@@ -1,4 +1,4 @@
-import { loadRamp, funnel, forecast, intakePerDay, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, STAGES, RAMP_FIELDS } from './lib.js';
+import { loadRamp, funnel, forecast, intakePerDay, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, STAGES, STAGE_LABEL, describeDateOrder, xlsxToCSV } from './lib.js';
 const $ = s => document.querySelector(s);
 const DAY = 864e5;
 const pct = x => (x * 100).toFixed(x < 0.1 && x > 0 ? 1 : 0) + '%';
@@ -9,16 +9,18 @@ const state = { tasks: [], ramp: null, accKey: 'vendor', taskUser: false, rampUs
 
 function kpi(l, v, cls = '') { return `<div class="kpi ${cls}"><div class="l">${l}</div><div class="v">${v}</div></div>`; }
 function tag(sec, user) { const t = document.querySelector(`#${sec} .illus-tag`); if (t) { t.textContent = user ? 'YOUR UPLOADED DATA' : 'ILLUSTRATIVE DATA'; t.classList.toggle('user', user); } }
-function mapLine(map, el, need) {
-  const parts = Object.entries(map).map(([k, h]) => `${k} ← <code>${esc(h)}</code>`);
+function mapLine(map, el, need, order) {
+  const keys = [...order.filter(k => k in map), ...Object.keys(map).filter(k => !order.includes(k))];
+  const parts = keys.map(k => `${k} ← <code>${esc(map[k])}</code>`);
   const miss = need.filter(k => !map[k]);
-  el.innerHTML = 'Matched columns: ' + (parts.join(' · ') || 'none') + (miss.length ? ` · <b style="color:var(--bad)">not found: ${miss.join(', ')}</b>` : '');
+  el.innerHTML = 'Matched columns: ' + (parts.join(' · ') || 'none') + (miss.length ? ` · <b class="bad-t">not found: ${miss.join(', ')}</b>` : '');
 }
+const dateNote = (el, d) => { el.textContent = describeDateOrder(d); el.classList.toggle('warn-t', d.basis === 'conflict'); };
 
 // ---------- tasks ----------
 function setTasks(text, user) {
   const r = loadTasks(text); state.tasks = r.tasks; state.taskUser = user;
-  mapLine(r.map, $('#task-map'), ['contributor', 'status']);
+  mapLine(r.map, $('#task-map'), ['contributor', 'status'], ['contributor', 'status', 'date', 'pod', 'vendor', 'reviewer']); dateNote($('#task-dates'), r.dateOrder);
   ['rate', 'quality', 'reviewers'].forEach(s => tag(s, user));
   renderTasks();
 }
@@ -47,24 +49,36 @@ function renderAcc() {
 function bar(label, frac, n, flag, extra = '') {
   return `<div class="bar ${flag ? 'flag' : ''} ${extra}"><span title="${esc(label)}" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(label)}</span><div class="t"><div class="f" style="width:${Math.max(0, Math.min(1, frac)) * 100}%"></div></div><span class="n">${n}</span></div>`;
 }
+function niceStep(max, n = 4) { const raw = max / n, p = 10 ** Math.floor(Math.log10(raw)), f = raw / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * p; }
+const short = t => new Date(t).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 function drawChart(d, start, deadline, target) {
-  const W = 800, H = 220, P = 36, end = Math.max(deadline, start + DAY);
-  const x = t => P + (t - start) / (end - start) * (W - 2 * P), y = v => H - P + 10 - v / Math.max(target, d.projected, 1) * (H - 2 * P);
+  const W = 800, H = 260, L = 56, R = 24, T = 30, B = 34, end = Math.max(deadline, start + DAY);
+  const step = niceStep(Math.max(target, d.projected, 1)), top = Math.ceil(Math.max(target, d.projected, 1) / step) * step;
+  const x = t => L + (t - start) / (end - start) * (W - L - R), y = v => H - B - v / top * (H - T - B);
   let cum = 0; const pts = d.series.map(([t, n]) => (cum += n, `${x(t).toFixed(1)},${y(cum).toFixed(1)}`));
   const last = d.series.length ? d.series[d.series.length - 1][0] : start;
-  $('#rate-chart').innerHTML = `<line x1="${P}" y1="${y(0)}" x2="${x(end)}" y2="${y(target)}" stroke="#9ca3af" stroke-dasharray="5 4"/>
-  <line x1="${x(last)}" y1="${y(cum)}" x2="${x(end)}" y2="${y(d.projected)}" stroke="${d.onTrack ? '#047857' : '#b91c1c'}" stroke-dasharray="2 3"/>
-  <polyline fill="none" stroke="#4f46e5" stroke-width="2.5" points="${pts.join(' ')}"/>
-  <line x1="${x(end)}" y1="${P - 20}" x2="${x(end)}" y2="${H - P + 10}" stroke="#e5e7eb"/>
-  <text x="${x(end) - 4}" y="${P - 8}" text-anchor="end" font-size="12" fill="#6b7280">deadline · target ${fmt(target)}</text>
-  <text x="${P}" y="${P - 8}" font-size="12" fill="#4f46e5">accepted (cumulative)</text><text x="${P + 160}" y="${P - 8}" font-size="12" fill="#9ca3af">straight-line pace to target</text>`;
+  let g = '';
+  for (let v = 0; v <= top + 1e-9; v += step) g += `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${L - 8}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
+  const days = Math.round((end - start) / DAY), xs = Math.max(1, Math.ceil(days / 7));
+  for (let k = 0; k <= days; k += xs) g += `<text class="ax" x="${x(start + k * DAY)}" y="${H - B + 18}" text-anchor="middle">${short(start + k * DAY)}</text>`;
+  $('#rate-chart').innerHTML = `${g}<line x1="${L}" x2="${W - R}" y1="${y(0)}" y2="${y(0)}" stroke="#d1d5db"/>
+  <line x1="${x(start)}" y1="${y(0)}" x2="${x(end)}" y2="${y(target)}" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="${x(last)}" y1="${y(cum)}" x2="${x(end)}" y2="${y(d.projected)}" stroke="${d.onTrack ? '#047857' : '#b91c1c'}" stroke-width="1.5" stroke-dasharray="2 3"/>
+  <polyline fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linejoin="round" points="${pts.join(' ')}"/>
+  <line x1="${x(end)}" y1="${T}" x2="${x(end)}" y2="${H - B}" stroke="#9ca3af"/>
+  <text class="ax" x="${x(end)}" y="${T - 12}" text-anchor="end">deadline ${short(end)} · target ${fmt(target)}</text>`;
+  $('#rate-legend').innerHTML = `<span><i style="background:#4f46e5"></i>Accepted (cumulative)</span><span><i class="dash" style="border-color:#9ca3af"></i>Straight-line pace to target</span><span><i class="dot" style="border-color:${d.onTrack ? '#047857' : '#b91c1c'}"></i>Projection at current pace</span>`;
 }
 
 // ---------- ramp ----------
 function setRamp(text, user) {
   const r = loadRamp(text); state.ramp = r; state.rampUser = user; tag('ramp', user);
-  mapLine(r.map, $('#ramp-map'), STAGES);
+  mapLine(r.map, $('#ramp-map'), STAGES, ['id', ...STAGES, 'pod', 'vendor']); dateNote($('#ramp-dates'), r.dateOrder);
   if (r.skipped) $('#ramp-map').innerHTML += ` · ${r.skipped} row(s) skipped (no recruit date)`;
+  const v = r.violations, vEl = $('#ramp-order');
+  vEl.hidden = !v.length;
+  vEl.innerHTML = v.length ? `<b>${v.length} row(s) have stage dates out of order</b> (a later stage dated before an earlier one). They are still counted; check them in the export: ` +
+    v.slice(0, 5).map(x => `${esc(x.id)} (row ${x.row}: ${STAGE_LABEL[x.later]} before ${STAGE_LABEL[x.earlier]})`).join(' · ') + (v.length > 5 ? ` · +${v.length - 5} more` : '') : '';
   if (r.people.length) $('#fc-cap').value = Math.max(1, Math.round(intakePerDay(r.people) * 2.5));
   renderRamp();
 }
@@ -116,8 +130,12 @@ function demo() {
 }
 
 // ---------- wiring ----------
-const readFile = (inp, cb) => inp.addEventListener('change', () => { const f = inp.files[0]; if (f) f.text().then(t => cb(t, true)); });
-readFile($('#task-file'), setTasks); readFile($('#ramp-file'), setRamp);
+const readFile = (inp, cb, errEl) => inp.addEventListener('change', async () => {
+  const f = inp.files[0]; if (!f) return; errEl.textContent = '';
+  try { cb(/\.xlsx$/i.test(f.name) ? await xlsxToCSV(await f.arrayBuffer()) : await f.text(), true); }
+  catch (e) { errEl.textContent = `Couldn’t read ${f.name}: ${e.message}`; }
+});
+readFile($('#task-file'), setTasks, $('#task-err')); readFile($('#ramp-file'), setRamp, $('#ramp-err'));
 ['#target', '#deadline'].forEach(s => $(s).addEventListener('input', renderTasks));
 $('#thresh').addEventListener('input', renderAcc);
 document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x === b)); state.accKey = b.dataset.k; renderAcc(); }));

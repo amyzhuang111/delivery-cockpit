@@ -21,12 +21,12 @@
 <div class="row"><label>Target accepted tasks<input id="target" type="number" min="1" value="6000"></label>
 <label>Deadline<input id="deadline" type="date" value="2026-10-21"></label></div>
 <div class="grid" id="rate-kpis"></div>
-<svg class="chart" id="rate-chart" viewBox="0 0 800 220" role="img" aria-label="Cumulative accepted tasks vs required pace"></svg></section>
+<div class="chart-wrap"><div class="legend" id="rate-legend"></div><svg class="chart" id="rate-chart" viewBox="0 0 800 260" role="img" aria-label="Cumulative accepted tasks vs required pace"></svg></div></section>
 
 <section class="panel" id="quality"><h2>Acceptance rate<small class="illus-tag">ILLUSTRATIVE DATA</small></h2>
 <p class="sub">Lowest first. Red = below the threshold. Upload a task-review export (any column names like worker / team / vendor / reviewer / outcome / date).</p>
-<div class="row"><label>Task CSV<input type="file" id="task-file" accept=".csv,text/csv"></label><label>Flag below<input id="thresh" type="number" min="0" max="100" value="80" style="width:90px"></label></div>
-<div class="map" id="task-map"></div>
+<div class="row"><label>Task CSV or XLSX<input type="file" id="task-file" accept=".csv,.tsv,.txt,.xlsx,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"></label><label>Flag below<input id="thresh" type="number" min="0" max="100" value="80" style="width:90px"></label></div>
+<div class="map" id="task-map"></div><p class="map" id="task-dates"></p><p class="err" id="task-err" role="alert"></p>
 <div class="tabs" role="tablist"><button role="tab" data-k="vendor" aria-selected="true">Vendor</button><button role="tab" data-k="pod" aria-selected="false">Pod</button><button role="tab" data-k="contributor" aria-selected="false">Contributor</button></div>
 <div class="bars" id="acc-bars"></div></section>
 
@@ -36,8 +36,8 @@
 
 <section class="panel" id="ramp"><h2>Contributor ramp<small class="illus-tag">ILLUSTRATIVE DATA</small></h2>
 <p class="sub">Recruited → screened → trained → first accepted task → productive. Upload a contributor export with one row per person and a date per stage; headers are matched fuzzily ("Applied On", "Screen Passed", "1st Accepted Task"…).</p>
-<div class="row"><label>Contributor CSV<input type="file" id="ramp-file" accept=".csv,text/csv"></label><button class="btn ghost" type="button" id="ramp-reset">Reload illustrative data</button></div>
-<div class="map" id="ramp-map"></div>
+<div class="row"><label>Contributor CSV or XLSX<input type="file" id="ramp-file" accept=".csv,.tsv,.txt,.xlsx,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"></label><button class="btn ghost" type="button" id="ramp-reset">Reload illustrative data</button></div>
+<div class="map" id="ramp-map"></div><p class="map" id="ramp-dates"></p><p class="err" id="ramp-err" role="alert"></p><div class="warnbox" id="ramp-order" hidden></div>
 <div class="grid" id="ramp-kpis" style="margin-top:14px"></div>
 <h3 style="font-weight:400;font-size:18px;margin:22px 0 8px">Funnel and drop-off</h3>
 <div class="bars funnel" id="funnel"></div>

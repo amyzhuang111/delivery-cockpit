@@ -78,13 +78,33 @@ export function mapHeaders(headers, fields) {
   return out;
 }
 
-export function parseDate(v) {
+const EXCEL_EPOCH = Date.UTC(1899, 11, 30);
+/** order: 'mdy' (US, default) or 'dmy' for slash/dot dates like 03/10/26. ISO dates and Excel serials are unambiguous. */
+export function parseDate(v, order = 'mdy') {
   if (v == null) return null; v = String(v).trim(); if (!v || /^(n\/?a|null|none|-|—)$/i.test(v)) return null;
+  if (/^\d{5}(\.\d+)?$/.test(v) && +v > 20000 && +v < 80000) return EXCEL_EPOCH + Math.round(+v * 86400000 / 60000) * 60000; // Excel serial date
   let m = v.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})/);
   if (m) return Date.UTC(+m[1], +m[2] - 1, +m[3]) + timeOfDay(v);
   m = v.match(/^(\d{1,2})[/.-](\d{1,2})[/.-](\d{2,4})/);
-  if (m) { let y = +m[3]; if (y < 100) y += 2000; return Date.UTC(y, +m[1] - 1, +m[2]) + timeOfDay(v); }
+  if (m) { let y = +m[3]; if (y < 100) y += 2000; const [mo, d] = order === 'dmy' ? [+m[2], +m[1]] : [+m[1], +m[2]]; if (mo > 12 || d > 31) return null; return Date.UTC(y, mo - 1, d) + timeOfDay(v); }
   const t = Date.parse(v); return isNaN(t) ? null : t;
+}
+/** Decide DD/MM vs MM/DD for one file from its slash dates. A first part >12 proves DD/MM; a second part >12 proves MM/DD. */
+export function detectDateOrder(values) {
+  let dmy = 0, mdy = 0, slash = 0;
+  for (const v of values) { const m = String(v ?? '').trim().match(/^(\d{1,2})[/.-](\d{1,2})[/.-](\d{2,4})/); if (!m) continue; slash++; if (+m[1] > 12) dmy++; if (+m[2] > 12) mdy++; }
+  if (!slash) return { order: 'mdy', basis: 'none', slash, dmy, mdy };
+  if (dmy && mdy) return { order: mdy >= dmy ? 'mdy' : 'dmy', basis: 'conflict', slash, dmy, mdy };
+  if (dmy) return { order: 'dmy', basis: 'evidence', slash, dmy, mdy };
+  if (mdy) return { order: 'mdy', basis: 'evidence', slash, dmy, mdy };
+  return { order: 'mdy', basis: 'ambiguous', slash, dmy, mdy };
+}
+export function describeDateOrder(d) {
+  if (!d || d.basis === 'none') return 'Dates: ISO / Excel dates only, no DD/MM vs MM/DD choice needed.';
+  const f = d.order === 'dmy' ? 'DD/MM/YYYY' : 'MM/DD/YYYY';
+  if (d.basis === 'evidence') return `Dates read as ${f}: ${d.order === 'dmy' ? d.dmy : d.mdy} of ${d.slash} slash dates only make sense that way.`;
+  if (d.basis === 'conflict') return `Dates read as ${f}, but the file mixes both (${d.mdy} look MM/DD, ${d.dmy} look DD/MM). Check the export.`;
+  return `Dates read as ${f} (US default): all ${d.slash} slash dates have day ≤ 12, so the file can't tell us.`;
 }
 function timeOfDay(v) { const m = v.match(/[ T](\d{1,2}):(\d{2})/); return m ? (+m[1] * 60 + +m[2]) * 60000 : 0; }
 const DAY = 86400000;
@@ -95,14 +115,19 @@ export function loadRamp(text) {
   const { headers, rows } = parseCSV(text);
   const map = mapHeaders(headers, RAMP_FIELDS);
   const missing = STAGES.filter(s => !map[s]);
+  const dateOrder = detectDateOrder(rows.flatMap(r => STAGES.filter(s => map[s]).map(s => r[map[s]])));
+  const violations = [];
   const people = rows.map((r, i) => {
     const p = { id: map.id ? r[map.id] : `row ${i + 2}`, pod: map.pod ? r[map.pod] : '', vendor: map.vendor ? r[map.vendor] : '' };
-    for (const s of STAGES) p[s] = map[s] ? parseDate(r[map[s]]) : null;
+    for (const s of STAGES) p[s] = map[s] ? parseDate(r[map[s]], dateOrder.order) : null;
+    // stage dates must not go backwards (e.g. trained before screened)
+    let prev = null;
+    for (const s of STAGES) if (p[s] != null) { if (prev && p[s] < p[prev]) { violations.push({ row: i + 2, id: p.id, earlier: prev, later: s }); p.orderViolation = true; } prev = s; }
     // a later stage implies earlier ones were passed (dates may be blank in exports)
     for (let k = STAGES.length - 2; k >= 0; k--) if (p[STAGES[k]] == null && p[STAGES[k + 1]] != null) p[STAGES[k]] = p[STAGES[k + 1]];
     return p;
   }).filter(p => p.recruited != null);
-  return { map, missing, people, skipped: rows.length - people.length, headers };
+  return { map, missing, people, skipped: rows.length - people.length, headers, dateOrder, violations };
 }
 
 export function median(a) { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; }
@@ -158,15 +183,16 @@ const REJECT = /^(reject(ed)?|declined?|fail(ed)?|no|false|0|bad|rework|redo|ret
 export function loadTasks(text) {
   const { headers, rows } = parseCSV(text);
   const map = mapHeaders(headers, TASK_FIELDS);
+  const dateOrder = detectDateOrder(map.date ? rows.map(r => r[map.date]) : []);
   const tasks = rows.map(r => {
     const st = map.status ? r[map.status] : '';
     return {
       contributor: map.contributor ? r[map.contributor] : '', pod: map.pod ? r[map.pod] : '', vendor: map.vendor ? r[map.vendor] : '',
-      reviewer: map.reviewer ? r[map.reviewer] : '', date: map.date ? parseDate(r[map.date]) : null,
+      reviewer: map.reviewer ? r[map.reviewer] : '', date: map.date ? parseDate(r[map.date], dateOrder.order) : null,
       accepted: ACCEPT.test(st) ? true : REJECT.test(st) ? false : null
     };
   });
-  return { map, tasks, headers };
+  return { map, tasks, headers, dateOrder };
 }
 export function acceptanceBy(tasks, key) {
   const g = new Map();
@@ -191,3 +217,50 @@ export function dailyRate(tasks, { target, start, deadline, asOf }) {
   const projected = delivered + actualPerDay * remainingDays;
   return { delivered, series, actualPerDay, requiredPerDay, remainingDays, projected, onTrack: projected >= target };
 }
+
+// ---------- XLSX (first worksheet) -> CSV text, no dependencies ----------
+const u16 = (b, o) => b[o] | b[o + 1] << 8, u32 = (b, o) => (b[o] | b[o + 1] << 8 | b[o + 2] << 16 | b[o + 3] << 24) >>> 0;
+async function unzip(buf) {
+  const b = new Uint8Array(buf); let e = b.length - 22;
+  while (e >= 0 && u32(b, e) !== 0x06054b50) e--;
+  if (e < 0) throw new Error('Not an XLSX file (no zip directory found).');
+  const files = {}; let o = u32(b, e + 16);
+  for (let n = u16(b, e + 10); n--;) {
+    const method = u16(b, o + 10), csize = u32(b, o + 20), nl = u16(b, o + 28), xl = u16(b, o + 30), cl = u16(b, o + 32), lo = u32(b, o + 42);
+    const name = new TextDecoder().decode(b.subarray(o + 46, o + 46 + nl));
+    files[name] = { method, csize, lo }; o += 46 + nl + xl + cl;
+  }
+  const read = async name => {
+    const f = files[name]; if (!f) return null;
+    const start = f.lo + 30 + u16(b, f.lo + 26) + u16(b, f.lo + 28), raw = b.subarray(start, start + f.csize);
+    if (f.method === 0) return new TextDecoder().decode(raw);
+    if (f.method !== 8) throw new Error('Unsupported compression in XLSX.');
+    const ds = new Blob([raw]).stream().pipeThrough(new DecompressionStream('deflate-raw'));
+    return new TextDecoder().decode(await new Response(ds).arrayBuffer());
+  };
+  return { names: Object.keys(files), read };
+}
+const xmlText = s => s.replace(/<[^>]+>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/&amp;/g, '&');
+const colIdx = ref => { let n = 0; for (const c of ref.replace(/\d+$/, '')) n = n * 26 + c.charCodeAt(0) - 64; return n - 1; };
+export async function xlsxToRows(buf) {
+  const z = await unzip(buf);
+  const ss = await z.read('xl/sharedStrings.xml');
+  const shared = ss ? [...ss.matchAll(/<si>([\s\S]*?)<\/si>/g)].map(m => xmlText([...m[1].matchAll(/<t[^>]*>([\s\S]*?)<\/t>/g)].map(t => t[1]).join(''))) : [];
+  const sheet = z.names.includes('xl/worksheets/sheet1.xml') ? 'xl/worksheets/sheet1.xml' : z.names.filter(n => /^xl\/worksheets\/[^/]+\.xml$/.test(n)).sort()[0];
+  if (!sheet) throw new Error('No worksheet found in XLSX.');
+  const xml = await z.read(sheet), rows = [];
+  for (const rm of xml.matchAll(/<row[^>]*?(?:\/>|>([\s\S]*?)<\/row>)/g)) {
+    const row = [];
+    for (const cm of (rm[1] || '').matchAll(/<c\b([^>]*?)(?:\/>|>([\s\S]*?)<\/c>)/g)) {
+      const attrs = cm[1], inner = cm[2] || '', ref = (attrs.match(/\br="([A-Z]+\d+)"/) || [])[1], t = (attrs.match(/\bt="(\w+)"/) || [])[1];
+      const v = (inner.match(/<v>([\s\S]*?)<\/v>/) || [])[1];
+      let val = t === 's' ? shared[+v] ?? '' : t === 'inlineStr' ? xmlText((inner.match(/<is>([\s\S]*?)<\/is>/) || ['', ''])[1]) : v != null ? xmlText(v) : '';
+      if (t === 'b') val = val === '1' ? 'TRUE' : 'FALSE';
+      row[ref ? colIdx(ref) : row.length] = val;
+    }
+    rows.push(Array.from(row, x => x ?? ''));
+  }
+  return rows;
+}
+export const rowsToCSV = rows => rows.map(r => r.map(c => /[",\n\r]/.test(c) ? '"' + String(c).replace(/"/g, '""') + '"' : c).join(',')).join('\n');
+export const xlsxToCSV = async buf => rowsToCSV(await xlsxToRows(buf));

@@ -1,5 +1,5 @@
 import test from 'node:test'; import assert from 'node:assert/strict'; import fs from 'fs';
-import { parseCSV, mapHeaders, RAMP_FIELDS, TASK_FIELDS, parseDate, loadRamp, funnel, forecast, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, quantile } from '../public/lib.js';
+import { parseCSV, mapHeaders, RAMP_FIELDS, TASK_FIELDS, parseDate, loadRamp, funnel, forecast, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, quantile, detectDateOrder, describeDateOrder, xlsxToRows, xlsxToCSV } from '../public/lib.js';
 const DAY = 864e5, D = s => Date.parse(s + 'T00:00:00Z');
 
 test('parseCSV handles quotes, escaped quotes, CRLF, BOM, comment lines', () => {
@@ -75,4 +75,33 @@ test('bundled data is labelled ILLUSTRATIVE', () => {
   for (const f of ['illustrative-ramp.csv', 'illustrative-tasks.csv']) assert.match(fs.readFileSync(new URL('../public/data/' + f, import.meta.url), 'utf8').split('\n')[0], /ILLUSTRATIVE DATA/);
   const html = fs.readFileSync(new URL('../public/index.html', import.meta.url), 'utf8');
   assert.match(html, /ILLUSTRATIVE DATA/); assert.doesNotMatch(html, /example\.com|href="#"|fonts\.googleapis|fonts\.gstatic/);
+});
+test('DD/MM vs MM/DD detected per file and applied', () => {
+  assert.equal(detectDateOrder(['03/10/2026', '13/10/2026']).order, 'dmy');
+  assert.equal(detectDateOrder(['10/03/2026', '10/13/2026']).order, 'mdy');
+  const amb = detectDateOrder(['03/10/2026', '2026-10-05']); assert.equal(amb.basis, 'ambiguous'); assert.match(describeDateOrder(amb), /MM\/DD\/YYYY \(US default\)/);
+  assert.equal(detectDateOrder(['2026-10-01']).basis, 'none');
+  assert.equal(detectDateOrder(['13/01/2026', '01/13/2026']).basis, 'conflict');
+  assert.equal(parseDate('03/10/2026', 'dmy'), D('2026-10-03')); assert.equal(parseDate('03/10/2026'), D('2026-03-10'));
+  assert.equal(parseDate('13/10/2026', 'mdy'), null, 'impossible month is rejected, not rolled over');
+  const r = loadRamp(fs.readFileSync(new URL('./fixtures/dmy-ramp.csv', import.meta.url), 'utf8'));
+  assert.equal(r.dateOrder.order, 'dmy'); assert.equal(r.people[0].productive, D('2026-10-13')); assert.equal(funnel(r.people).ttpMedian, 10);
+});
+test('stage-date order violations are flagged', () => {
+  const r = loadRamp(fs.readFileSync(new URL('./fixtures/dmy-ramp.csv', import.meta.url), 'utf8'));
+  assert.deepEqual(r.violations, [{ row: 4, id: 'C', earlier: 'screened', later: 'trained' }]);
+  assert.equal(loadRamp(fs.readFileSync(new URL('./fixtures/messy-ramp.csv', import.meta.url), 'utf8')).violations.length, 0);
+});
+test('XLSX import: real openpyxl workbook with shared strings, date cells, text dates, blanks', async () => {
+  const buf = fs.readFileSync(new URL('./fixtures/ramp.xlsx', import.meta.url));
+  const rows = await xlsxToRows(buf);
+  assert.deepEqual(rows[0], ['Worker ID', 'Signup Date', 'Vetted On', 'Onboarded At', 'First Task Accepted', 'Ramped At', 'Team']);
+  assert.equal(rows[3][0], 'W-3 "quoted", comma'); assert.equal(rows[2][3], '');
+  const r = loadRamp(await xlsxToCSV(buf));
+  assert.deepEqual(r.missing, []); assert.equal(r.people.length, 4); assert.equal(r.skipped, 1);
+  assert.equal(r.people[0].recruited, D('2026-10-01')); assert.equal(r.people[0].productive, D('2026-10-08'));
+  assert.equal(r.people[2].id, 'W-3 "quoted", comma'); assert.equal(r.people[2].trained, D('2026-10-06'));
+  assert.deepEqual(funnel(r.people).stages.map(s => s.count), [4, 4, 3, 2, 2]);
+  assert.deepEqual(r.violations.map(v => v.id), ['W-4']);
+  await assert.rejects(xlsxToRows(new TextEncoder().encode('a,b\n1,2').buffer), /Not an XLSX/);
 });

@@ -55,3 +55,30 @@ test('every visible link returns 200 and none are placeholders', async () => {
   }
   await p.close();
 });
+test('rate chart has y-axis labels, gridlines and a legend', async () => {
+  const { p } = await open();
+  const ys = await p.$$eval('#rate-chart text.ax[text-anchor="end"]', es => es.map(e => e.textContent));
+  assert.ok(ys.includes('0') && ys.length >= 4, ys.join('|'));
+  assert.ok((await p.$$('#rate-chart line.grid-l')).length >= 3);
+  assert.match(await p.$eval('#rate-legend', e => e.innerText), /Accepted \(cumulative\)/);
+  await p.close();
+});
+test('matched columns listed in stage order; date format stated', async () => {
+  const { p } = await open();
+  const m = await p.$eval('#ramp-map', e => e.innerText);
+  const idx = ['recruited', 'screened', 'trained', 'firstAccepted', 'productive'].map(k => m.indexOf(k + ' ←'));
+  assert.ok(idx.every((v, i) => v >= 0 && (i === 0 || v > idx[i - 1])), m);
+  assert.match(await p.$eval('#ramp-dates', e => e.innerText), /^Dates:/);
+  await p.close();
+});
+test('XLSX upload imports, states date choice, flags out-of-order stages', async () => {
+  const { p } = await open();
+  await (await p.$('#ramp-file')).uploadFile(path.resolve('test/fixtures/ramp.xlsx'));
+  await p.waitForFunction(() => /Ramped At/.test(document.querySelector('#ramp-map').innerText));
+  assert.deepEqual(await p.$$eval('#funnel .bar .n', es => es.map(e => e.innerText.split(' ')[0])), ['4', '4', '3', '2', '2']);
+  assert.match(await p.$eval('#ramp-order', e => e.innerText), /1 row\(s\) have stage dates out of order[\s\S]*W-4/);
+  assert.match(await p.$eval('#ramp-dates', e => e.innerText), /MM\/DD\/YYYY/);
+  await (await p.$('#ramp-file')).uploadFile(path.resolve('test/fixtures/dmy-ramp.csv'));
+  await p.waitForFunction(() => /DD\/MM\/YYYY/.test(document.querySelector('#ramp-dates').innerText));
+  await p.close();
+});
