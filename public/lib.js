@@ -221,33 +221,48 @@ export function reviewerLoad(tasks) {
   return [...g.entries()].map(([k, n]) => ({ reviewer: k, n, perDay: n / d })).sort((a, b) => b.n - a.n);
 }
 /**
- * asOf = the day we are measuring "from here" (default: today). dataEnd = last date in the export.
- * Actual pace is measured over the export's span (start..dataEnd); remaining days run from asOf to the deadline.
+ * asOf = the day "from here" starts (default: today). dataEnd = last date in the export.
+ * Pace is measured over start..dataEnd. Remaining days run inclusively from the first day not yet in the data
+ * (max(asOf, dataEnd + 1)) through the deadline, so a deadline of today still has 1 day left.
+ * gapDays = days between the last data date and asOf that have no data. Projection is a range:
+ *   low  = those gap days produced nothing; high = they ran at the measured pace.
  */
 export function dailyRate(tasks, { target, start, deadline, asOf, dataEnd = asOf }) {
   let delivered = 0; const byDay = new Map();
-  for (const t of tasks) { if (!t.accepted || t.date == null) continue; if (t.date <= Math.max(asOf, dataEnd)) delivered++; const d = Math.floor(t.date / DAY) * DAY; byDay.set(d, (byDay.get(d) || 0) + 1); }
+  for (const t of tasks) { if (!t.accepted || t.date == null) continue; delivered++; const d = Math.floor(t.date / DAY) * DAY; byDay.set(d, (byDay.get(d) || 0) + 1); }
   const series = [...byDay.entries()].sort((a, b) => a[0] - b[0]);
   const elapsed = Math.max(1, Math.round((dataEnd - start) / DAY) + 1);
-  const remainingDays = Math.max(0, Math.round((deadline - asOf) / DAY));
+  const from = Math.max(asOf, dataEnd + DAY);
+  const remainingDays = Math.max(0, Math.round((deadline - from) / DAY) + 1);
+  const gapDays = Math.max(0, Math.round((Math.min(asOf, deadline + DAY) - dataEnd) / DAY) - 1);
   const actualPerDay = delivered / elapsed;
-  const requiredPerDay = remainingDays > 0 ? Math.max(0, target - delivered) / remainingDays : (delivered >= target ? 0 : Infinity);
-  const projected = delivered + actualPerDay * remainingDays;
-  const staleDays = Math.max(0, Math.round((asOf - dataEnd) / DAY));
-  return { delivered, series, actualPerDay, requiredPerDay, remainingDays, projected, onTrack: projected >= target, staleDays };
+  const left = Math.max(0, target - delivered);
+  const requiredPerDay = remainingDays > 0 ? left / remainingDays : (left ? Infinity : 0);
+  const projectedLow = delivered + actualPerDay * remainingDays, projectedHigh = projectedLow + actualPerDay * gapDays;
+  const etaDays = actualPerDay > 0 ? Math.ceil(left / actualPerDay) : Infinity; // days after dataEnd, gap at pace
+  return { delivered, series, actualPerDay, requiredPerDay, remainingDays, gapDays, dueToday: remainingDays === 1 && Math.round((deadline - from) / DAY) === 0,
+    projected: projectedLow, projectedLow, projectedHigh, onTrack: projectedLow >= target, maybe: projectedLow < target && projectedHigh >= target,
+    staleDays: Math.max(0, Math.round((asOf - dataEnd) / DAY)), etaHigh: dataEnd + etaDays * DAY, etaLow: Math.max(asOf - DAY, dataEnd) + etaDays * DAY };
 }
+/** Safe ISO date: '' for anything toISOString would throw on. */
+export const isoDate = t => Number.isFinite(t) && Math.abs(t) <= 8.64e15 ? new Date(t).toISOString().slice(0, 10) : '';
+export function checkThreshold(v) { return v === '' || !Number.isFinite(+v) || +v < 0 || +v > 100 ? 'Flag threshold must be between 0 and 100.' : null; }
 /** Input checks for the rate panel and forecast. Returns a message or null. */
 export function checkRateInputs({ target, deadline }) {
   if (!Number.isFinite(target) || target < 1) return 'Enter a target of at least 1 accepted task.';
+  if (target > 1e9) return 'Target is capped at 1,000,000,000.';
   if (!Number.isFinite(deadline)) return 'Enter a deadline date.';
   return null;
 }
 export function checkForecastInputs({ n, start, deadline, capacity }) {
   if (!Number.isFinite(n) || n < 1) return 'Enter N of at least 1.';
+  if (n > 1e6) return 'N is capped at 1,000,000.';
   if (!Number.isFinite(start)) return 'Enter a start date.';
   if (!Number.isFinite(deadline)) return 'Enter date X.';
   if (deadline <= start) return 'Date X must be after the start date.';
   if (!Number.isFinite(capacity) || capacity <= 0) return 'Enter a recruits/day capacity above 0.';
+  if (capacity > 1e6) return 'Capacity is capped at 1,000,000 recruits/day.';
+  if ((deadline - start) / DAY > 3650) return 'Date X must be within 10 years of the start.';
   return null;
 }
 

@@ -1,5 +1,5 @@
 import test from 'node:test'; import assert from 'node:assert/strict'; import fs from 'fs';
-import { parseCSV, mapHeaders, RAMP_FIELDS, TASK_FIELDS, parseDate, loadRamp, funnel, forecast, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, quantile, checkRateInputs, checkForecastInputs, detectDateOrder, describeDateOrder, xlsxToRows, xlsxToCSV, xlsxSheets } from '../public/lib.js';
+import { parseCSV, mapHeaders, RAMP_FIELDS, TASK_FIELDS, parseDate, loadRamp, funnel, forecast, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, quantile, checkRateInputs, checkForecastInputs, isoDate, checkThreshold, detectDateOrder, describeDateOrder, xlsxToRows, xlsxToCSV, xlsxSheets } from '../public/lib.js';
 const DAY = 864e5, D = s => Date.parse(s + 'T00:00:00Z');
 
 test('parseCSV handles quotes, escaped quotes, CRLF, BOM, comment lines', () => {
@@ -121,7 +121,10 @@ test('funnel cohort cutoff: recent recruits are not counted as drop-offs', () =>
 test('daily rate measures from as-of (today), pace from the data span, and reports staleness', () => {
   const tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(d => ({ accepted: true, date: D(`2026-10-${String(d).padStart(2, '0')}`) }));
   const r = dailyRate(tasks, { target: 30, start: D('2026-10-01'), deadline: D('2026-10-21'), asOf: D('2026-10-19'), dataEnd: D('2026-10-10') });
-  assert.equal(r.actualPerDay, 1); assert.equal(r.remainingDays, 2); assert.equal(r.requiredPerDay, 10); assert.equal(r.staleDays, 9); assert.equal(r.onTrack, false);
+  assert.equal(r.actualPerDay, 1); assert.equal(r.remainingDays, 3, 'Oct 19, 20, 21'); assert.equal(r.requiredPerDay, 20 / 3); assert.equal(r.staleDays, 9); assert.equal(r.onTrack, false);
+  assert.equal(r.gapDays, 8, 'Oct 11-18 have no data'); assert.equal(r.projectedLow, 13); assert.equal(r.projectedHigh, 21);
+  const dataMode = dailyRate(tasks, { target: 30, start: D('2026-10-01'), deadline: D('2026-10-21'), asOf: D('2026-10-10'), dataEnd: D('2026-10-10') });
+  assert.equal(dataMode.remainingDays, 11); assert.equal(dataMode.gapDays, 0); assert.equal(dataMode.projectedLow, 21);
   assert.equal(dailyRate(tasks, { target: 5, start: D('2026-10-01'), deadline: D('2026-10-21'), asOf: D('2026-10-19'), dataEnd: D('2026-10-10') }).requiredPerDay, 0);
 });
 test('input guards: negative/empty target, empty dates, X before start', () => {
@@ -139,4 +142,24 @@ test('200k-row task file loads and aggregates in under 2s', () => {
   const t0 = Date.now(); const { tasks } = loadTasks(rows.join('\n'));
   acceptanceBy(tasks, 'contributor'); reviewerLoad(tasks); dailyRate(tasks, { target: 1e6, start: D('2026-10-01'), deadline: D('2026-10-21'), asOf: D('2026-10-19'), dataEnd: D('2026-10-10') });
   assert.equal(tasks.length, 200000); assert.ok(Date.now() - t0 < 2000, `${Date.now() - t0} ms`);
+});
+test('deadline of today counts as 1 day left (due today), not passed', () => {
+  const tasks = [{ accepted: true, date: D('2026-10-19') }];
+  const r = dailyRate(tasks, { target: 5, start: D('2026-10-19'), deadline: D('2026-10-20'), asOf: D('2026-10-20'), dataEnd: D('2026-10-19') });
+  assert.equal(r.remainingDays, 1); assert.equal(r.dueToday, true); assert.equal(r.requiredPerDay, 4);
+  const past = dailyRate(tasks, { target: 5, start: D('2026-10-19'), deadline: D('2026-10-18'), asOf: D('2026-10-20'), dataEnd: D('2026-10-19') });
+  assert.equal(past.remainingDays, 0); assert.equal(past.requiredPerDay, Infinity);
+});
+test('extreme values: N, capacity, target caps; isoDate never throws; forecast stays finite or Infinity', () => {
+  for (const n of [1e9, 1e300, Infinity]) assert.match(checkForecastInputs({ n, start: 0, deadline: DAY, capacity: 1 }) || '', /capped|at least/);
+  assert.match(checkForecastInputs({ n: 5, start: 0, deadline: DAY, capacity: 1e9 }), /capped/);
+  assert.match(checkForecastInputs({ n: 5, start: 0, deadline: 4000 * DAY, capacity: 1 }), /10 years/);
+  assert.match(checkRateInputs({ target: 1e12, deadline: 1 }), /capped/);
+  for (const t of [NaN, Infinity, -Infinity, 1e300, 8.64e15 + 1]) assert.equal(isoDate(t), '');
+  assert.equal(isoDate(D('2026-10-19')), '2026-10-19');
+  const r = forecast({ n: 1e6, start: 0, deadline: 10 * DAY, rates: [0.0001, 0.0001, 1, 1], ttpDays: 2, capacity: 1 });
+  assert.equal(r.feasible, false); assert.ok(isoDate(r.earliestDays * DAY) === '' || r.earliestDays > 1e6);
+});
+test('threshold must be 0-100 and not blank', () => {
+  for (const v of ['', '-1', '150', 'abc']) assert.ok(checkThreshold(v)); for (const v of ['0', '80', '100']) assert.equal(checkThreshold(v), null);
 });

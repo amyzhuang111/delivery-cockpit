@@ -116,7 +116,7 @@ test('as-of defaults to today and the stale data date is shown', async () => {
   const kp = await p.$eval('#rate-kpis', e => e.innerText); const today = await p.evaluate(() => new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' }));
   assert.ok(kp.includes(`Required / day from ${today}`), kp);
   assert.equal(await p.$eval('#deadline', e => e.value), await p.evaluate(() => { const n = new Date(); return new Date(Date.UTC(n.getFullYear(), n.getMonth(), n.getDate()) + 7 * 864e5).toISOString().slice(0, 10); }));
-  await p.select('#asof', 'data'); assert.match(await p.$eval('#rate-kpis', e => e.innerText), /Required \/ day from Oct 10/);
+  await p.select('#asof', 'data'); assert.match(await p.$eval('#rate-kpis', e => e.innerText), /Required \/ day from Oct 11/);
   assert.match(await p.$eval('#fc-cap-note', e => e.innerText), /observed recruit intake .*\d+(\.\d)?\/day/);
   assert.match(await p.$eval('#funnel-note', e => e.innerText), /includes in-flight recruits/);
   await p.close();
@@ -138,7 +138,7 @@ test('200k-row task CSV renders in under 5s', async () => {
   fs.writeFileSync(f, rows.join('\n'));
   const { p } = await open(375);
   const t0 = Date.now(); await (await p.$('#task-file')).uploadFile(f);
-  await p.waitForFunction(() => /Accepted so far\s*160,000/.test(document.querySelector('#rate-kpis').innerText), { timeout: 5000 });
+  await p.waitForFunction(() => /Accepted in data[^\n]*\s*160,000/.test(document.querySelector('#rate-kpis').innerText), { timeout: 5000 });
   const ms = Date.now() - t0; assert.ok(ms < 5000, ms + ' ms'); console.log('# 200k render ms', ms);
   await p.close();
 });
@@ -151,4 +151,25 @@ test('tabs: arrow keys move selection, aria-controls set', async () => {
   assert.equal(await p.$eval('#tab-vendor', e => e.tabIndex), -1);
   await p.select('#fc-src', 'published'); assert.match(await p.$eval('#verdict', e => e.innerText), /Mixed sources/);
   await p.close();
+});
+test('extreme N, deadline today, projection range, no-vendor upload, threshold validation', async () => {
+  const { p } = await open();
+  const errs = []; p.on('pageerror', e => errs.push(e.message));
+  const set = async (sel, v) => { await p.$eval(sel, (e, v) => { e.value = v; e.dispatchEvent(new Event('input', { bubbles: true })); }, v); };
+  await set('#fc-n', '0'); await set('#fc-n', '1e9'); assert.match(await p.$eval('#fc-out', e => e.innerText), /capped at 1,000,000/);
+  await set('#fc-n', '1000000'); await set('#fc-cap', '1'); assert.match(await p.$eval('#fc-out', e => e.innerText), /^No: 1,000,000[\s\S]*more than 10 years out/);
+  assert.deepEqual(errs, []);
+  const kp = () => p.$eval('#rate-kpis', e => e.innerText);
+  assert.match(await kp(), /Projected at deadline \(low–high\)\s*[\d,]+–[\d,]+/); assert.match(await kp(), /assumes Oct 11(–\w+ \d+)? = 0 \(no data\)/);
+  assert.match(await p.$eval('#rate-asof-note', e => e.innerText), /low = those \d+ day\(s\) produced nothing, high = they ran at pace/);
+  const today = await p.evaluate(() => { const n = new Date(); return new Date(Date.UTC(n.getFullYear(), n.getMonth(), n.getDate())).toISOString().slice(0, 10); });
+  await set('#deadline', today); assert.match(await kp(), /due today/); assert.doesNotMatch(await kp(), /deadline passed/);
+  await set('#thresh', '150'); assert.match(await p.$eval('#thresh-err', e => e.innerText), /between 0 and 100/);
+  await set('#thresh', ''); assert.match(await p.$eval('#thresh-err', e => e.innerText), /between 0 and 100/);
+  await set('#thresh', '80'); assert.equal(await p.$eval('#thresh-err', e => e.innerText), '');
+  const f = path.join(os.tmpdir(), 'dc-novendor.csv'); fs.writeFileSync(f, 'who,result,day,team\na,accepted,2026-10-01,P1\nb,rejected,2026-10-01,P2\n');
+  await (await p.$('#task-file')).uploadFile(f);
+  await p.waitForFunction(() => document.querySelector('#tab-pod').getAttribute('aria-selected') === 'true');
+  assert.equal(await p.$eval('#tab-vendor', e => e.disabled), true); assert.doesNotMatch(await p.$eval('#acc-bars', e => e.innerText), /No rows/);
+  assert.deepEqual(errs, []); await p.close();
 });
