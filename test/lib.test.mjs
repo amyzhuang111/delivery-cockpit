@@ -1,5 +1,5 @@
 import test from 'node:test'; import assert from 'node:assert/strict'; import fs from 'fs';
-import { parseCSV, mapHeaders, RAMP_FIELDS, TASK_FIELDS, parseDate, loadRamp, funnel, forecast, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, quantile, detectDateOrder, describeDateOrder, xlsxToRows, xlsxToCSV, xlsxSheets } from '../public/lib.js';
+import { parseCSV, mapHeaders, RAMP_FIELDS, TASK_FIELDS, parseDate, loadRamp, funnel, forecast, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, quantile, checkRateInputs, checkForecastInputs, detectDateOrder, describeDateOrder, xlsxToRows, xlsxToCSV, xlsxSheets } from '../public/lib.js';
 const DAY = 864e5, D = s => Date.parse(s + 'T00:00:00Z');
 
 test('parseCSV handles quotes, escaped quotes, CRLF, BOM, comment lines', () => {
@@ -36,11 +36,12 @@ test('messy real CSV fixture imports correctly', () => {
   assert.equal(r.map.trained, 'Onboarding complete'); assert.equal(r.map.firstAccepted, 'First approved task'); assert.equal(r.map.productive, 'Fully Ramped');
   assert.equal(r.people.length, 5); assert.equal(r.skipped, 1);
   assert.equal(r.people[0].id, 'Doe, Jane'); assert.equal(r.people[1].id, 'Smith; Bob'); assert.equal(r.people[2].id, 'O"Neil');
-  const kim = r.people.find(p => p.id === 'Kim'); assert.equal(kim.screened, D('2026-10-09'), 'later stage backfills earlier blanks');
+  const kim = r.people.find(p => p.id === 'Kim'); assert.equal(kim.productive, null, 'skipped-stage row is counted only up to its first gap');
+  assert.deepEqual(r.skippedStage, [{ row: 6, id: 'Kim', missing: 'screened' }]);
   const f = funnel(r.people);
-  assert.deepEqual(f.stages.map(s => s.count), [5, 4, 3, 2, 2]);
+  assert.deepEqual(f.stages.map(s => s.count), [5, 3, 2, 1, 1]);
   assert.equal(f.bottleneck.key, 'firstAccepted');
-  assert.equal(f.ttpMedian, 6.5);
+  assert.equal(f.ttpMedian, 7);
 });
 test('funnel conversion, drop-off and time to productivity', () => {
   const ps = [0, 1, 2, 3].map(i => ({ recruited: D('2026-10-01'), screened: i < 3 ? D('2026-10-02') : null, trained: i < 2 ? D('2026-10-03') : null, firstAccepted: i < 2 ? D('2026-10-04') : null, productive: i < 1 ? D('2026-10-06') : null }));
@@ -110,4 +111,32 @@ test('XLSX: every sheet is listed and any sheet can be read', async () => {
   assert.deepEqual(await xlsxSheets(buf), ['Contributors', 'Cohort B & notes']);
   const r = loadRamp(await xlsxToCSV(buf, 1));
   assert.deepEqual(r.people.map(p => p.id), ['B-1', 'B-2']); assert.deepEqual(funnel(r.people).stages.map(s => s.count), [2, 1, 1, 1, 1]);
+});
+test('funnel cohort cutoff: recent recruits are not counted as drop-offs', () => {
+  const old = [0, 1, 2, 3].map(i => ({ recruited: D('2026-10-01'), screened: i < 2 ? D('2026-10-03') : null, trained: null, firstAccepted: null, productive: null }));
+  const fresh = [0, 1, 2, 3, 4, 5].map(() => ({ recruited: D('2026-10-09'), screened: null, trained: null, firstAccepted: null, productive: null }));
+  const f = funnel([...old, ...fresh], { asOf: D('2026-10-10') });
+  assert.equal(f.stages[1].rawConv, 0.2); assert.equal(f.stages[1].eligible, 4); assert.equal(f.stages[1].convFromPrev, 0.5);
+});
+test('daily rate measures from as-of (today), pace from the data span, and reports staleness', () => {
+  const tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(d => ({ accepted: true, date: D(`2026-10-${String(d).padStart(2, '0')}`) }));
+  const r = dailyRate(tasks, { target: 30, start: D('2026-10-01'), deadline: D('2026-10-21'), asOf: D('2026-10-19'), dataEnd: D('2026-10-10') });
+  assert.equal(r.actualPerDay, 1); assert.equal(r.remainingDays, 2); assert.equal(r.requiredPerDay, 10); assert.equal(r.staleDays, 9); assert.equal(r.onTrack, false);
+  assert.equal(dailyRate(tasks, { target: 5, start: D('2026-10-01'), deadline: D('2026-10-21'), asOf: D('2026-10-19'), dataEnd: D('2026-10-10') }).requiredPerDay, 0);
+});
+test('input guards: negative/empty target, empty dates, X before start', () => {
+  assert.match(checkRateInputs({ target: -5, deadline: 1 }), /target/); assert.match(checkRateInputs({ target: NaN, deadline: 1 }), /target/);
+  assert.match(checkRateInputs({ target: 10, deadline: NaN }), /deadline/); assert.equal(checkRateInputs({ target: 10, deadline: 1 }), null);
+  assert.match(checkForecastInputs({ n: 0, start: 0, deadline: DAY, capacity: 1 }), /N of at least 1/);
+  assert.match(checkForecastInputs({ n: 5, start: NaN, deadline: DAY, capacity: 1 }), /start/);
+  assert.match(checkForecastInputs({ n: 5, start: 0, deadline: NaN, capacity: 1 }), /date X/);
+  assert.match(checkForecastInputs({ n: 5, start: DAY, deadline: 0, capacity: 1 }), /after the start/);
+  assert.equal(checkForecastInputs({ n: 5, start: 0, deadline: DAY, capacity: 1 }), null);
+});
+test("task header 'who' maps to contributor", () => { assert.equal(mapHeaders(['who', 'result', 'day'], TASK_FIELDS).contributor, 'who'); });
+test('200k-row task file loads and aggregates in under 2s', () => {
+  const rows = ['worker,outcome,date,reviewer']; for (let i = 0; i < 200000; i++) rows.push(`w${i % 5000},${i % 5 ? 'accepted' : 'rejected'},2026-10-${String(1 + i % 10).padStart(2, '0')},r${i % 40}`);
+  const t0 = Date.now(); const { tasks } = loadTasks(rows.join('\n'));
+  acceptanceBy(tasks, 'contributor'); reviewerLoad(tasks); dailyRate(tasks, { target: 1e6, start: D('2026-10-01'), deadline: D('2026-10-21'), asOf: D('2026-10-19'), dataEnd: D('2026-10-10') });
+  assert.equal(tasks.length, 200000); assert.ok(Date.now() - t0 < 2000, `${Date.now() - t0} ms`);
 });

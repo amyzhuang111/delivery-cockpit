@@ -70,3 +70,6 @@ section.panel,#funnel{scroll-margin-top:72px}
 @media (max-width:480px){h2{font-size:26px}.chart-wrap{padding:10px 8px 4px}}
 label.sheet{margin-top:8px;max-width:260px}label[hidden]{display:none}
 @media (max-width:480px){h2 small.illus-tag{display:block;margin:6px 0 0;white-space:nowrap}}
+.pill{display:inline-block;font:600 10px Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);background:var(--acc-soft);border-radius:6px;padding:1px 6px}
+#rate-asof-note{margin:4px 0 12px}details.note{margin-top:8px}details.note table{max-width:360px}.tabs [role=tab]:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.row>label{max-width:100%}.row select{max-width:100%;width:100%;text-overflow:ellipsis}#asof,#fc-src{width:auto}@media (max-width:480px){#asof,#fc-src{width:100%}}

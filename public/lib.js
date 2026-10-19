@@ -42,7 +42,7 @@ export const RAMP_FIELDS = {
   vendor: ['vendor', 'source', 'channel', 'agency', 'partner']
 };
 export const TASK_FIELDS = {
-  contributor: ['contributor', 'contributor id', 'worker', 'worker id', 'annotator', 'expert', 'author', 'labeler'],
+  contributor: ['contributor', 'who', 'contributor id', 'done by', 'submitted by', 'worker', 'worker id', 'annotator', 'expert', 'author', 'labeler'],
   pod: ['pod', 'team', 'squad', 'group'],
   vendor: ['vendor', 'source', 'agency', 'partner'],
   reviewer: ['reviewer', 'reviewed by', 'qa', 'qa reviewer', 'auditor', 'grader'],
@@ -116,42 +116,57 @@ export function loadRamp(text) {
   const map = mapHeaders(headers, RAMP_FIELDS);
   const missing = STAGES.filter(s => !map[s]);
   const dateOrder = detectDateOrder(rows.flatMap(r => STAGES.filter(s => map[s]).map(s => r[map[s]])));
-  const violations = [];
+  const violations = [], skippedStage = [];
   const people = rows.map((r, i) => {
     const p = { id: map.id ? r[map.id] : `row ${i + 2}`, pod: map.pod ? r[map.pod] : '', vendor: map.vendor ? r[map.vendor] : '' };
     for (const s of STAGES) p[s] = map[s] ? parseDate(r[map[s]], dateOrder.order) : null;
     // stage dates must not go backwards (e.g. trained before screened)
     let prev = null;
     for (const s of STAGES) if (p[s] != null) { if (prev && p[s] < p[prev]) { violations.push({ row: i + 2, id: p.id, earlier: prev, later: s }); p.orderViolation = true; } prev = s; }
-    // a later stage implies earlier ones were passed (dates may be blank in exports)
-    for (let k = STAGES.length - 2; k >= 0; k--) if (p[STAGES[k]] == null && p[STAGES[k + 1]] != null) p[STAGES[k]] = p[STAGES[k + 1]];
+    // skipped stage: a later stage has a date but an earlier one is blank. Count the person only up to the first gap
+    // (so later-stage conversion isn't inflated) and list the row so the export can be fixed.
+    const gap = STAGES.findIndex(st => p[st] == null);
+    if (gap > 0 && STAGES.slice(gap).some(st => p[st] != null)) { skippedStage.push({ row: i + 2, id: p.id, missing: STAGES[gap] }); for (const st of STAGES.slice(gap)) p[st] = null; }
     return p;
   }).filter(p => p.recruited != null);
-  return { map, missing, people, skipped: rows.length - people.length, headers, dateOrder, violations };
+  return { map, missing, people, skipped: rows.length - people.length, headers, dateOrder, violations, skippedStage: skippedStage.filter(x => people.some(p => p.id === x.id)) };
 }
 
 export function median(a) { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; }
 export function quantile(a, q) { if (!a.length) return null; const s = [...a].sort((x, y) => x - y); const i = (s.length - 1) * q, lo = Math.floor(i); return s[lo] + (s[Math.ceil(i)] - s[lo]) * (i - lo); }
 
-export function funnel(people) {
+const maxOf = a => { let m = -Infinity; for (const v of a) if (v > m) m = v; return m; };
+const minOf = a => { let m = Infinity; for (const v of a) if (v < m) m = v; return m; };
+export { maxOf, minOf };
+/**
+ * Funnel with a cohort age cutoff. Raw counts include in-flight recruits. Conversion for stage i uses only people who reached
+ * stage i-1 at least the P80 lag (i-1 -> i) before the data's last date, so recent recruits aren't counted as drop-offs.
+ */
+export function funnel(people, { asOf } = {}) {
+  asOf ??= maxOf(people.flatMap(p => STAGES.map(s => p[s]).filter(v => v != null)));
   const counts = STAGES.map(s => people.filter(p => p[s] != null).length);
-  const stages = STAGES.map((s, i) => ({
-    key: s, label: STAGE_LABEL[s], count: counts[i],
-    convFromPrev: i === 0 ? 1 : (counts[i - 1] ? counts[i] / counts[i - 1] : 0),
-    dropOff: i === 0 ? 0 : counts[i - 1] - counts[i],
-    medianDaysFromPrev: i === 0 ? null : median(people.filter(p => p[s] != null && p[STAGES[i - 1]] != null).map(p => (p[s] - p[STAGES[i - 1]]) / DAY))
-  }));
+  const stages = STAGES.map((s, i) => {
+    const o = { key: s, label: STAGE_LABEL[s], count: counts[i], convFromPrev: 1, rawConv: 1, dropOff: 0, medianDaysFromPrev: null, lagP80: null, eligible: counts[0], mature: true };
+    if (!i) return o;
+    const prev = STAGES[i - 1], lags = people.filter(p => p[s] != null && p[prev] != null).map(p => (p[s] - p[prev]) / DAY);
+    o.medianDaysFromPrev = median(lags); o.lagP80 = lags.length ? quantile(lags, 0.8) : 0;
+    o.rawConv = counts[i - 1] ? counts[i] / counts[i - 1] : 0; o.dropOff = counts[i - 1] - counts[i];
+    const elig = people.filter(p => p[prev] != null && p[prev] <= asOf - Math.ceil(o.lagP80) * DAY);
+    o.eligible = elig.length; o.mature = elig.length > 0;
+    o.convFromPrev = elig.length ? elig.filter(p => p[s] != null).length / elig.length : o.rawConv;
+    return o;
+  });
   const ttp = people.filter(p => p.productive != null).map(p => (p.productive - p.recruited) / DAY);
-  const overall = counts[0] ? counts[4] / counts[0] : 0;
+  const overall = stages.slice(1).reduce((a, st) => a * st.convFromPrev, 1), rawOverall = counts[0] ? counts[4] / counts[0] : 0;
   let worst = null;
-  stages.slice(1).forEach(s => { if (!worst || s.convFromPrev < worst.convFromPrev) worst = s; });
-  return { stages, overall, ttpMedian: median(ttp), ttpP80: quantile(ttp, 0.8), bottleneck: worst };
+  stages.slice(1).forEach(st => { if (!worst || st.convFromPrev < worst.convFromPrev) worst = st; });
+  return { stages, overall, rawOverall, asOf, ttpMedian: median(ttp), ttpP80: quantile(ttp, 0.8), bottleneck: worst };
 }
 
 /** Observed recruit intake per day over the data's span. */
 export function intakePerDay(people) {
   const t = people.map(p => p.recruited); if (!t.length) return 0;
-  const span = Math.max(1, Math.round((Math.max(...t) - Math.min(...t)) / DAY) + 1);
+  const span = Math.max(1, Math.round((maxOf(t) - minOf(t)) / DAY) + 1);
   return t.length / span;
 }
 
@@ -205,17 +220,35 @@ export function reviewerLoad(tasks) {
   const d = Math.max(1, days.size);
   return [...g.entries()].map(([k, n]) => ({ reviewer: k, n, perDay: n / d })).sort((a, b) => b.n - a.n);
 }
-export function dailyRate(tasks, { target, start, deadline, asOf }) {
-  const acc = tasks.filter(t => t.accepted && t.date != null);
-  const delivered = acc.filter(t => t.date <= asOf).length;
-  const byDay = new Map(); for (const t of acc) { const d = Math.floor(t.date / DAY) * DAY; byDay.set(d, (byDay.get(d) || 0) + 1); }
+/**
+ * asOf = the day we are measuring "from here" (default: today). dataEnd = last date in the export.
+ * Actual pace is measured over the export's span (start..dataEnd); remaining days run from asOf to the deadline.
+ */
+export function dailyRate(tasks, { target, start, deadline, asOf, dataEnd = asOf }) {
+  let delivered = 0; const byDay = new Map();
+  for (const t of tasks) { if (!t.accepted || t.date == null) continue; if (t.date <= Math.max(asOf, dataEnd)) delivered++; const d = Math.floor(t.date / DAY) * DAY; byDay.set(d, (byDay.get(d) || 0) + 1); }
   const series = [...byDay.entries()].sort((a, b) => a[0] - b[0]);
-  const elapsed = Math.max(1, Math.round((asOf - start) / DAY) + 1);
+  const elapsed = Math.max(1, Math.round((dataEnd - start) / DAY) + 1);
   const remainingDays = Math.max(0, Math.round((deadline - asOf) / DAY));
   const actualPerDay = delivered / elapsed;
-  const requiredPerDay = remainingDays > 0 ? (target - delivered) / remainingDays : Infinity;
+  const requiredPerDay = remainingDays > 0 ? Math.max(0, target - delivered) / remainingDays : (delivered >= target ? 0 : Infinity);
   const projected = delivered + actualPerDay * remainingDays;
-  return { delivered, series, actualPerDay, requiredPerDay, remainingDays, projected, onTrack: projected >= target };
+  const staleDays = Math.max(0, Math.round((asOf - dataEnd) / DAY));
+  return { delivered, series, actualPerDay, requiredPerDay, remainingDays, projected, onTrack: projected >= target, staleDays };
+}
+/** Input checks for the rate panel and forecast. Returns a message or null. */
+export function checkRateInputs({ target, deadline }) {
+  if (!Number.isFinite(target) || target < 1) return 'Enter a target of at least 1 accepted task.';
+  if (!Number.isFinite(deadline)) return 'Enter a deadline date.';
+  return null;
+}
+export function checkForecastInputs({ n, start, deadline, capacity }) {
+  if (!Number.isFinite(n) || n < 1) return 'Enter N of at least 1.';
+  if (!Number.isFinite(start)) return 'Enter a start date.';
+  if (!Number.isFinite(deadline)) return 'Enter date X.';
+  if (deadline <= start) return 'Date X must be after the start date.';
+  if (!Number.isFinite(capacity) || capacity <= 0) return 'Enter a recruits/day capacity above 0.';
+  return null;
 }
 
 // ---------- XLSX (first worksheet) -> CSV text, no dependencies ----------
