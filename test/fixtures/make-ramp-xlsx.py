@@ -8,4 +8,9 @@ ws.append(["W-2", d(1), d(3), None, None, None, "Pod B"])
 ws.append(["W-3 \"quoted\", comma", "10/02/2026", "10/03/2026", d(6), None, None, "Pod A"])  # text dates
 ws.append(["W-4", d(3), d(5), d(4), d(7), d(10), "Pod B"])  # trained before screened -> order violation
 ws.append(["W-5", None, None, None, None, None, "Pod C"])  # no recruit date -> skipped
+# second sheet: a different cohort, so the sheet picker has something to switch to
+ws2 = wb.create_sheet("Cohort B & notes")
+ws2.append(["Worker ID", "Signup Date", "Vetted On", "Onboarded At", "First Task Accepted", "Ramped At"])
+ws2.append(["B-1", d(5), d(6), d(7), d(8), d(9)])
+ws2.append(["B-2", d(5), None, None, None, None])
 wb.save("test/fixtures/ramp.xlsx")

@@ -68,4 +68,5 @@ footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--mute);fo
 h2 small.illus-tag{color:var(--warn);font-weight:600;font-size:11px;letter-spacing:.08em}h2 small.illus-tag.user{color:var(--ok)}
 section.panel,#funnel{scroll-margin-top:72px}
 @media (max-width:480px){h2{font-size:26px}.chart-wrap{padding:10px 8px 4px}}
-@media (max-width:480px){.chart-wrap{overflow-x:auto}.chart{min-width:560px}}
+label.sheet{margin-top:8px;max-width:260px}label[hidden]{display:none}
+@media (max-width:480px){h2 small.illus-tag{display:block;margin:6px 0 0;white-space:nowrap}}

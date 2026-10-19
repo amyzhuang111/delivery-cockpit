@@ -1,4 +1,4 @@
-import { loadRamp, funnel, forecast, intakePerDay, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, STAGES, STAGE_LABEL, describeDateOrder, xlsxToCSV } from './lib.js';
+import { loadRamp, funnel, forecast, intakePerDay, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, STAGES, STAGE_LABEL, describeDateOrder, xlsxToCSV, xlsxSheets } from './lib.js';
 const $ = s => document.querySelector(s);
 const DAY = 864e5;
 const pct = x => (x * 100).toFixed(x < 0.1 && x > 0 ? 1 : 0) + '%';
@@ -52,15 +52,16 @@ function bar(label, frac, n, flag, extra = '') {
 function niceStep(max, n = 4) { const raw = max / n, p = 10 ** Math.floor(Math.log10(raw)), f = raw / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * p; }
 const short = t => new Date(t).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 function drawChart(d, start, deadline, target) {
-  const W = 800, H = 260, L = 56, R = 24, T = 30, B = 34, end = Math.max(deadline, start + DAY);
+  const W = Math.round($('#rate-chart').getBoundingClientRect().width || 800), H = W < 500 ? 220 : 260, L = W < 500 ? 44 : 56, R = W < 500 ? 12 : 24, T = 30, B = 34, end = Math.max(deadline, start + DAY);
   const step = niceStep(Math.max(target, d.projected, 1)), top = Math.ceil(Math.max(target, d.projected, 1) / step) * step;
   const x = t => L + (t - start) / (end - start) * (W - L - R), y = v => H - B - v / top * (H - T - B);
   let cum = 0; const pts = d.series.map(([t, n]) => (cum += n, `${x(t).toFixed(1)},${y(cum).toFixed(1)}`));
   const last = d.series.length ? d.series[d.series.length - 1][0] : start;
   let g = '';
   for (let v = 0; v <= top + 1e-9; v += step) g += `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${L - 8}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
-  const days = Math.round((end - start) / DAY), xs = Math.max(1, Math.ceil(days / 7));
-  for (let k = 0; k <= days; k += xs) g += `<text class="ax" x="${x(start + k * DAY)}" y="${H - B + 18}" text-anchor="middle">${short(start + k * DAY)}</text>`;
+  const days = Math.round((end - start) / DAY), xs = Math.max(1, Math.ceil(days / Math.max(2, Math.floor((W - L - R) / 90))));
+  $('#rate-chart').setAttribute('viewBox', `0 0 ${W} ${H}`);
+  for (let k = 0; k <= days; k += xs) if (x(start + k * DAY) <= W - R - 22) g += `<text class="ax" x="${x(start + k * DAY)}" y="${H - B + 18}" text-anchor="middle">${short(start + k * DAY)}</text>`;
   $('#rate-chart').innerHTML = `${g}<line x1="${L}" x2="${W - R}" y1="${y(0)}" y2="${y(0)}" stroke="#d1d5db"/>
   <line x1="${x(start)}" y1="${y(0)}" x2="${x(end)}" y2="${y(target)}" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 4"/>
   <line x1="${x(last)}" y1="${y(cum)}" x2="${x(end)}" y2="${y(d.projected)}" stroke="${d.onTrack ? '#047857' : '#b91c1c'}" stroke-width="1.5" stroke-dasharray="2 3"/>
@@ -130,12 +131,23 @@ function demo() {
 }
 
 // ---------- wiring ----------
-const readFile = (inp, cb, errEl) => inp.addEventListener('change', async () => {
-  const f = inp.files[0]; if (!f) return; errEl.textContent = '';
-  try { cb(/\.xlsx$/i.test(f.name) ? await xlsxToCSV(await f.arrayBuffer()) : await f.text(), true); }
-  catch (e) { errEl.textContent = `Couldn’t read ${f.name}: ${e.message}`; }
-});
-readFile($('#task-file'), setTasks, $('#task-err')); readFile($('#ramp-file'), setRamp, $('#ramp-err'));
+// XLSX: list every sheet; the user picks one (default: first). CSV/TSV: read as text.
+const readFile = (inp, cb, errEl, sel) => {
+  let buf = null, name = '';
+  const load = async () => { try { cb(await xlsxToCSV(buf, +sel.value || 0), true); } catch (e) { errEl.textContent = `Couldn’t read ${name}: ${e.message}`; } };
+  sel.addEventListener('change', load);
+  inp.addEventListener('change', async () => {
+    const f = inp.files[0]; if (!f) return; errEl.textContent = ''; name = f.name; sel.parentElement.hidden = true;
+    try {
+      if (!/\.xlsx$/i.test(f.name)) return cb(await f.text(), true);
+      buf = await f.arrayBuffer(); const names = await xlsxSheets(buf);
+      sel.innerHTML = names.map((n, i) => `<option value="${i}">${esc(n)}</option>`).join(''); sel.parentElement.hidden = names.length < 2;
+      await load();
+    } catch (e) { errEl.textContent = `Couldn’t read ${f.name}: ${e.message}`; }
+  });
+};
+readFile($('#task-file'), setTasks, $('#task-err'), $('#task-sheet')); readFile($('#ramp-file'), setRamp, $('#ramp-err'), $('#ramp-sheet'));
+let rw = 0; addEventListener('resize', () => { const w = $('#rate-chart').getBoundingClientRect().width; if (Math.abs(w - rw) > 40) { rw = w; renderTasks(); } });
 ['#target', '#deadline'].forEach(s => $(s).addEventListener('input', renderTasks));
 $('#thresh').addEventListener('input', renderAcc);
 document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x === b)); state.accKey = b.dataset.k; renderAcc(); }));

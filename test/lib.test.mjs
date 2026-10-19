@@ -1,5 +1,5 @@
 import test from 'node:test'; import assert from 'node:assert/strict'; import fs from 'fs';
-import { parseCSV, mapHeaders, RAMP_FIELDS, TASK_FIELDS, parseDate, loadRamp, funnel, forecast, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, quantile, detectDateOrder, describeDateOrder, xlsxToRows, xlsxToCSV } from '../public/lib.js';
+import { parseCSV, mapHeaders, RAMP_FIELDS, TASK_FIELDS, parseDate, loadRamp, funnel, forecast, loadTasks, acceptanceBy, reviewerLoad, dailyRate, median, quantile, detectDateOrder, describeDateOrder, xlsxToRows, xlsxToCSV, xlsxSheets } from '../public/lib.js';
 const DAY = 864e5, D = s => Date.parse(s + 'T00:00:00Z');
 
 test('parseCSV handles quotes, escaped quotes, CRLF, BOM, comment lines', () => {
@@ -104,4 +104,10 @@ test('XLSX import: real openpyxl workbook with shared strings, date cells, text 
   assert.deepEqual(funnel(r.people).stages.map(s => s.count), [4, 4, 3, 2, 2]);
   assert.deepEqual(r.violations.map(v => v.id), ['W-4']);
   await assert.rejects(xlsxToRows(new TextEncoder().encode('a,b\n1,2').buffer), /Not an XLSX/);
+});
+test('XLSX: every sheet is listed and any sheet can be read', async () => {
+  const buf = fs.readFileSync(new URL('./fixtures/ramp.xlsx', import.meta.url));
+  assert.deepEqual(await xlsxSheets(buf), ['Contributors', 'Cohort B & notes']);
+  const r = loadRamp(await xlsxToCSV(buf, 1));
+  assert.deepEqual(r.people.map(p => p.id), ['B-1', 'B-2']); assert.deepEqual(funnel(r.people).stages.map(s => s.count), [2, 1, 1, 1, 1]);
 });

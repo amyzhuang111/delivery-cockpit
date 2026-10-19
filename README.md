@@ -12,8 +12,8 @@ Panels: daily rate vs deadline · acceptance rate by vendor / pod / contributor 
 ## How to use
 1. Open the site. It loads the illustrative CSVs.
 2. Set target + deadline to see the required vs actual daily rate.
-3. Upload a task-review export (CSV or XLSX; first sheet is read) (who, outcome, plus optional team/vendor/reviewer/date). Header names are matched fuzzily.
-4. Upload a contributor export (CSV or XLSX; one row per person, one date column per stage; blank = not reached). The page states whether it read dates as DD/MM or MM/DD (decided per file: a first part >12 proves DD/MM, a second part >12 proves MM/DD, otherwise US MM/DD is assumed and said so) and flags rows whose stage dates go backwards.
+3. Upload a task-review export (CSV or XLSX; every sheet is listed and you pick one, first by default) (who, outcome, plus optional team/vendor/reviewer/date). Header names are matched fuzzily.
+4. Upload a contributor export (CSV or XLSX, with a sheet picker; one row per person, one date column per stage; blank = not reached). The page states whether it read dates as DD/MM or MM/DD (decided per file: a first part >12 proves DD/MM, a second part >12 proves MM/DD, otherwise US MM/DD is assumed and said so) and flags rows whose stage dates go backwards.
 5. Enter N, the date and recruits/day capacity to get a yes/no verdict, the recruits/day you'd need, and the earliest feasible date.
 6. Click **Run the 1,000-in-3-days check** for the demo scenario.
 

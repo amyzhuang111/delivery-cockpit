@@ -242,11 +242,20 @@ async function unzip(buf) {
 }
 const xmlText = s => s.replace(/<[^>]+>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/&amp;/g, '&');
 const colIdx = ref => { let n = 0; for (const c of ref.replace(/\d+$/, '')) n = n * 26 + c.charCodeAt(0) - 64; return n - 1; };
-export async function xlsxToRows(buf) {
+/** Sheet names and their XML paths, in workbook order. */
+async function sheetList(z) {
+  const wb = await z.read('xl/workbook.xml'), rels = await z.read('xl/_rels/workbook.xml.rels');
+  const target = {}; for (const m of (rels || '').matchAll(/<Relationship\b[^>]*>/g)) { const id = (m[0].match(/\bId="([^"]+)"/) || [])[1], t = (m[0].match(/\bTarget="([^"]+)"/) || [])[1]; if (id && t) target[id] = t.replace(/^\/?(xl\/)?/, 'xl/'); }
+  const out = [...(wb || '').matchAll(/<sheet\b[^>]*>/g)].map(m => ({ name: xmlText((m[0].match(/\bname="([^"]*)"/) || [])[1] || ''), path: target[(m[0].match(/\br:id="([^"]+)"/) || [])[1]] })).filter(x => x.path && z.names.includes(x.path));
+  return out.length ? out : z.names.filter(n => /^xl\/worksheets\/[^/]+\.xml$/.test(n)).sort().map((path, i) => ({ name: `Sheet ${i + 1}`, path }));
+}
+export async function xlsxSheets(buf) { return (await sheetList(await unzip(buf))).map(s => s.name); }
+/** Rows of one worksheet (index into xlsxSheets order; default first). */
+export async function xlsxToRows(buf, sheetIndex = 0) {
   const z = await unzip(buf);
   const ss = await z.read('xl/sharedStrings.xml');
   const shared = ss ? [...ss.matchAll(/<si>([\s\S]*?)<\/si>/g)].map(m => xmlText([...m[1].matchAll(/<t[^>]*>([\s\S]*?)<\/t>/g)].map(t => t[1]).join(''))) : [];
-  const sheet = z.names.includes('xl/worksheets/sheet1.xml') ? 'xl/worksheets/sheet1.xml' : z.names.filter(n => /^xl\/worksheets\/[^/]+\.xml$/.test(n)).sort()[0];
+  const sheets = await sheetList(z), sheet = (sheets[sheetIndex] || {}).path;
   if (!sheet) throw new Error('No worksheet found in XLSX.');
   const xml = await z.read(sheet), rows = [];
   for (const rm of xml.matchAll(/<row[^>]*?(?:\/>|>([\s\S]*?)<\/row>)/g)) {
@@ -263,4 +272,4 @@ export async function xlsxToRows(buf) {
   return rows;
 }
 export const rowsToCSV = rows => rows.map(r => r.map(c => /[",\n\r]/.test(c) ? '"' + String(c).replace(/"/g, '""') + '"' : c).join(',')).join('\n');
-export const xlsxToCSV = async buf => rowsToCSV(await xlsxToRows(buf));
+export const xlsxToCSV = async (buf, sheetIndex = 0) => rowsToCSV(await xlsxToRows(buf, sheetIndex));
