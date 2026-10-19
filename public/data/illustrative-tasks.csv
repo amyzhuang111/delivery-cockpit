@@ -1,0 +1,3500 @@
+# ILLUSTRATIVE DATA - synthetic, seeded generator, not real tasks
+Task ID,Submitted At,Worker,Team,Vendor,QA Reviewer,Review Outcome
+T1,2026-10-01,EX-0020,Pod A,Vendor South,R3,Accepted
+T2,2026-10-01,EX-0039,Pod D,Direct,R3,Accepted
+T3,2026-10-01,EX-0010,Pod C,Vendor North,R6,Accepted
+T4,2026-10-01,EX-0060,Pod A,Direct,R2,Accepted
+T5,2026-10-01,EX-0064,Pod A,Vendor North,R4,Accepted
+T6,2026-10-01,EX-0049,Pod B,Vendor North,R5,Accepted
+T7,2026-10-01,EX-0015,Pod D,Direct,R3,Accepted
+T8,2026-10-01,EX-0021,Pod B,Direct,R1,Accepted
+T9,2026-10-01,EX-0032,Pod A,Vendor South,R1,Rejected
+T10,2026-10-01,EX-0078,Pod C,Direct,R4,Accepted
+T11,2026-10-01,EX-0056,Pod A,Vendor South,R2,Accepted
+T12,2026-10-01,EX-0008,Pod A,Vendor South,R2,Accepted
+T13,2026-10-01,EX-0002,Pod C,Vendor South,R3,Accepted
+T14,2026-10-01,EX-0018,Pod C,Direct,R3,Accepted
+T15,2026-10-01,EX-0044,Pod A,Vendor South,R1,Accepted
+T16,2026-10-01,EX-0066,Pod C,Direct,R1,Accepted
+T17,2026-10-01,EX-0027,Pod D,Direct,R3,Accepted
+T18,2026-10-01,EX-0059,Pod D,Vendor South,R3,Accepted
+T19,2026-10-01,EX-0080,Pod A,Vendor South,R3,Accepted
+T20,2026-10-01,EX-0065,Pod B,Vendor South,R3,Rejected
+T21,2026-10-01,EX-0043,Pod D,Vendor North,R3,Accepted
+T22,2026-10-01,EX-0051,Pod D,Direct,R5,Accepted
+T23,2026-10-01,EX-0029,Pod B,Vendor South,R2,Rejected
+T24,2026-10-01,EX-0047,Pod D,Vendor South,R3,Accepted
+T25,2026-10-01,EX-0041,Pod B,Vendor South,R3,Accepted
+T26,2026-10-01,EX-0023,Pod D,Vendor South,R3,Accepted
+T27,2026-10-01,EX-0031,Pod D,Vendor North,R4,Accepted
+T28,2026-10-01,EX-0078,Pod C,Direct,R1,Accepted
+T29,2026-10-01,EX-0060,Pod A,Direct,R5,Accepted
+T30,2026-10-01,EX-0028,Pod A,Vendor North,R2,Accepted
+T31,2026-10-01,EX-0067,Pod D,Vendor North,R3,Accepted
+T32,2026-10-01,EX-0059,Pod D,Vendor South,R4,Accepted
+T33,2026-10-01,EX-0007,Pod D,Vendor North,R3,Rejected
+T34,2026-10-01,EX-0073,Pod B,Vendor North,R3,Accepted
+T35,2026-10-01,EX-0036,Pod A,Direct,R6,Accepted
+T36,2026-10-01,EX-0076,Pod A,Vendor North,R5,Rejected
+T37,2026-10-01,EX-0003,Pod D,Direct,R3,Accepted
+T38,2026-10-01,EX-0073,Pod B,Vendor North,R6,Accepted
+T39,2026-10-01,EX-0029,Pod B,Vendor South,R4,Accepted
+T40,2026-10-01,EX-0047,Pod D,Vendor South,R3,Accepted
+T41,2026-10-01,EX-0016,Pod A,Vendor North,R3,Accepted
+T42,2026-10-01,EX-0032,Pod A,Vendor South,R3,Accepted
+T43,2026-10-01,EX-0025,Pod B,Vendor North,R1,Accepted
+T44,2026-10-01,EX-0019,Pod D,Vendor North,R5,Accepted
+T45,2026-10-01,EX-0061,Pod B,Vendor North,R3,Accepted
+T46,2026-10-01,EX-0073,Pod B,Vendor North,R1,Accepted
+T47,2026-10-01,EX-0022,Pod C,Vendor North,R5,Accepted
+T48,2026-10-01,EX-0053,Pod B,Vendor South,R6,Accepted
+T49,2026-10-01,EX-0001,Pod B,Vendor North,R3,Accepted
+T50,2026-10-01,EX-0013,Pod B,Vendor North,R2,Accepted
+T51,2026-10-01,EX-0066,Pod C,Direct,R1,Accepted
+T52,2026-10-01,EX-0054,Pod C,Direct,R3,Accepted
+T53,2026-10-01,EX-0009,Pod B,Direct,R3,Accepted
+T54,2026-10-01,EX-0060,Pod A,Direct,R3,Accepted
+T55,2026-10-01,EX-0010,Pod C,Vendor North,R3,Accepted
+T56,2026-10-01,EX-0040,Pod A,Vendor North,R3,Accepted
+T57,2026-10-01,EX-0004,Pod A,Vendor North,R2,Accepted
+T58,2026-10-01,EX-0072,Pod A,Direct,R1,Accepted
+T59,2026-10-01,EX-0001,Pod B,Vendor North,R3,Accepted
+T60,2026-10-01,EX-0059,Pod D,Vendor South,R4,Accepted
+T61,2026-10-01,EX-0015,Pod D,Direct,R3,Accepted
+T62,2026-10-01,EX-0050,Pod C,Vendor South,R6,Accepted
+T63,2026-10-01,EX-0058,Pod C,Vendor North,R3,Accepted
+T64,2026-10-01,EX-0076,Pod A,Vendor North,R4,Accepted
+T65,2026-10-01,EX-0069,Pod B,Direct,R3,Accepted
+T66,2026-10-01,EX-0004,Pod A,Vendor North,R3,Accepted
+T67,2026-10-01,EX-0042,Pod C,Direct,R2,Accepted
+T68,2026-10-01,EX-0050,Pod C,Vendor South,R5,Accepted
+T69,2026-10-01,EX-0048,Pod A,Direct,R2,Accepted
+T70,2026-10-01,EX-0065,Pod B,Vendor South,R2,Accepted
+T71,2026-10-01,EX-0048,Pod A,Direct,R3,Rejected
+T72,2026-10-01,EX-0012,Pod A,Direct,R3,Accepted
+T73,2026-10-01,EX-0031,Pod D,Vendor North,R2,Accepted
+T74,2026-10-01,EX-0056,Pod A,Vendor South,R3,Rejected
+T75,2026-10-01,EX-0004,Pod A,Vendor North,R3,Accepted
+T76,2026-10-01,EX-0037,Pod B,Vendor North,R3,Accepted
+T77,2026-10-01,EX-0078,Pod C,Direct,R1,Accepted
+T78,2026-10-01,EX-0001,Pod B,Vendor North,R3,Accepted
+T79,2026-10-01,EX-0075,Pod D,Direct,R4,Accepted
+T80,2026-10-01,EX-0069,Pod B,Direct,R2,Accepted
+T81,2026-10-01,EX-0051,Pod D,Direct,R3,Accepted
+T82,2026-10-01,EX-0074,Pod C,Vendor South,R1,Rejected
+T83,2026-10-01,EX-0077,Pod B,Vendor South,R3,Accepted
+T84,2026-10-01,EX-0072,Pod A,Direct,R6,Accepted
+T85,2026-10-01,EX-0006,Pod C,Direct,R6,Accepted
+T86,2026-10-01,EX-0035,Pod D,Vendor South,R4,Rejected
+T87,2026-10-01,EX-0075,Pod D,Direct,R2,Accepted
+T88,2026-10-01,EX-0080,Pod A,Vendor South,R3,Accepted
+T89,2026-10-01,EX-0075,Pod D,Direct,R5,Accepted
+T90,2026-10-01,EX-0003,Pod D,Direct,R4,Accepted
+T91,2026-10-01,EX-0078,Pod C,Direct,R1,Accepted
+T92,2026-10-01,EX-0030,Pod C,Direct,R1,Accepted
+T93,2026-10-01,EX-0069,Pod B,Direct,R2,Accepted
+T94,2026-10-01,EX-0080,Pod A,Vendor South,R2,Accepted
+T95,2026-10-01,EX-0070,Pod C,Vendor North,R2,Accepted
+T96,2026-10-01,EX-0011,Pod D,Vendor South,R3,Accepted
+T97,2026-10-01,EX-0068,Pod A,Vendor South,R3,Accepted
+T98,2026-10-01,EX-0052,Pod A,Vendor North,R4,Accepted
+T99,2026-10-01,EX-0012,Pod A,Direct,R1,Accepted
+T100,2026-10-01,EX-0067,Pod D,Vendor North,R1,Accepted
+T101,2026-10-01,EX-0021,Pod B,Direct,R5,Rejected
+T102,2026-10-01,EX-0017,Pod B,Vendor South,R1,Rejected
+T103,2026-10-01,EX-0005,Pod B,Vendor South,R6,Accepted
+T104,2026-10-01,EX-0008,Pod A,Vendor South,R6,Accepted
+T105,2026-10-01,EX-0044,Pod A,Vendor South,R1,Accepted
+T106,2026-10-01,EX-0064,Pod A,Vendor North,R2,Accepted
+T107,2026-10-01,EX-0015,Pod D,Direct,R3,Accepted
+T108,2026-10-01,EX-0058,Pod C,Vendor North,R3,Accepted
+T109,2026-10-01,EX-0017,Pod B,Vendor South,R1,Rejected
+T110,2026-10-01,EX-0030,Pod C,Direct,R3,Accepted
+T111,2026-10-01,EX-0010,Pod C,Vendor North,R5,Accepted
+T112,2026-10-01,EX-0073,Pod B,Vendor North,R3,Rejected
+T113,2026-10-01,EX-0016,Pod A,Vendor North,R5,Accepted
+T114,2026-10-01,EX-0040,Pod A,Vendor North,R6,Accepted
+T115,2026-10-01,EX-0059,Pod D,Vendor South,R5,Accepted
+T116,2026-10-01,EX-0036,Pod A,Direct,R3,Accepted
+T117,2026-10-01,EX-0012,Pod A,Direct,R1,Accepted
+T118,2026-10-01,EX-0045,Pod B,Direct,R3,Accepted
+T119,2026-10-01,EX-0056,Pod A,Vendor South,R6,Accepted
+T120,2026-10-01,EX-0022,Pod C,Vendor North,R3,Accepted
+T121,2026-10-01,EX-0041,Pod B,Vendor South,R4,Rejected
+T122,2026-10-01,EX-0006,Pod C,Direct,R2,Accepted
+T123,2026-10-01,EX-0009,Pod B,Direct,R3,Accepted
+T124,2026-10-01,EX-0048,Pod A,Direct,R3,Rejected
+T125,2026-10-01,EX-0028,Pod A,Vendor North,R3,Rejected
+T126,2026-10-01,EX-0010,Pod C,Vendor North,R4,Accepted
+T127,2026-10-01,EX-0052,Pod A,Vendor North,R3,Accepted
+T128,2026-10-01,EX-0057,Pod B,Direct,R3,Accepted
+T129,2026-10-01,EX-0041,Pod B,Vendor South,R1,Accepted
+T130,2026-10-01,EX-0064,Pod A,Vendor North,R4,Accepted
+T131,2026-10-01,EX-0036,Pod A,Direct,R3,Accepted
+T132,2026-10-01,EX-0029,Pod B,Vendor South,R6,Accepted
+T133,2026-10-01,EX-0077,Pod B,Vendor South,R3,Accepted
+T134,2026-10-01,EX-0033,Pod B,Direct,R3,Rejected
+T135,2026-10-01,EX-0001,Pod B,Vendor North,R3,Accepted
+T136,2026-10-01,EX-0052,Pod A,Vendor North,R5,Accepted
+T137,2026-10-01,EX-0036,Pod A,Direct,R3,Accepted
+T138,2026-10-01,EX-0045,Pod B,Direct,R3,Accepted
+T139,2026-10-01,EX-0073,Pod B,Vendor North,R1,Accepted
+T140,2026-10-01,EX-0043,Pod D,Vendor North,R4,Accepted
+T141,2026-10-01,EX-0021,Pod B,Direct,R3,Rejected
+T142,2026-10-01,EX-0036,Pod A,Direct,R2,Accepted
+T143,2026-10-01,EX-0067,Pod D,Vendor North,R3,Accepted
+T144,2026-10-01,EX-0074,Pod C,Vendor South,R2,Accepted
+T145,2026-10-01,EX-0076,Pod A,Vendor North,R4,Accepted
+T146,2026-10-01,EX-0019,Pod D,Vendor North,R2,Accepted
+T147,2026-10-01,EX-0044,Pod A,Vendor South,R3,Accepted
+T148,2026-10-01,EX-0044,Pod A,Vendor South,R3,Accepted
+T149,2026-10-01,EX-0043,Pod D,Vendor North,R2,Accepted
+T150,2026-10-01,EX-0047,Pod D,Vendor South,R3,Rejected
+T151,2026-10-01,EX-0013,Pod B,Vendor North,R6,Accepted
+T152,2026-10-01,EX-0020,Pod A,Vendor South,R3,Accepted
+T153,2026-10-01,EX-0052,Pod A,Vendor North,R1,Accepted
+T154,2026-10-01,EX-0006,Pod C,Direct,R4,Accepted
+T155,2026-10-01,EX-0051,Pod D,Direct,R1,Accepted
+T156,2026-10-01,EX-0022,Pod C,Vendor North,R3,Accepted
+T157,2026-10-01,EX-0044,Pod A,Vendor South,R5,Accepted
+T158,2026-10-01,EX-0074,Pod C,Vendor South,R1,Rejected
+T159,2026-10-01,EX-0068,Pod A,Vendor South,R3,Rejected
+T160,2026-10-01,EX-0062,Pod C,Vendor South,R5,Accepted
+T161,2026-10-01,EX-0037,Pod B,Vendor North,R3,Accepted
+T162,2026-10-01,EX-0036,Pod A,Direct,R4,Accepted
+T163,2026-10-01,EX-0076,Pod A,Vendor North,R6,Rejected
+T164,2026-10-01,EX-0035,Pod D,Vendor South,R2,Accepted
+T165,2026-10-01,EX-0059,Pod D,Vendor South,R3,Accepted
+T166,2026-10-01,EX-0060,Pod A,Direct,R5,Rejected
+T167,2026-10-01,EX-0023,Pod D,Vendor South,R3,Accepted
+T168,2026-10-01,EX-0038,Pod C,Vendor South,R5,Rejected
+T169,2026-10-01,EX-0025,Pod B,Vendor North,R3,Rejected
+T170,2026-10-01,EX-0071,Pod D,Vendor South,R5,Accepted
+T171,2026-10-01,EX-0040,Pod A,Vendor North,R6,Rejected
+T172,2026-10-01,EX-0076,Pod A,Vendor North,R3,Accepted
+T173,2026-10-01,EX-0035,Pod D,Vendor South,R3,Rejected
+T174,2026-10-01,EX-0005,Pod B,Vendor South,R4,Accepted
+T175,2026-10-01,EX-0042,Pod C,Direct,R4,Rejected
+T176,2026-10-01,EX-0044,Pod A,Vendor South,R1,Accepted
+T177,2026-10-01,EX-0058,Pod C,Vendor North,R1,Rejected
+T178,2026-10-01,EX-0046,Pod C,Vendor North,R2,Accepted
+T179,2026-10-01,EX-0007,Pod D,Vendor North,R3,Accepted
+T180,2026-10-01,EX-0054,Pod C,Direct,R6,Rejected
+T181,2026-10-01,EX-0045,Pod B,Direct,R1,Accepted
+T182,2026-10-01,EX-0017,Pod B,Vendor South,R2,Accepted
+T183,2026-10-01,EX-0019,Pod D,Vendor North,R2,Accepted
+T184,2026-10-01,EX-0066,Pod C,Direct,R6,Accepted
+T185,2026-10-01,EX-0055,Pod D,Vendor North,R5,Accepted
+T186,2026-10-01,EX-0003,Pod D,Direct,R3,Accepted
+T187,2026-10-01,EX-0019,Pod D,Vendor North,R6,Accepted
+T188,2026-10-01,EX-0067,Pod D,Vendor North,R2,Accepted
+T189,2026-10-01,EX-0035,Pod D,Vendor South,R5,Accepted
+T190,2026-10-01,EX-0034,Pod C,Vendor North,R6,Accepted
+T191,2026-10-01,EX-0042,Pod C,Direct,R2,Rejected
+T192,2026-10-01,EX-0072,Pod A,Direct,R4,Rejected
+T193,2026-10-01,EX-0073,Pod B,Vendor North,R6,Accepted
+T194,2026-10-01,EX-0009,Pod B,Direct,R1,Rejected
+T195,2026-10-01,EX-0067,Pod D,Vendor North,R3,Accepted
+T196,2026-10-01,EX-0050,Pod C,Vendor South,R2,Accepted
+T197,2026-10-01,EX-0039,Pod D,Direct,R3,Accepted
+T198,2026-10-01,EX-0019,Pod D,Vendor North,R3,Accepted
+T199,2026-10-01,EX-0047,Pod D,Vendor South,R2,Accepted
+T200,2026-10-01,EX-0073,Pod B,Vendor North,R3,Rejected
+T201,2026-10-01,EX-0037,Pod B,Vendor North,R4,Accepted
+T202,2026-10-01,EX-0049,Pod B,Vendor North,R5,Accepted
+T203,2026-10-01,EX-0034,Pod C,Vendor North,R4,Accepted
+T204,2026-10-01,EX-0037,Pod B,Vendor North,R3,Accepted
+T205,2026-10-01,EX-0063,Pod D,Direct,R3,Accepted
+T206,2026-10-01,EX-0019,Pod D,Vendor North,R6,Accepted
+T207,2026-10-01,EX-0075,Pod D,Direct,R1,Accepted
+T208,2026-10-01,EX-0053,Pod B,Vendor South,R3,Rejected
+T209,2026-10-01,EX-0040,Pod A,Vendor North,R5,Rejected
+T210,2026-10-01,EX-0069,Pod B,Direct,R3,Accepted
+T211,2026-10-01,EX-0036,Pod A,Direct,R3,Accepted
+T212,2026-10-01,EX-0048,Pod A,Direct,R1,Accepted
+T213,2026-10-01,EX-0062,Pod C,Vendor South,R1,Rejected
+T214,2026-10-01,EX-0021,Pod B,Direct,R1,Accepted
+T215,2026-10-01,EX-0028,Pod A,Vendor North,R6,Accepted
+T216,2026-10-01,EX-0047,Pod D,Vendor South,R1,Accepted
+T217,2026-10-01,EX-0070,Pod C,Vendor North,R2,Accepted
+T218,2026-10-01,EX-0066,Pod C,Direct,R3,Accepted
+T219,2026-10-01,EX-0076,Pod A,Vendor North,R4,Accepted
+T220,2026-10-01,EX-0029,Pod B,Vendor South,R3,Rejected
+T221,2026-10-01,EX-0076,Pod A,Vendor North,R1,Accepted
+T222,2026-10-01,EX-0045,Pod B,Direct,R4,Rejected
+T223,2026-10-01,EX-0051,Pod D,Direct,R5,Accepted
+T224,2026-10-01,EX-0054,Pod C,Direct,R2,Accepted
+T225,2026-10-01,EX-0034,Pod C,Vendor North,R3,Accepted
+T226,2026-10-01,EX-0053,Pod B,Vendor South,R4,Accepted
+T227,2026-10-01,EX-0024,Pod A,Direct,R3,Accepted
+T228,2026-10-01,EX-0037,Pod B,Vendor North,R6,Accepted
+T229,2026-10-01,EX-0034,Pod C,Vendor North,R6,Accepted
+T230,2026-10-01,EX-0059,Pod D,Vendor South,R2,Rejected
+T231,2026-10-01,EX-0036,Pod A,Direct,R2,Rejected
+T232,2026-10-01,EX-0029,Pod B,Vendor South,R4,Accepted
+T233,2026-10-01,EX-0034,Pod C,Vendor North,R3,Accepted
+T234,2026-10-01,EX-0001,Pod B,Vendor North,R3,Accepted
+T235,2026-10-01,EX-0073,Pod B,Vendor North,R1,Accepted
+T236,2026-10-01,EX-0021,Pod B,Direct,R3,Rejected
+T237,2026-10-01,EX-0019,Pod D,Vendor North,R1,Accepted
+T238,2026-10-01,EX-0033,Pod B,Direct,R2,Accepted
+T239,2026-10-01,EX-0018,Pod C,Direct,R5,Rejected
+T240,2026-10-01,EX-0024,Pod A,Direct,R5,Accepted
+T241,2026-10-01,EX-0051,Pod D,Direct,R2,Accepted
+T242,2026-10-01,EX-0079,Pod D,Vendor North,R2,Accepted
+T243,2026-10-01,EX-0060,Pod A,Direct,R3,Accepted
+T244,2026-10-01,EX-0031,Pod D,Vendor North,R3,Accepted
+T245,2026-10-01,EX-0024,Pod A,Direct,R4,Accepted
+T246,2026-10-01,EX-0046,Pod C,Vendor North,R5,Accepted
+T247,2026-10-01,EX-0010,Pod C,Vendor North,R3,Accepted
+T248,2026-10-01,EX-0064,Pod A,Vendor North,R2,Accepted
+T249,2026-10-01,EX-0065,Pod B,Vendor South,R4,Rejected
+T250,2026-10-01,EX-0013,Pod B,Vendor North,R3,Accepted
+T251,2026-10-01,EX-0028,Pod A,Vendor North,R3,Accepted
+T252,2026-10-01,EX-0070,Pod C,Vendor North,R2,Accepted
+T253,2026-10-01,EX-0055,Pod D,Vendor North,R1,Rejected
+T254,2026-10-01,EX-0040,Pod A,Vendor North,R4,Accepted
+T255,2026-10-01,EX-0073,Pod B,Vendor North,R3,Accepted
+T256,2026-10-01,EX-0070,Pod C,Vendor North,R4,Accepted
+T257,2026-10-01,EX-0080,Pod A,Vendor South,R5,Rejected
+T258,2026-10-01,EX-0038,Pod C,Vendor South,R3,Accepted
+T259,2026-10-01,EX-0004,Pod A,Vendor North,R3,Accepted
+T260,2026-10-01,EX-0074,Pod C,Vendor South,R3,Rejected
+T261,2026-10-01,EX-0021,Pod B,Direct,R2,Accepted
+T262,2026-10-01,EX-0047,Pod D,Vendor South,R2,Accepted
+T263,2026-10-01,EX-0027,Pod D,Direct,R6,Accepted
+T264,2026-10-01,EX-0018,Pod C,Direct,R3,Accepted
+T265,2026-10-01,EX-0074,Pod C,Vendor South,R3,Accepted
+T266,2026-10-01,EX-0007,Pod D,Vendor North,R2,Rejected
+T267,2026-10-01,EX-0040,Pod A,Vendor North,R1,Accepted
+T268,2026-10-01,EX-0012,Pod A,Direct,R3,Accepted
+T269,2026-10-01,EX-0053,Pod B,Vendor South,R6,Accepted
+T270,2026-10-01,EX-0037,Pod B,Vendor North,R3,Accepted
+T271,2026-10-01,EX-0028,Pod A,Vendor North,R5,Accepted
+T272,2026-10-01,EX-0043,Pod D,Vendor North,R5,Accepted
+T273,2026-10-01,EX-0062,Pod C,Vendor South,R6,Rejected
+T274,2026-10-01,EX-0003,Pod D,Direct,R5,Accepted
+T275,2026-10-01,EX-0040,Pod A,Vendor North,R4,Accepted
+T276,2026-10-01,EX-0008,Pod A,Vendor South,R3,Rejected
+T277,2026-10-01,EX-0037,Pod B,Vendor North,R1,Accepted
+T278,2026-10-01,EX-0072,Pod A,Direct,R3,Accepted
+T279,2026-10-01,EX-0050,Pod C,Vendor South,R3,Rejected
+T280,2026-10-01,EX-0015,Pod D,Direct,R2,Accepted
+T281,2026-10-01,EX-0078,Pod C,Direct,R3,Accepted
+T282,2026-10-01,EX-0059,Pod D,Vendor South,R3,Accepted
+T283,2026-10-01,EX-0073,Pod B,Vendor North,R4,Accepted
+T284,2026-10-01,EX-0028,Pod A,Vendor North,R4,Accepted
+T285,2026-10-01,EX-0036,Pod A,Direct,R6,Rejected
+T286,2026-10-01,EX-0026,Pod C,Vendor South,R1,Rejected
+T287,2026-10-01,EX-0080,Pod A,Vendor South,R3,Accepted
+T288,2026-10-01,EX-0022,Pod C,Vendor North,R1,Accepted
+T289,2026-10-01,EX-0001,Pod B,Vendor North,R3,Accepted
+T290,2026-10-01,EX-0055,Pod D,Vendor North,R6,Accepted
+T291,2026-10-01,EX-0065,Pod B,Vendor South,R2,Accepted
+T292,2026-10-01,EX-0044,Pod A,Vendor South,R3,Accepted
+T293,2026-10-02,EX-0055,Pod D,Vendor North,R3,Rejected
+T294,2026-10-02,EX-0008,Pod A,Vendor South,R2,Rejected
+T295,2026-10-02,EX-0046,Pod C,Vendor North,R3,Accepted
+T296,2026-10-02,EX-0072,Pod A,Direct,R6,Accepted
+T297,2026-10-02,EX-0019,Pod D,Vendor North,R5,Rejected
+T298,2026-10-02,EX-0050,Pod C,Vendor South,R3,Rejected
+T299,2026-10-02,EX-0028,Pod A,Vendor North,R3,Accepted
+T300,2026-10-02,EX-0013,Pod B,Vendor North,R3,Accepted
+T301,2026-10-02,EX-0057,Pod B,Direct,R1,Accepted
+T302,2026-10-02,EX-0021,Pod B,Direct,R5,Accepted
+T303,2026-10-02,EX-0079,Pod D,Vendor North,R3,Accepted
+T304,2026-10-02,EX-0073,Pod B,Vendor North,R2,Accepted
+T305,2026-10-02,EX-0066,Pod C,Direct,R3,Accepted
+T306,2026-10-02,EX-0043,Pod D,Vendor North,R3,Accepted
+T307,2026-10-02,EX-0038,Pod C,Vendor South,R6,Accepted
+T308,2026-10-02,EX-0031,Pod D,Vendor North,R2,Accepted
+T309,2026-10-02,EX-0070,Pod C,Vendor North,R1,Accepted
+T310,2026-10-02,EX-0040,Pod A,Vendor North,R3,Accepted
+T311,2026-10-02,EX-0031,Pod D,Vendor North,R3,Accepted
+T312,2026-10-02,EX-0004,Pod A,Vendor North,R3,Accepted
+T313,2026-10-02,EX-0004,Pod A,Vendor North,R2,Accepted
+T314,2026-10-02,EX-0043,Pod D,Vendor North,R3,Rejected
+T315,2026-10-02,EX-0017,Pod B,Vendor South,R3,Accepted
+T316,2026-10-02,EX-0007,Pod D,Vendor North,R5,Rejected
+T317,2026-10-02,EX-0070,Pod C,Vendor North,R4,Rejected
+T318,2026-10-02,EX-0038,Pod C,Vendor South,R3,Accepted
+T319,2026-10-02,EX-0007,Pod D,Vendor North,R6,Accepted
+T320,2026-10-02,EX-0080,Pod A,Vendor South,R3,Rejected
+T321,2026-10-02,EX-0002,Pod C,Vendor South,R3,Rejected
+T322,2026-10-02,EX-0069,Pod B,Direct,R6,Rejected
+T323,2026-10-02,EX-0077,Pod B,Vendor South,R5,Rejected
+T324,2026-10-02,EX-0059,Pod D,Vendor South,R3,Accepted
+T325,2026-10-02,EX-0022,Pod C,Vendor North,R6,Accepted
+T326,2026-10-02,EX-0004,Pod A,Vendor North,R4,Accepted
+T327,2026-10-02,EX-0057,Pod B,Direct,R4,Accepted
+T328,2026-10-02,EX-0025,Pod B,Vendor North,R4,Accepted
+T329,2026-10-02,EX-0049,Pod B,Vendor North,R3,Accepted
+T330,2026-10-02,EX-0004,Pod A,Vendor North,R4,Rejected
+T331,2026-10-02,EX-0025,Pod B,Vendor North,R4,Rejected
+T332,2026-10-02,EX-0056,Pod A,Vendor South,R1,Accepted
+T333,2026-10-02,EX-0033,Pod B,Direct,R4,Accepted
+T334,2026-10-02,EX-0072,Pod A,Direct,R2,Accepted
+T335,2026-10-02,EX-0015,Pod D,Direct,R3,Accepted
+T336,2026-10-02,EX-0012,Pod A,Direct,R3,Accepted
+T337,2026-10-02,EX-0053,Pod B,Vendor South,R1,Accepted
+T338,2026-10-02,EX-0066,Pod C,Direct,R3,Accepted
+T339,2026-10-02,EX-0074,Pod C,Vendor South,R4,Accepted
+T340,2026-10-02,EX-0024,Pod A,Direct,R1,Accepted
+T341,2026-10-02,EX-0016,Pod A,Vendor North,R2,Accepted
+T342,2026-10-02,EX-0080,Pod A,Vendor South,R3,Accepted
+T343,2026-10-02,EX-0012,Pod A,Direct,R5,Rejected
+T344,2026-10-02,EX-0003,Pod D,Direct,R3,Accepted
+T345,2026-10-02,EX-0080,Pod A,Vendor South,R1,Rejected
+T346,2026-10-02,EX-0031,Pod D,Vendor North,R3,Accepted
+T347,2026-10-02,EX-0003,Pod D,Direct,R2,Accepted
+T348,2026-10-02,EX-0005,Pod B,Vendor South,R3,Accepted
+T349,2026-10-02,EX-0016,Pod A,Vendor North,R1,Accepted
+T350,2026-10-02,EX-0024,Pod A,Direct,R1,Rejected
+T351,2026-10-02,EX-0028,Pod A,Vendor North,R3,Accepted
+T352,2026-10-02,EX-0043,Pod D,Vendor North,R3,Accepted
+T353,2026-10-02,EX-0036,Pod A,Direct,R3,Accepted
+T354,2026-10-02,EX-0076,Pod A,Vendor North,R5,Accepted
+T355,2026-10-02,EX-0010,Pod C,Vendor North,R5,Accepted
+T356,2026-10-02,EX-0062,Pod C,Vendor South,R3,Accepted
+T357,2026-10-02,EX-0069,Pod B,Direct,R5,Accepted
+T358,2026-10-02,EX-0060,Pod A,Direct,R3,Accepted
+T359,2026-10-02,EX-0065,Pod B,Vendor South,R3,Accepted
+T360,2026-10-02,EX-0072,Pod A,Direct,R3,Accepted
+T361,2026-10-02,EX-0027,Pod D,Direct,R5,Accepted
+T362,2026-10-02,EX-0049,Pod B,Vendor North,R3,Rejected
+T363,2026-10-02,EX-0078,Pod C,Direct,R3,Accepted
+T364,2026-10-02,EX-0043,Pod D,Vendor North,R4,Accepted
+T365,2026-10-02,EX-0062,Pod C,Vendor South,R1,Rejected
+T366,2026-10-02,EX-0050,Pod C,Vendor South,R3,Rejected
+T367,2026-10-02,EX-0030,Pod C,Direct,R3,Accepted
+T368,2026-10-02,EX-0047,Pod D,Vendor South,R4,Accepted
+T369,2026-10-02,EX-0016,Pod A,Vendor North,R1,Accepted
+T370,2026-10-02,EX-0015,Pod D,Direct,R3,Accepted
+T371,2026-10-02,EX-0057,Pod B,Direct,R3,Rejected
+T372,2026-10-02,EX-0078,Pod C,Direct,R6,Accepted
+T373,2026-10-02,EX-0009,Pod B,Direct,R3,Accepted
+T374,2026-10-02,EX-0027,Pod D,Direct,R3,Accepted
+T375,2026-10-02,EX-0052,Pod A,Vendor North,R3,Accepted
+T376,2026-10-02,EX-0022,Pod C,Vendor North,R5,Accepted
+T377,2026-10-02,EX-0016,Pod A,Vendor North,R3,Accepted
+T378,2026-10-02,EX-0012,Pod A,Direct,R3,Accepted
+T379,2026-10-02,EX-0031,Pod D,Vendor North,R5,Rejected
+T380,2026-10-02,EX-0047,Pod D,Vendor South,R2,Rejected
+T381,2026-10-02,EX-0051,Pod D,Direct,R3,Accepted
+T382,2026-10-02,EX-0064,Pod A,Vendor North,R6,Accepted
+T383,2026-10-02,EX-0042,Pod C,Direct,R5,Rejected
+T384,2026-10-02,EX-0012,Pod A,Direct,R1,Accepted
+T385,2026-10-02,EX-0010,Pod C,Vendor North,R4,Accepted
+T386,2026-10-02,EX-0049,Pod B,Vendor North,R2,Accepted
+T387,2026-10-02,EX-0050,Pod C,Vendor South,R2,Accepted
+T388,2026-10-02,EX-0009,Pod B,Direct,R5,Accepted
+T389,2026-10-02,EX-0046,Pod C,Vendor North,R3,Accepted
+T390,2026-10-02,EX-0022,Pod C,Vendor North,R3,Rejected
+T391,2026-10-02,EX-0050,Pod C,Vendor South,R1,Accepted
+T392,2026-10-02,EX-0039,Pod D,Direct,R1,Accepted
+T393,2026-10-02,EX-0064,Pod A,Vendor North,R4,Accepted
+T394,2026-10-02,EX-0010,Pod C,Vendor North,R2,Accepted
+T395,2026-10-02,EX-0021,Pod B,Direct,R2,Accepted
+T396,2026-10-02,EX-0072,Pod A,Direct,R6,Accepted
+T397,2026-10-02,EX-0041,Pod B,Vendor South,R5,Accepted
+T398,2026-10-02,EX-0046,Pod C,Vendor North,R1,Accepted
+T399,2026-10-02,EX-0048,Pod A,Direct,R5,Accepted
+T400,2026-10-02,EX-0071,Pod D,Vendor South,R1,Accepted
+T401,2026-10-02,EX-0066,Pod C,Direct,R3,Accepted
+T402,2026-10-02,EX-0027,Pod D,Direct,R3,Accepted
+T403,2026-10-02,EX-0025,Pod B,Vendor North,R6,Accepted
+T404,2026-10-02,EX-0037,Pod B,Vendor North,R5,Accepted
+T405,2026-10-02,EX-0003,Pod D,Direct,R5,Accepted
+T406,2026-10-02,EX-0027,Pod D,Direct,R3,Rejected
+T407,2026-10-02,EX-0008,Pod A,Vendor South,R3,Rejected
+T408,2026-10-02,EX-0036,Pod A,Direct,R1,Accepted
+T409,2026-10-02,EX-0028,Pod A,Vendor North,R3,Rejected
+T410,2026-10-02,EX-0079,Pod D,Vendor North,R5,Accepted
+T411,2026-10-02,EX-0002,Pod C,Vendor South,R1,Accepted
+T412,2026-10-02,EX-0078,Pod C,Direct,R2,Accepted
+T413,2026-10-02,EX-0005,Pod B,Vendor South,R3,Accepted
+T414,2026-10-02,EX-0029,Pod B,Vendor South,R5,Rejected
+T415,2026-10-02,EX-0030,Pod C,Direct,R3,Accepted
+T416,2026-10-02,EX-0028,Pod A,Vendor North,R3,Accepted
+T417,2026-10-02,EX-0079,Pod D,Vendor North,R6,Accepted
+T418,2026-10-02,EX-0063,Pod D,Direct,R3,Accepted
+T419,2026-10-02,EX-0061,Pod B,Vendor North,R3,Accepted
+T420,2026-10-02,EX-0055,Pod D,Vendor North,R3,Rejected
+T421,2026-10-02,EX-0037,Pod B,Vendor North,R6,Accepted
+T422,2026-10-02,EX-0045,Pod B,Direct,R4,Rejected
+T423,2026-10-02,EX-0060,Pod A,Direct,R3,Accepted
+T424,2026-10-02,EX-0010,Pod C,Vendor North,R1,Accepted
+T425,2026-10-02,EX-0027,Pod D,Direct,R5,Rejected
+T426,2026-10-02,EX-0016,Pod A,Vendor North,R2,Accepted
+T427,2026-10-02,EX-0022,Pod C,Vendor North,R3,Rejected
+T428,2026-10-02,EX-0042,Pod C,Direct,R2,Rejected
+T429,2026-10-02,EX-0079,Pod D,Vendor North,R3,Accepted
+T430,2026-10-02,EX-0020,Pod A,Vendor South,R3,Rejected
+T431,2026-10-02,EX-0040,Pod A,Vendor North,R5,Accepted
+T432,2026-10-02,EX-0070,Pod C,Vendor North,R3,Rejected
+T433,2026-10-02,EX-0013,Pod B,Vendor North,R1,Accepted
+T434,2026-10-02,EX-0028,Pod A,Vendor North,R1,Accepted
+T435,2026-10-02,EX-0025,Pod B,Vendor North,R3,Accepted
+T436,2026-10-02,EX-0068,Pod A,Vendor South,R2,Accepted
+T437,2026-10-02,EX-0029,Pod B,Vendor South,R2,Rejected
+T438,2026-10-02,EX-0012,Pod A,Direct,R5,Accepted
+T439,2026-10-02,EX-0001,Pod B,Vendor North,R6,Accepted
+T440,2026-10-02,EX-0054,Pod C,Direct,R3,Rejected
+T441,2026-10-02,EX-0001,Pod B,Vendor North,R3,Accepted
+T442,2026-10-02,EX-0009,Pod B,Direct,R3,Accepted
+T443,2026-10-02,EX-0050,Pod C,Vendor South,R3,Accepted
+T444,2026-10-02,EX-0046,Pod C,Vendor North,R2,Accepted
+T445,2026-10-02,EX-0069,Pod B,Direct,R3,Accepted
+T446,2026-10-02,EX-0005,Pod B,Vendor South,R3,Accepted
+T447,2026-10-02,EX-0045,Pod B,Direct,R3,Accepted
+T448,2026-10-02,EX-0070,Pod C,Vendor North,R1,Accepted
+T449,2026-10-02,EX-0074,Pod C,Vendor South,R3,Rejected
+T450,2026-10-02,EX-0003,Pod D,Direct,R2,Accepted
+T451,2026-10-02,EX-0025,Pod B,Vendor North,R4,Accepted
+T452,2026-10-02,EX-0018,Pod C,Direct,R1,Accepted
+T453,2026-10-02,EX-0056,Pod A,Vendor South,R4,Accepted
+T454,2026-10-02,EX-0005,Pod B,Vendor South,R6,Accepted
+T455,2026-10-02,EX-0078,Pod C,Direct,R6,Accepted
+T456,2026-10-02,EX-0020,Pod A,Vendor South,R3,Rejected
+T457,2026-10-02,EX-0001,Pod B,Vendor North,R4,Accepted
+T458,2026-10-02,EX-0020,Pod A,Vendor South,R3,Accepted
+T459,2026-10-02,EX-0060,Pod A,Direct,R3,Accepted
+T460,2026-10-02,EX-0033,Pod B,Direct,R1,Rejected
+T461,2026-10-02,EX-0011,Pod D,Vendor South,R4,Accepted
+T462,2026-10-02,EX-0038,Pod C,Vendor South,R3,Rejected
+T463,2026-10-02,EX-0053,Pod B,Vendor South,R3,Accepted
+T464,2026-10-02,EX-0061,Pod B,Vendor North,R5,Accepted
+T465,2026-10-02,EX-0060,Pod A,Direct,R3,Accepted
+T466,2026-10-02,EX-0039,Pod D,Direct,R2,Accepted
+T467,2026-10-02,EX-0053,Pod B,Vendor South,R6,Accepted
+T468,2026-10-02,EX-0052,Pod A,Vendor North,R1,Accepted
+T469,2026-10-02,EX-0058,Pod C,Vendor North,R5,Accepted
+T470,2026-10-02,EX-0046,Pod C,Vendor North,R3,Accepted
+T471,2026-10-02,EX-0017,Pod B,Vendor South,R3,Rejected
+T472,2026-10-02,EX-0070,Pod C,Vendor North,R3,Accepted
+T473,2026-10-02,EX-0041,Pod B,Vendor South,R3,Rejected
+T474,2026-10-02,EX-0006,Pod C,Direct,R3,Accepted
+T475,2026-10-02,EX-0073,Pod B,Vendor North,R2,Accepted
+T476,2026-10-02,EX-0061,Pod B,Vendor North,R5,Accepted
+T477,2026-10-02,EX-0041,Pod B,Vendor South,R1,Accepted
+T478,2026-10-02,EX-0022,Pod C,Vendor North,R3,Accepted
+T479,2026-10-02,EX-0048,Pod A,Direct,R3,Accepted
+T480,2026-10-02,EX-0028,Pod A,Vendor North,R5,Accepted
+T481,2026-10-02,EX-0031,Pod D,Vendor North,R1,Accepted
+T482,2026-10-02,EX-0021,Pod B,Direct,R5,Accepted
+T483,2026-10-02,EX-0069,Pod B,Direct,R6,Accepted
+T484,2026-10-02,EX-0020,Pod A,Vendor South,R2,Rejected
+T485,2026-10-02,EX-0056,Pod A,Vendor South,R3,Accepted
+T486,2026-10-02,EX-0067,Pod D,Vendor North,R5,Accepted
+T487,2026-10-02,EX-0059,Pod D,Vendor South,R5,Accepted
+T488,2026-10-02,EX-0060,Pod A,Direct,R4,Accepted
+T489,2026-10-02,EX-0055,Pod D,Vendor North,R4,Accepted
+T490,2026-10-02,EX-0046,Pod C,Vendor North,R3,Accepted
+T491,2026-10-02,EX-0067,Pod D,Vendor North,R3,Accepted
+T492,2026-10-02,EX-0030,Pod C,Direct,R3,Accepted
+T493,2026-10-02,EX-0004,Pod A,Vendor North,R3,Accepted
+T494,2026-10-02,EX-0059,Pod D,Vendor South,R3,Accepted
+T495,2026-10-02,EX-0073,Pod B,Vendor North,R3,Accepted
+T496,2026-10-02,EX-0079,Pod D,Vendor North,R3,Accepted
+T497,2026-10-02,EX-0003,Pod D,Direct,R3,Accepted
+T498,2026-10-02,EX-0010,Pod C,Vendor North,R6,Rejected
+T499,2026-10-02,EX-0022,Pod C,Vendor North,R3,Accepted
+T500,2026-10-02,EX-0014,Pod C,Vendor South,R6,Accepted
+T501,2026-10-02,EX-0039,Pod D,Direct,R3,Accepted
+T502,2026-10-02,EX-0076,Pod A,Vendor North,R2,Accepted
+T503,2026-10-02,EX-0069,Pod B,Direct,R4,Accepted
+T504,2026-10-02,EX-0063,Pod D,Direct,R4,Accepted
+T505,2026-10-02,EX-0034,Pod C,Vendor North,R6,Accepted
+T506,2026-10-02,EX-0063,Pod D,Direct,R3,Accepted
+T507,2026-10-02,EX-0027,Pod D,Direct,R3,Accepted
+T508,2026-10-02,EX-0078,Pod C,Direct,R3,Accepted
+T509,2026-10-02,EX-0071,Pod D,Vendor South,R4,Rejected
+T510,2026-10-02,EX-0036,Pod A,Direct,R6,Accepted
+T511,2026-10-02,EX-0026,Pod C,Vendor South,R4,Accepted
+T512,2026-10-02,EX-0055,Pod D,Vendor North,R2,Accepted
+T513,2026-10-02,EX-0023,Pod D,Vendor South,R1,Accepted
+T514,2026-10-02,EX-0033,Pod B,Direct,R6,Accepted
+T515,2026-10-02,EX-0010,Pod C,Vendor North,R1,Rejected
+T516,2026-10-02,EX-0067,Pod D,Vendor North,R1,Accepted
+T517,2026-10-02,EX-0018,Pod C,Direct,R1,Accepted
+T518,2026-10-02,EX-0076,Pod A,Vendor North,R5,Accepted
+T519,2026-10-02,EX-0073,Pod B,Vendor North,R4,Accepted
+T520,2026-10-02,EX-0054,Pod C,Direct,R6,Accepted
+T521,2026-10-02,EX-0042,Pod C,Direct,R3,Accepted
+T522,2026-10-02,EX-0048,Pod A,Direct,R3,Accepted
+T523,2026-10-02,EX-0066,Pod C,Direct,R4,Accepted
+T524,2026-10-02,EX-0058,Pod C,Vendor North,R4,Accepted
+T525,2026-10-02,EX-0064,Pod A,Vendor North,R3,Accepted
+T526,2026-10-02,EX-0020,Pod A,Vendor South,R4,Rejected
+T527,2026-10-02,EX-0020,Pod A,Vendor South,R6,Rejected
+T528,2026-10-02,EX-0044,Pod A,Vendor South,R6,Accepted
+T529,2026-10-02,EX-0045,Pod B,Direct,R3,Rejected
+T530,2026-10-02,EX-0037,Pod B,Vendor North,R5,Accepted
+T531,2026-10-02,EX-0078,Pod C,Direct,R3,Rejected
+T532,2026-10-02,EX-0017,Pod B,Vendor South,R3,Rejected
+T533,2026-10-02,EX-0048,Pod A,Direct,R2,Accepted
+T534,2026-10-02,EX-0045,Pod B,Direct,R3,Accepted
+T535,2026-10-02,EX-0054,Pod C,Direct,R5,Accepted
+T536,2026-10-02,EX-0005,Pod B,Vendor South,R2,Accepted
+T537,2026-10-02,EX-0072,Pod A,Direct,R5,Rejected
+T538,2026-10-02,EX-0011,Pod D,Vendor South,R3,Rejected
+T539,2026-10-02,EX-0064,Pod A,Vendor North,R3,Accepted
+T540,2026-10-02,EX-0004,Pod A,Vendor North,R5,Rejected
+T541,2026-10-02,EX-0048,Pod A,Direct,R3,Rejected
+T542,2026-10-02,EX-0038,Pod C,Vendor South,R3,Accepted
+T543,2026-10-02,EX-0063,Pod D,Direct,R3,Accepted
+T544,2026-10-02,EX-0070,Pod C,Vendor North,R3,Accepted
+T545,2026-10-02,EX-0067,Pod D,Vendor North,R2,Accepted
+T546,2026-10-02,EX-0002,Pod C,Vendor South,R2,Accepted
+T547,2026-10-02,EX-0022,Pod C,Vendor North,R4,Accepted
+T548,2026-10-02,EX-0059,Pod D,Vendor South,R1,Rejected
+T549,2026-10-02,EX-0030,Pod C,Direct,R3,Accepted
+T550,2026-10-02,EX-0070,Pod C,Vendor North,R3,Accepted
+T551,2026-10-02,EX-0048,Pod A,Direct,R3,Rejected
+T552,2026-10-02,EX-0030,Pod C,Direct,R4,Accepted
+T553,2026-10-02,EX-0049,Pod B,Vendor North,R3,Accepted
+T554,2026-10-02,EX-0016,Pod A,Vendor North,R2,Accepted
+T555,2026-10-02,EX-0049,Pod B,Vendor North,R3,Accepted
+T556,2026-10-02,EX-0040,Pod A,Vendor North,R1,Rejected
+T557,2026-10-02,EX-0073,Pod B,Vendor North,R3,Rejected
+T558,2026-10-02,EX-0038,Pod C,Vendor South,R3,Accepted
+T559,2026-10-02,EX-0071,Pod D,Vendor South,R3,Rejected
+T560,2026-10-02,EX-0059,Pod D,Vendor South,R2,Accepted
+T561,2026-10-02,EX-0029,Pod B,Vendor South,R3,Accepted
+T562,2026-10-02,EX-0011,Pod D,Vendor South,R4,Rejected
+T563,2026-10-02,EX-0024,Pod A,Direct,R3,Accepted
+T564,2026-10-02,EX-0020,Pod A,Vendor South,R4,Rejected
+T565,2026-10-02,EX-0022,Pod C,Vendor North,R3,Accepted
+T566,2026-10-02,EX-0056,Pod A,Vendor South,R3,Accepted
+T567,2026-10-02,EX-0051,Pod D,Direct,R1,Rejected
+T568,2026-10-02,EX-0054,Pod C,Direct,R6,Accepted
+T569,2026-10-02,EX-0077,Pod B,Vendor South,R2,Accepted
+T570,2026-10-02,EX-0071,Pod D,Vendor South,R2,Rejected
+T571,2026-10-02,EX-0080,Pod A,Vendor South,R2,Rejected
+T572,2026-10-02,EX-0063,Pod D,Direct,R1,Accepted
+T573,2026-10-02,EX-0058,Pod C,Vendor North,R2,Rejected
+T574,2026-10-02,EX-0047,Pod D,Vendor South,R6,Accepted
+T575,2026-10-02,EX-0013,Pod B,Vendor North,R6,Accepted
+T576,2026-10-02,EX-0071,Pod D,Vendor South,R3,Rejected
+T577,2026-10-02,EX-0003,Pod D,Direct,R3,Accepted
+T578,2026-10-02,EX-0050,Pod C,Vendor South,R3,Accepted
+T579,2026-10-02,EX-0068,Pod A,Vendor South,R2,Rejected
+T580,2026-10-02,EX-0078,Pod C,Direct,R2,Accepted
+T581,2026-10-02,EX-0032,Pod A,Vendor South,R5,Accepted
+T582,2026-10-02,EX-0074,Pod C,Vendor South,R5,Accepted
+T583,2026-10-02,EX-0051,Pod D,Direct,R3,Rejected
+T584,2026-10-02,EX-0053,Pod B,Vendor South,R1,Accepted
+T585,2026-10-02,EX-0058,Pod C,Vendor North,R6,Accepted
+T586,2026-10-02,EX-0012,Pod A,Direct,R6,Rejected
+T587,2026-10-02,EX-0080,Pod A,Vendor South,R3,Accepted
+T588,2026-10-02,EX-0067,Pod D,Vendor North,R3,Accepted
+T589,2026-10-02,EX-0038,Pod C,Vendor South,R3,Accepted
+T590,2026-10-02,EX-0020,Pod A,Vendor South,R3,Rejected
+T591,2026-10-02,EX-0008,Pod A,Vendor South,R3,Accepted
+T592,2026-10-02,EX-0065,Pod B,Vendor South,R3,Accepted
+T593,2026-10-02,EX-0067,Pod D,Vendor North,R5,Rejected
+T594,2026-10-02,EX-0016,Pod A,Vendor North,R1,Accepted
+T595,2026-10-02,EX-0078,Pod C,Direct,R5,Accepted
+T596,2026-10-02,EX-0066,Pod C,Direct,R3,Accepted
+T597,2026-10-02,EX-0052,Pod A,Vendor North,R3,Accepted
+T598,2026-10-02,EX-0002,Pod C,Vendor South,R2,Accepted
+T599,2026-10-02,EX-0036,Pod A,Direct,R5,Accepted
+T600,2026-10-02,EX-0039,Pod D,Direct,R6,Accepted
+T601,2026-10-02,EX-0055,Pod D,Vendor North,R3,Accepted
+T602,2026-10-02,EX-0002,Pod C,Vendor South,R1,Accepted
+T603,2026-10-02,EX-0049,Pod B,Vendor North,R3,Accepted
+T604,2026-10-02,EX-0025,Pod B,Vendor North,R3,Accepted
+T605,2026-10-02,EX-0068,Pod A,Vendor South,R5,Rejected
+T606,2026-10-02,EX-0062,Pod C,Vendor South,R3,Accepted
+T607,2026-10-02,EX-0074,Pod C,Vendor South,R5,Accepted
+T608,2026-10-02,EX-0030,Pod C,Direct,R3,Accepted
+T609,2026-10-02,EX-0067,Pod D,Vendor North,R3,Accepted
+T610,2026-10-02,EX-0074,Pod C,Vendor South,R6,Rejected
+T611,2026-10-02,EX-0049,Pod B,Vendor North,R6,Accepted
+T612,2026-10-02,EX-0030,Pod C,Direct,R6,Accepted
+T613,2026-10-02,EX-0079,Pod D,Vendor North,R3,Accepted
+T614,2026-10-02,EX-0080,Pod A,Vendor South,R5,Accepted
+T615,2026-10-02,EX-0042,Pod C,Direct,R1,Accepted
+T616,2026-10-02,EX-0010,Pod C,Vendor North,R5,Accepted
+T617,2026-10-02,EX-0006,Pod C,Direct,R1,Accepted
+T618,2026-10-02,EX-0014,Pod C,Vendor South,R3,Accepted
+T619,2026-10-02,EX-0060,Pod A,Direct,R3,Accepted
+T620,2026-10-02,EX-0004,Pod A,Vendor North,R2,Accepted
+T621,2026-10-02,EX-0033,Pod B,Direct,R5,Accepted
+T622,2026-10-02,EX-0057,Pod B,Direct,R5,Accepted
+T623,2026-10-02,EX-0026,Pod C,Vendor South,R1,Accepted
+T624,2026-10-02,EX-0058,Pod C,Vendor North,R3,Accepted
+T625,2026-10-02,EX-0033,Pod B,Direct,R1,Accepted
+T626,2026-10-02,EX-0048,Pod A,Direct,R2,Accepted
+T627,2026-10-02,EX-0039,Pod D,Direct,R4,Accepted
+T628,2026-10-02,EX-0053,Pod B,Vendor South,R2,Accepted
+T629,2026-10-02,EX-0079,Pod D,Vendor North,R3,Accepted
+T630,2026-10-02,EX-0068,Pod A,Vendor South,R3,Accepted
+T631,2026-10-02,EX-0032,Pod A,Vendor South,R2,Accepted
+T632,2026-10-02,EX-0006,Pod C,Direct,R2,Accepted
+T633,2026-10-02,EX-0004,Pod A,Vendor North,R1,Accepted
+T634,2026-10-02,EX-0053,Pod B,Vendor South,R6,Rejected
+T635,2026-10-02,EX-0065,Pod B,Vendor South,R3,Accepted
+T636,2026-10-02,EX-0066,Pod C,Direct,R3,Accepted
+T637,2026-10-02,EX-0069,Pod B,Direct,R6,Accepted
+T638,2026-10-02,EX-0070,Pod C,Vendor North,R3,Accepted
+T639,2026-10-02,EX-0016,Pod A,Vendor North,R3,Rejected
+T640,2026-10-02,EX-0075,Pod D,Direct,R3,Accepted
+T641,2026-10-02,EX-0016,Pod A,Vendor North,R3,Accepted
+T642,2026-10-02,EX-0078,Pod C,Direct,R5,Accepted
+T643,2026-10-02,EX-0048,Pod A,Direct,R1,Rejected
+T644,2026-10-02,EX-0072,Pod A,Direct,R3,Accepted
+T645,2026-10-02,EX-0069,Pod B,Direct,R2,Accepted
+T646,2026-10-02,EX-0051,Pod D,Direct,R3,Accepted
+T647,2026-10-02,EX-0012,Pod A,Direct,R3,Rejected
+T648,2026-10-02,EX-0039,Pod D,Direct,R3,Rejected
+T649,2026-10-02,EX-0020,Pod A,Vendor South,R3,Accepted
+T650,2026-10-02,EX-0039,Pod D,Direct,R3,Accepted
+T651,2026-10-02,EX-0073,Pod B,Vendor North,R2,Accepted
+T652,2026-10-02,EX-0038,Pod C,Vendor South,R5,Accepted
+T653,2026-10-02,EX-0056,Pod A,Vendor South,R1,Accepted
+T654,2026-10-02,EX-0061,Pod B,Vendor North,R3,Accepted
+T655,2026-10-02,EX-0051,Pod D,Direct,R3,Accepted
+T656,2026-10-02,EX-0068,Pod A,Vendor South,R3,Accepted
+T657,2026-10-02,EX-0019,Pod D,Vendor North,R6,Accepted
+T658,2026-10-03,EX-0072,Pod A,Direct,R2,Accepted
+T659,2026-10-03,EX-0055,Pod D,Vendor North,R5,Accepted
+T660,2026-10-03,EX-0004,Pod A,Vendor North,R1,Accepted
+T661,2026-10-03,EX-0039,Pod D,Direct,R2,Accepted
+T662,2026-10-03,EX-0060,Pod A,Direct,R4,Accepted
+T663,2026-10-03,EX-0065,Pod B,Vendor South,R2,Accepted
+T664,2026-10-03,EX-0058,Pod C,Vendor North,R6,Accepted
+T665,2026-10-03,EX-0036,Pod A,Direct,R3,Accepted
+T666,2026-10-03,EX-0014,Pod C,Vendor South,R4,Accepted
+T667,2026-10-03,EX-0017,Pod B,Vendor South,R3,Rejected
+T668,2026-10-03,EX-0002,Pod C,Vendor South,R4,Accepted
+T669,2026-10-03,EX-0014,Pod C,Vendor South,R3,Accepted
+T670,2026-10-03,EX-0075,Pod D,Direct,R3,Accepted
+T671,2026-10-03,EX-0035,Pod D,Vendor South,R3,Accepted
+T672,2026-10-03,EX-0017,Pod B,Vendor South,R1,Rejected
+T673,2026-10-03,EX-0047,Pod D,Vendor South,R3,Accepted
+T674,2026-10-03,EX-0007,Pod D,Vendor North,R4,Rejected
+T675,2026-10-03,EX-0062,Pod C,Vendor South,R4,Accepted
+T676,2026-10-03,EX-0037,Pod B,Vendor North,R3,Accepted
+T677,2026-10-03,EX-0027,Pod D,Direct,R4,Rejected
+T678,2026-10-03,EX-0066,Pod C,Direct,R5,Accepted
+T679,2026-10-03,EX-0059,Pod D,Vendor South,R3,Rejected
+T680,2026-10-03,EX-0037,Pod B,Vendor North,R1,Accepted
+T681,2026-10-03,EX-0050,Pod C,Vendor South,R4,Rejected
+T682,2026-10-03,EX-0024,Pod A,Direct,R3,Accepted
+T683,2026-10-03,EX-0038,Pod C,Vendor South,R3,Rejected
+T684,2026-10-03,EX-0028,Pod A,Vendor North,R4,Accepted
+T685,2026-10-03,EX-0064,Pod A,Vendor North,R4,Accepted
+T686,2026-10-03,EX-0053,Pod B,Vendor South,R5,Accepted
+T687,2026-10-03,EX-0012,Pod A,Direct,R3,Accepted
+T688,2026-10-03,EX-0007,Pod D,Vendor North,R2,Accepted
+T689,2026-10-03,EX-0017,Pod B,Vendor South,R5,Rejected
+T690,2026-10-03,EX-0047,Pod D,Vendor South,R3,Rejected
+T691,2026-10-03,EX-0008,Pod A,Vendor South,R3,Accepted
+T692,2026-10-03,EX-0078,Pod C,Direct,R3,Accepted
+T693,2026-10-03,EX-0061,Pod B,Vendor North,R5,Accepted
+T694,2026-10-03,EX-0003,Pod D,Direct,R3,Accepted
+T695,2026-10-03,EX-0008,Pod A,Vendor South,R5,Accepted
+T696,2026-10-03,EX-0077,Pod B,Vendor South,R4,Rejected
+T697,2026-10-03,EX-0006,Pod C,Direct,R3,Rejected
+T698,2026-10-03,EX-0043,Pod D,Vendor North,R5,Accepted
+T699,2026-10-03,EX-0077,Pod B,Vendor South,R3,Accepted
+T700,2026-10-03,EX-0075,Pod D,Direct,R2,Accepted
+T701,2026-10-03,EX-0076,Pod A,Vendor North,R6,Accepted
+T702,2026-10-03,EX-0046,Pod C,Vendor North,R5,Accepted
+T703,2026-10-03,EX-0059,Pod D,Vendor South,R3,Accepted
+T704,2026-10-03,EX-0080,Pod A,Vendor South,R6,Rejected
+T705,2026-10-03,EX-0058,Pod C,Vendor North,R3,Accepted
+T706,2026-10-03,EX-0068,Pod A,Vendor South,R1,Rejected
+T707,2026-10-03,EX-0029,Pod B,Vendor South,R1,Rejected
+T708,2026-10-03,EX-0020,Pod A,Vendor South,R3,Accepted
+T709,2026-10-03,EX-0047,Pod D,Vendor South,R4,Accepted
+T710,2026-10-03,EX-0055,Pod D,Vendor North,R3,Accepted
+T711,2026-10-03,EX-0050,Pod C,Vendor South,R3,Rejected
+T712,2026-10-03,EX-0005,Pod B,Vendor South,R4,Rejected
+T713,2026-10-03,EX-0067,Pod D,Vendor North,R5,Rejected
+T714,2026-10-03,EX-0051,Pod D,Direct,R5,Accepted
+T715,2026-10-03,EX-0009,Pod B,Direct,R3,Accepted
+T716,2026-10-03,EX-0025,Pod B,Vendor North,R4,Rejected
+T717,2026-10-03,EX-0010,Pod C,Vendor North,R3,Accepted
+T718,2026-10-03,EX-0033,Pod B,Direct,R1,Rejected
+T719,2026-10-03,EX-0032,Pod A,Vendor South,R6,Rejected
+T720,2026-10-03,EX-0073,Pod B,Vendor North,R5,Accepted
+T721,2026-10-03,EX-0046,Pod C,Vendor North,R4,Accepted
+T722,2026-10-03,EX-0078,Pod C,Direct,R6,Accepted
+T723,2026-10-03,EX-0034,Pod C,Vendor North,R3,Accepted
+T724,2026-10-03,EX-0068,Pod A,Vendor South,R1,Accepted
+T725,2026-10-03,EX-0028,Pod A,Vendor North,R3,Accepted
+T726,2026-10-03,EX-0003,Pod D,Direct,R3,Accepted
+T727,2026-10-03,EX-0052,Pod A,Vendor North,R2,Accepted
+T728,2026-10-03,EX-0004,Pod A,Vendor North,R6,Rejected
+T729,2026-10-03,EX-0053,Pod B,Vendor South,R3,Rejected
+T730,2026-10-03,EX-0020,Pod A,Vendor South,R3,Accepted
+T731,2026-10-03,EX-0074,Pod C,Vendor South,R1,Accepted
+T732,2026-10-03,EX-0053,Pod B,Vendor South,R4,Accepted
+T733,2026-10-03,EX-0046,Pod C,Vendor North,R1,Accepted
+T734,2026-10-03,EX-0026,Pod C,Vendor South,R5,Accepted
+T735,2026-10-03,EX-0043,Pod D,Vendor North,R4,Accepted
+T736,2026-10-03,EX-0007,Pod D,Vendor North,R2,Accepted
+T737,2026-10-03,EX-0051,Pod D,Direct,R3,Accepted
+T738,2026-10-03,EX-0072,Pod A,Direct,R3,Rejected
+T739,2026-10-03,EX-0066,Pod C,Direct,R1,Accepted
+T740,2026-10-03,EX-0013,Pod B,Vendor North,R2,Accepted
+T741,2026-10-03,EX-0076,Pod A,Vendor North,R3,Accepted
+T742,2026-10-03,EX-0002,Pod C,Vendor South,R4,Rejected
+T743,2026-10-03,EX-0073,Pod B,Vendor North,R3,Accepted
+T744,2026-10-03,EX-0056,Pod A,Vendor South,R1,Accepted
+T745,2026-10-03,EX-0009,Pod B,Direct,R3,Accepted
+T746,2026-10-03,EX-0027,Pod D,Direct,R4,Accepted
+T747,2026-10-03,EX-0062,Pod C,Vendor South,R3,Accepted
+T748,2026-10-03,EX-0023,Pod D,Vendor South,R3,Accepted
+T749,2026-10-03,EX-0041,Pod B,Vendor South,R2,Accepted
+T750,2026-10-03,EX-0050,Pod C,Vendor South,R6,Accepted
+T751,2026-10-03,EX-0062,Pod C,Vendor South,R3,Accepted
+T752,2026-10-03,EX-0044,Pod A,Vendor South,R3,Accepted
+T753,2026-10-03,EX-0061,Pod B,Vendor North,R3,Accepted
+T754,2026-10-03,EX-0080,Pod A,Vendor South,R3,Accepted
+T755,2026-10-03,EX-0076,Pod A,Vendor North,R4,Accepted
+T756,2026-10-03,EX-0078,Pod C,Direct,R2,Accepted
+T757,2026-10-03,EX-0009,Pod B,Direct,R6,Accepted
+T758,2026-10-03,EX-0022,Pod C,Vendor North,R5,Rejected
+T759,2026-10-03,EX-0044,Pod A,Vendor South,R2,Rejected
+T760,2026-10-03,EX-0019,Pod D,Vendor North,R3,Accepted
+T761,2026-10-03,EX-0075,Pod D,Direct,R4,Accepted
+T762,2026-10-03,EX-0065,Pod B,Vendor South,R3,Accepted
+T763,2026-10-03,EX-0018,Pod C,Direct,R3,Accepted
+T764,2026-10-03,EX-0013,Pod B,Vendor North,R5,Accepted
+T765,2026-10-03,EX-0002,Pod C,Vendor South,R3,Accepted
+T766,2026-10-03,EX-0060,Pod A,Direct,R3,Accepted
+T767,2026-10-03,EX-0068,Pod A,Vendor South,R3,Accepted
+T768,2026-10-03,EX-0001,Pod B,Vendor North,R3,Accepted
+T769,2026-10-03,EX-0014,Pod C,Vendor South,R3,Accepted
+T770,2026-10-03,EX-0071,Pod D,Vendor South,R2,Accepted
+T771,2026-10-03,EX-0035,Pod D,Vendor South,R6,Accepted
+T772,2026-10-03,EX-0016,Pod A,Vendor North,R6,Accepted
+T773,2026-10-03,EX-0067,Pod D,Vendor North,R3,Accepted
+T774,2026-10-03,EX-0045,Pod B,Direct,R3,Accepted
+T775,2026-10-03,EX-0077,Pod B,Vendor South,R1,Accepted
+T776,2026-10-03,EX-0065,Pod B,Vendor South,R3,Rejected
+T777,2026-10-03,EX-0058,Pod C,Vendor North,R6,Accepted
+T778,2026-10-03,EX-0070,Pod C,Vendor North,R3,Accepted
+T779,2026-10-03,EX-0054,Pod C,Direct,R2,Accepted
+T780,2026-10-03,EX-0064,Pod A,Vendor North,R5,Accepted
+T781,2026-10-03,EX-0061,Pod B,Vendor North,R3,Accepted
+T782,2026-10-03,EX-0024,Pod A,Direct,R5,Accepted
+T783,2026-10-03,EX-0008,Pod A,Vendor South,R3,Accepted
+T784,2026-10-03,EX-0002,Pod C,Vendor South,R1,Accepted
+T785,2026-10-03,EX-0002,Pod C,Vendor South,R1,Accepted
+T786,2026-10-03,EX-0029,Pod B,Vendor South,R2,Accepted
+T787,2026-10-03,EX-0038,Pod C,Vendor South,R1,Accepted
+T788,2026-10-03,EX-0080,Pod A,Vendor South,R4,Accepted
+T789,2026-10-03,EX-0020,Pod A,Vendor South,R3,Accepted
+T790,2026-10-03,EX-0013,Pod B,Vendor North,R3,Accepted
+T791,2026-10-03,EX-0072,Pod A,Direct,R3,Accepted
+T792,2026-10-03,EX-0007,Pod D,Vendor North,R3,Accepted
+T793,2026-10-03,EX-0034,Pod C,Vendor North,R3,Accepted
+T794,2026-10-03,EX-0078,Pod C,Direct,R4,Accepted
+T795,2026-10-03,EX-0047,Pod D,Vendor South,R2,Rejected
+T796,2026-10-03,EX-0006,Pod C,Direct,R4,Accepted
+T797,2026-10-03,EX-0003,Pod D,Direct,R3,Accepted
+T798,2026-10-03,EX-0064,Pod A,Vendor North,R3,Accepted
+T799,2026-10-03,EX-0070,Pod C,Vendor North,R6,Rejected
+T800,2026-10-03,EX-0040,Pod A,Vendor North,R3,Accepted
+T801,2026-10-03,EX-0012,Pod A,Direct,R5,Accepted
+T802,2026-10-03,EX-0024,Pod A,Direct,R3,Accepted
+T803,2026-10-03,EX-0071,Pod D,Vendor South,R3,Accepted
+T804,2026-10-03,EX-0014,Pod C,Vendor South,R2,Accepted
+T805,2026-10-03,EX-0016,Pod A,Vendor North,R6,Accepted
+T806,2026-10-03,EX-0062,Pod C,Vendor South,R3,Accepted
+T807,2026-10-03,EX-0062,Pod C,Vendor South,R3,Accepted
+T808,2026-10-03,EX-0055,Pod D,Vendor North,R2,Accepted
+T809,2026-10-03,EX-0068,Pod A,Vendor South,R4,Accepted
+T810,2026-10-03,EX-0059,Pod D,Vendor South,R2,Accepted
+T811,2026-10-03,EX-0002,Pod C,Vendor South,R3,Rejected
+T812,2026-10-03,EX-0054,Pod C,Direct,R1,Accepted
+T813,2026-10-03,EX-0014,Pod C,Vendor South,R1,Accepted
+T814,2026-10-03,EX-0069,Pod B,Direct,R2,Rejected
+T815,2026-10-03,EX-0042,Pod C,Direct,R6,Rejected
+T816,2026-10-03,EX-0076,Pod A,Vendor North,R3,Accepted
+T817,2026-10-03,EX-0003,Pod D,Direct,R2,Accepted
+T818,2026-10-03,EX-0060,Pod A,Direct,R3,Rejected
+T819,2026-10-03,EX-0010,Pod C,Vendor North,R3,Accepted
+T820,2026-10-03,EX-0046,Pod C,Vendor North,R5,Accepted
+T821,2026-10-03,EX-0033,Pod B,Direct,R4,Accepted
+T822,2026-10-03,EX-0071,Pod D,Vendor South,R3,Accepted
+T823,2026-10-03,EX-0049,Pod B,Vendor North,R3,Accepted
+T824,2026-10-03,EX-0048,Pod A,Direct,R3,Accepted
+T825,2026-10-03,EX-0047,Pod D,Vendor South,R1,Accepted
+T826,2026-10-03,EX-0026,Pod C,Vendor South,R2,Accepted
+T827,2026-10-03,EX-0027,Pod D,Direct,R2,Rejected
+T828,2026-10-03,EX-0033,Pod B,Direct,R6,Accepted
+T829,2026-10-03,EX-0012,Pod A,Direct,R6,Rejected
+T830,2026-10-03,EX-0057,Pod B,Direct,R5,Accepted
+T831,2026-10-03,EX-0022,Pod C,Vendor North,R5,Accepted
+T832,2026-10-03,EX-0052,Pod A,Vendor North,R2,Accepted
+T833,2026-10-03,EX-0003,Pod D,Direct,R3,Accepted
+T834,2026-10-03,EX-0079,Pod D,Vendor North,R3,Accepted
+T835,2026-10-03,EX-0060,Pod A,Direct,R2,Rejected
+T836,2026-10-03,EX-0036,Pod A,Direct,R3,Accepted
+T837,2026-10-03,EX-0046,Pod C,Vendor North,R1,Accepted
+T838,2026-10-03,EX-0068,Pod A,Vendor South,R2,Accepted
+T839,2026-10-03,EX-0002,Pod C,Vendor South,R6,Rejected
+T840,2026-10-03,EX-0077,Pod B,Vendor South,R3,Accepted
+T841,2026-10-03,EX-0020,Pod A,Vendor South,R1,Accepted
+T842,2026-10-03,EX-0011,Pod D,Vendor South,R5,Accepted
+T843,2026-10-03,EX-0053,Pod B,Vendor South,R2,Accepted
+T844,2026-10-03,EX-0035,Pod D,Vendor South,R2,Rejected
+T845,2026-10-03,EX-0006,Pod C,Direct,R1,Accepted
+T846,2026-10-03,EX-0008,Pod A,Vendor South,R3,Accepted
+T847,2026-10-03,EX-0044,Pod A,Vendor South,R1,Accepted
+T848,2026-10-03,EX-0063,Pod D,Direct,R3,Rejected
+T849,2026-10-03,EX-0021,Pod B,Direct,R3,Accepted
+T850,2026-10-03,EX-0014,Pod C,Vendor South,R3,Accepted
+T851,2026-10-03,EX-0079,Pod D,Vendor North,R3,Accepted
+T852,2026-10-03,EX-0052,Pod A,Vendor North,R3,Accepted
+T853,2026-10-03,EX-0057,Pod B,Direct,R3,Rejected
+T854,2026-10-03,EX-0046,Pod C,Vendor North,R2,Accepted
+T855,2026-10-03,EX-0068,Pod A,Vendor South,R3,Rejected
+T856,2026-10-03,EX-0002,Pod C,Vendor South,R3,Accepted
+T857,2026-10-03,EX-0021,Pod B,Direct,R4,Accepted
+T858,2026-10-03,EX-0035,Pod D,Vendor South,R5,Accepted
+T859,2026-10-03,EX-0070,Pod C,Vendor North,R3,Accepted
+T860,2026-10-03,EX-0054,Pod C,Direct,R1,Accepted
+T861,2026-10-03,EX-0043,Pod D,Vendor North,R4,Accepted
+T862,2026-10-03,EX-0071,Pod D,Vendor South,R3,Accepted
+T863,2026-10-03,EX-0057,Pod B,Direct,R1,Accepted
+T864,2026-10-03,EX-0057,Pod B,Direct,R1,Rejected
+T865,2026-10-03,EX-0035,Pod D,Vendor South,R3,Rejected
+T866,2026-10-03,EX-0079,Pod D,Vendor North,R5,Accepted
+T867,2026-10-03,EX-0078,Pod C,Direct,R3,Rejected
+T868,2026-10-03,EX-0038,Pod C,Vendor South,R3,Accepted
+T869,2026-10-03,EX-0044,Pod A,Vendor South,R3,Accepted
+T870,2026-10-03,EX-0038,Pod C,Vendor South,R5,Accepted
+T871,2026-10-03,EX-0050,Pod C,Vendor South,R3,Accepted
+T872,2026-10-03,EX-0002,Pod C,Vendor South,R1,Accepted
+T873,2026-10-03,EX-0021,Pod B,Direct,R3,Accepted
+T874,2026-10-03,EX-0066,Pod C,Direct,R5,Accepted
+T875,2026-10-03,EX-0069,Pod B,Direct,R2,Accepted
+T876,2026-10-03,EX-0012,Pod A,Direct,R1,Accepted
+T877,2026-10-03,EX-0010,Pod C,Vendor North,R4,Accepted
+T878,2026-10-03,EX-0065,Pod B,Vendor South,R6,Rejected
+T879,2026-10-03,EX-0006,Pod C,Direct,R3,Accepted
+T880,2026-10-03,EX-0026,Pod C,Vendor South,R4,Accepted
+T881,2026-10-03,EX-0052,Pod A,Vendor North,R3,Accepted
+T882,2026-10-03,EX-0079,Pod D,Vendor North,R5,Accepted
+T883,2026-10-03,EX-0070,Pod C,Vendor North,R3,Accepted
+T884,2026-10-03,EX-0061,Pod B,Vendor North,R6,Accepted
+T885,2026-10-03,EX-0076,Pod A,Vendor North,R3,Accepted
+T886,2026-10-03,EX-0040,Pod A,Vendor North,R3,Accepted
+T887,2026-10-03,EX-0057,Pod B,Direct,R3,Accepted
+T888,2026-10-03,EX-0077,Pod B,Vendor South,R3,Accepted
+T889,2026-10-03,EX-0010,Pod C,Vendor North,R3,Accepted
+T890,2026-10-03,EX-0022,Pod C,Vendor North,R3,Accepted
+T891,2026-10-03,EX-0010,Pod C,Vendor North,R1,Accepted
+T892,2026-10-03,EX-0056,Pod A,Vendor South,R2,Accepted
+T893,2026-10-03,EX-0031,Pod D,Vendor North,R2,Rejected
+T894,2026-10-03,EX-0027,Pod D,Direct,R3,Accepted
+T895,2026-10-03,EX-0057,Pod B,Direct,R2,Accepted
+T896,2026-10-03,EX-0002,Pod C,Vendor South,R5,Accepted
+T897,2026-10-03,EX-0024,Pod A,Direct,R3,Accepted
+T898,2026-10-03,EX-0035,Pod D,Vendor South,R3,Accepted
+T899,2026-10-03,EX-0077,Pod B,Vendor South,R6,Rejected
+T900,2026-10-03,EX-0053,Pod B,Vendor South,R3,Accepted
+T901,2026-10-03,EX-0072,Pod A,Direct,R2,Accepted
+T902,2026-10-03,EX-0058,Pod C,Vendor North,R3,Accepted
+T903,2026-10-03,EX-0078,Pod C,Direct,R3,Accepted
+T904,2026-10-03,EX-0068,Pod A,Vendor South,R1,Accepted
+T905,2026-10-03,EX-0059,Pod D,Vendor South,R2,Rejected
+T906,2026-10-03,EX-0007,Pod D,Vendor North,R3,Accepted
+T907,2026-10-03,EX-0038,Pod C,Vendor South,R3,Rejected
+T908,2026-10-03,EX-0012,Pod A,Direct,R3,Accepted
+T909,2026-10-03,EX-0068,Pod A,Vendor South,R2,Accepted
+T910,2026-10-03,EX-0053,Pod B,Vendor South,R4,Accepted
+T911,2026-10-03,EX-0069,Pod B,Direct,R6,Accepted
+T912,2026-10-03,EX-0025,Pod B,Vendor North,R5,Accepted
+T913,2026-10-03,EX-0078,Pod C,Direct,R2,Accepted
+T914,2026-10-03,EX-0033,Pod B,Direct,R6,Accepted
+T915,2026-10-03,EX-0040,Pod A,Vendor North,R3,Accepted
+T916,2026-10-03,EX-0019,Pod D,Vendor North,R5,Accepted
+T917,2026-10-03,EX-0045,Pod B,Direct,R3,Accepted
+T918,2026-10-03,EX-0019,Pod D,Vendor North,R3,Accepted
+T919,2026-10-03,EX-0030,Pod C,Direct,R3,Accepted
+T920,2026-10-03,EX-0022,Pod C,Vendor North,R3,Accepted
+T921,2026-10-03,EX-0012,Pod A,Direct,R3,Accepted
+T922,2026-10-03,EX-0003,Pod D,Direct,R6,Accepted
+T923,2026-10-03,EX-0028,Pod A,Vendor North,R5,Accepted
+T924,2026-10-03,EX-0044,Pod A,Vendor South,R3,Rejected
+T925,2026-10-03,EX-0009,Pod B,Direct,R2,Accepted
+T926,2026-10-03,EX-0045,Pod B,Direct,R3,Accepted
+T927,2026-10-03,EX-0054,Pod C,Direct,R5,Accepted
+T928,2026-10-03,EX-0022,Pod C,Vendor North,R3,Accepted
+T929,2026-10-03,EX-0021,Pod B,Direct,R3,Accepted
+T930,2026-10-03,EX-0064,Pod A,Vendor North,R2,Accepted
+T931,2026-10-03,EX-0030,Pod C,Direct,R3,Accepted
+T932,2026-10-03,EX-0019,Pod D,Vendor North,R2,Accepted
+T933,2026-10-03,EX-0043,Pod D,Vendor North,R4,Accepted
+T934,2026-10-03,EX-0075,Pod D,Direct,R2,Accepted
+T935,2026-10-03,EX-0014,Pod C,Vendor South,R4,Accepted
+T936,2026-10-03,EX-0061,Pod B,Vendor North,R1,Accepted
+T937,2026-10-03,EX-0025,Pod B,Vendor North,R5,Rejected
+T938,2026-10-03,EX-0025,Pod B,Vendor North,R3,Accepted
+T939,2026-10-03,EX-0031,Pod D,Vendor North,R6,Accepted
+T940,2026-10-03,EX-0031,Pod D,Vendor North,R5,Rejected
+T941,2026-10-03,EX-0011,Pod D,Vendor South,R3,Rejected
+T942,2026-10-03,EX-0072,Pod A,Direct,R5,Accepted
+T943,2026-10-03,EX-0037,Pod B,Vendor North,R3,Accepted
+T944,2026-10-03,EX-0023,Pod D,Vendor South,R3,Rejected
+T945,2026-10-03,EX-0063,Pod D,Direct,R4,Accepted
+T946,2026-10-03,EX-0044,Pod A,Vendor South,R5,Accepted
+T947,2026-10-03,EX-0048,Pod A,Direct,R2,Rejected
+T948,2026-10-03,EX-0014,Pod C,Vendor South,R1,Accepted
+T949,2026-10-03,EX-0070,Pod C,Vendor North,R3,Accepted
+T950,2026-10-03,EX-0014,Pod C,Vendor South,R4,Accepted
+T951,2026-10-03,EX-0040,Pod A,Vendor North,R6,Accepted
+T952,2026-10-03,EX-0071,Pod D,Vendor South,R5,Accepted
+T953,2026-10-03,EX-0056,Pod A,Vendor South,R6,Accepted
+T954,2026-10-03,EX-0010,Pod C,Vendor North,R3,Accepted
+T955,2026-10-03,EX-0017,Pod B,Vendor South,R6,Accepted
+T956,2026-10-03,EX-0021,Pod B,Direct,R6,Accepted
+T957,2026-10-03,EX-0027,Pod D,Direct,R6,Accepted
+T958,2026-10-03,EX-0014,Pod C,Vendor South,R6,Rejected
+T959,2026-10-03,EX-0060,Pod A,Direct,R6,Accepted
+T960,2026-10-03,EX-0074,Pod C,Vendor South,R3,Rejected
+T961,2026-10-03,EX-0039,Pod D,Direct,R4,Rejected
+T962,2026-10-03,EX-0025,Pod B,Vendor North,R3,Accepted
+T963,2026-10-03,EX-0008,Pod A,Vendor South,R3,Accepted
+T964,2026-10-03,EX-0059,Pod D,Vendor South,R1,Accepted
+T965,2026-10-03,EX-0031,Pod D,Vendor North,R4,Accepted
+T966,2026-10-03,EX-0079,Pod D,Vendor North,R3,Accepted
+T967,2026-10-03,EX-0009,Pod B,Direct,R1,Rejected
+T968,2026-10-03,EX-0025,Pod B,Vendor North,R6,Accepted
+T969,2026-10-03,EX-0073,Pod B,Vendor North,R3,Accepted
+T970,2026-10-03,EX-0054,Pod C,Direct,R6,Accepted
+T971,2026-10-03,EX-0036,Pod A,Direct,R1,Accepted
+T972,2026-10-03,EX-0015,Pod D,Direct,R3,Accepted
+T973,2026-10-03,EX-0063,Pod D,Direct,R6,Accepted
+T974,2026-10-03,EX-0078,Pod C,Direct,R3,Rejected
+T975,2026-10-03,EX-0011,Pod D,Vendor South,R3,Rejected
+T976,2026-10-03,EX-0028,Pod A,Vendor North,R4,Accepted
+T977,2026-10-03,EX-0068,Pod A,Vendor South,R5,Accepted
+T978,2026-10-03,EX-0037,Pod B,Vendor North,R3,Accepted
+T979,2026-10-04,EX-0024,Pod A,Direct,R5,Accepted
+T980,2026-10-04,EX-0032,Pod A,Vendor South,R1,Accepted
+T981,2026-10-04,EX-0079,Pod D,Vendor North,R5,Accepted
+T982,2026-10-04,EX-0056,Pod A,Vendor South,R1,Accepted
+T983,2026-10-04,EX-0058,Pod C,Vendor North,R2,Accepted
+T984,2026-10-04,EX-0060,Pod A,Direct,R2,Rejected
+T985,2026-10-04,EX-0079,Pod D,Vendor North,R3,Accepted
+T986,2026-10-04,EX-0073,Pod B,Vendor North,R6,Rejected
+T987,2026-10-04,EX-0020,Pod A,Vendor South,R2,Accepted
+T988,2026-10-04,EX-0055,Pod D,Vendor North,R6,Accepted
+T989,2026-10-04,EX-0043,Pod D,Vendor North,R3,Accepted
+T990,2026-10-04,EX-0076,Pod A,Vendor North,R3,Accepted
+T991,2026-10-04,EX-0007,Pod D,Vendor North,R5,Accepted
+T992,2026-10-04,EX-0034,Pod C,Vendor North,R6,Accepted
+T993,2026-10-04,EX-0054,Pod C,Direct,R1,Accepted
+T994,2026-10-04,EX-0014,Pod C,Vendor South,R5,Accepted
+T995,2026-10-04,EX-0048,Pod A,Direct,R1,Accepted
+T996,2026-10-04,EX-0080,Pod A,Vendor South,R5,Rejected
+T997,2026-10-04,EX-0054,Pod C,Direct,R2,Accepted
+T998,2026-10-04,EX-0028,Pod A,Vendor North,R4,Accepted
+T999,2026-10-04,EX-0054,Pod C,Direct,R5,Accepted
+T1000,2026-10-04,EX-0009,Pod B,Direct,R4,Accepted
+T1001,2026-10-04,EX-0045,Pod B,Direct,R6,Accepted
+T1002,2026-10-04,EX-0045,Pod B,Direct,R3,Accepted
+T1003,2026-10-04,EX-0022,Pod C,Vendor North,R6,Accepted
+T1004,2026-10-04,EX-0024,Pod A,Direct,R3,Accepted
+T1005,2026-10-04,EX-0019,Pod D,Vendor North,R3,Accepted
+T1006,2026-10-04,EX-0044,Pod A,Vendor South,R3,Accepted
+T1007,2026-10-04,EX-0013,Pod B,Vendor North,R6,Accepted
+T1008,2026-10-04,EX-0040,Pod A,Vendor North,R6,Accepted
+T1009,2026-10-04,EX-0002,Pod C,Vendor South,R5,Accepted
+T1010,2026-10-04,EX-0065,Pod B,Vendor South,R1,Accepted
+T1011,2026-10-04,EX-0023,Pod D,Vendor South,R5,Rejected
+T1012,2026-10-04,EX-0030,Pod C,Direct,R3,Accepted
+T1013,2026-10-04,EX-0079,Pod D,Vendor North,R5,Accepted
+T1014,2026-10-04,EX-0058,Pod C,Vendor North,R3,Accepted
+T1015,2026-10-04,EX-0008,Pod A,Vendor South,R3,Accepted
+T1016,2026-10-04,EX-0029,Pod B,Vendor South,R1,Accepted
+T1017,2026-10-04,EX-0064,Pod A,Vendor North,R6,Accepted
+T1018,2026-10-04,EX-0053,Pod B,Vendor South,R3,Accepted
+T1019,2026-10-04,EX-0029,Pod B,Vendor South,R3,Rejected
+T1020,2026-10-04,EX-0073,Pod B,Vendor North,R4,Rejected
+T1021,2026-10-04,EX-0006,Pod C,Direct,R3,Accepted
+T1022,2026-10-04,EX-0062,Pod C,Vendor South,R3,Accepted
+T1023,2026-10-04,EX-0071,Pod D,Vendor South,R4,Accepted
+T1024,2026-10-04,EX-0039,Pod D,Direct,R3,Rejected
+T1025,2026-10-04,EX-0010,Pod C,Vendor North,R4,Accepted
+T1026,2026-10-04,EX-0069,Pod B,Direct,R2,Accepted
+T1027,2026-10-04,EX-0054,Pod C,Direct,R2,Rejected
+T1028,2026-10-04,EX-0021,Pod B,Direct,R1,Accepted
+T1029,2026-10-04,EX-0008,Pod A,Vendor South,R6,Accepted
+T1030,2026-10-04,EX-0042,Pod C,Direct,R5,Rejected
+T1031,2026-10-04,EX-0054,Pod C,Direct,R5,Accepted
+T1032,2026-10-04,EX-0012,Pod A,Direct,R3,Accepted
+T1033,2026-10-04,EX-0057,Pod B,Direct,R3,Accepted
+T1034,2026-10-04,EX-0045,Pod B,Direct,R3,Accepted
+T1035,2026-10-04,EX-0078,Pod C,Direct,R3,Accepted
+T1036,2026-10-04,EX-0013,Pod B,Vendor North,R3,Accepted
+T1037,2026-10-04,EX-0016,Pod A,Vendor North,R2,Accepted
+T1038,2026-10-04,EX-0023,Pod D,Vendor South,R1,Rejected
+T1039,2026-10-04,EX-0018,Pod C,Direct,R1,Accepted
+T1040,2026-10-04,EX-0022,Pod C,Vendor North,R3,Accepted
+T1041,2026-10-04,EX-0045,Pod B,Direct,R4,Accepted
+T1042,2026-10-04,EX-0058,Pod C,Vendor North,R3,Accepted
+T1043,2026-10-04,EX-0020,Pod A,Vendor South,R3,Accepted
+T1044,2026-10-04,EX-0031,Pod D,Vendor North,R3,Accepted
+T1045,2026-10-04,EX-0052,Pod A,Vendor North,R3,Rejected
+T1046,2026-10-04,EX-0051,Pod D,Direct,R3,Accepted
+T1047,2026-10-04,EX-0015,Pod D,Direct,R3,Accepted
+T1048,2026-10-04,EX-0048,Pod A,Direct,R4,Accepted
+T1049,2026-10-04,EX-0079,Pod D,Vendor North,R6,Rejected
+T1050,2026-10-04,EX-0065,Pod B,Vendor South,R6,Accepted
+T1051,2026-10-04,EX-0022,Pod C,Vendor North,R3,Accepted
+T1052,2026-10-04,EX-0035,Pod D,Vendor South,R6,Accepted
+T1053,2026-10-04,EX-0070,Pod C,Vendor North,R3,Accepted
+T1054,2026-10-04,EX-0052,Pod A,Vendor North,R2,Accepted
+T1055,2026-10-04,EX-0053,Pod B,Vendor South,R5,Accepted
+T1056,2026-10-04,EX-0039,Pod D,Direct,R5,Accepted
+T1057,2026-10-04,EX-0023,Pod D,Vendor South,R5,Accepted
+T1058,2026-10-04,EX-0020,Pod A,Vendor South,R1,Accepted
+T1059,2026-10-04,EX-0074,Pod C,Vendor South,R5,Accepted
+T1060,2026-10-04,EX-0010,Pod C,Vendor North,R5,Accepted
+T1061,2026-10-04,EX-0031,Pod D,Vendor North,R3,Rejected
+T1062,2026-10-04,EX-0011,Pod D,Vendor South,R3,Rejected
+T1063,2026-10-04,EX-0037,Pod B,Vendor North,R3,Accepted
+T1064,2026-10-04,EX-0053,Pod B,Vendor South,R5,Rejected
+T1065,2026-10-04,EX-0006,Pod C,Direct,R3,Accepted
+T1066,2026-10-04,EX-0004,Pod A,Vendor North,R3,Accepted
+T1067,2026-10-04,EX-0058,Pod C,Vendor North,R3,Accepted
+T1068,2026-10-04,EX-0034,Pod C,Vendor North,R5,Accepted
+T1069,2026-10-04,EX-0033,Pod B,Direct,R4,Accepted
+T1070,2026-10-04,EX-0069,Pod B,Direct,R2,Accepted
+T1071,2026-10-04,EX-0043,Pod D,Vendor North,R3,Accepted
+T1072,2026-10-04,EX-0027,Pod D,Direct,R5,Accepted
+T1073,2026-10-04,EX-0074,Pod C,Vendor South,R1,Rejected
+T1074,2026-10-04,EX-0051,Pod D,Direct,R3,Accepted
+T1075,2026-10-04,EX-0022,Pod C,Vendor North,R4,Accepted
+T1076,2026-10-04,EX-0057,Pod B,Direct,R6,Accepted
+T1077,2026-10-04,EX-0060,Pod A,Direct,R3,Accepted
+T1078,2026-10-04,EX-0029,Pod B,Vendor South,R1,Accepted
+T1079,2026-10-04,EX-0074,Pod C,Vendor South,R6,Rejected
+T1080,2026-10-04,EX-0030,Pod C,Direct,R3,Accepted
+T1081,2026-10-04,EX-0052,Pod A,Vendor North,R4,Accepted
+T1082,2026-10-04,EX-0053,Pod B,Vendor South,R3,Accepted
+T1083,2026-10-04,EX-0043,Pod D,Vendor North,R1,Accepted
+T1084,2026-10-04,EX-0047,Pod D,Vendor South,R3,Accepted
+T1085,2026-10-04,EX-0069,Pod B,Direct,R3,Accepted
+T1086,2026-10-04,EX-0069,Pod B,Direct,R2,Accepted
+T1087,2026-10-04,EX-0053,Pod B,Vendor South,R1,Accepted
+T1088,2026-10-04,EX-0007,Pod D,Vendor North,R3,Accepted
+T1089,2026-10-04,EX-0063,Pod D,Direct,R1,Accepted
+T1090,2026-10-04,EX-0015,Pod D,Direct,R3,Accepted
+T1091,2026-10-04,EX-0045,Pod B,Direct,R3,Accepted
+T1092,2026-10-04,EX-0080,Pod A,Vendor South,R3,Accepted
+T1093,2026-10-04,EX-0054,Pod C,Direct,R3,Accepted
+T1094,2026-10-04,EX-0012,Pod A,Direct,R3,Accepted
+T1095,2026-10-04,EX-0021,Pod B,Direct,R5,Rejected
+T1096,2026-10-04,EX-0069,Pod B,Direct,R4,Accepted
+T1097,2026-10-04,EX-0007,Pod D,Vendor North,R5,Accepted
+T1098,2026-10-04,EX-0030,Pod C,Direct,R4,Accepted
+T1099,2026-10-04,EX-0039,Pod D,Direct,R3,Accepted
+T1100,2026-10-04,EX-0035,Pod D,Vendor South,R5,Accepted
+T1101,2026-10-04,EX-0060,Pod A,Direct,R6,Accepted
+T1102,2026-10-04,EX-0033,Pod B,Direct,R3,Accepted
+T1103,2026-10-04,EX-0040,Pod A,Vendor North,R5,Accepted
+T1104,2026-10-04,EX-0019,Pod D,Vendor North,R3,Accepted
+T1105,2026-10-04,EX-0011,Pod D,Vendor South,R3,Accepted
+T1106,2026-10-04,EX-0054,Pod C,Direct,R5,Accepted
+T1107,2026-10-04,EX-0043,Pod D,Vendor North,R4,Accepted
+T1108,2026-10-04,EX-0026,Pod C,Vendor South,R3,Rejected
+T1109,2026-10-04,EX-0008,Pod A,Vendor South,R5,Accepted
+T1110,2026-10-04,EX-0057,Pod B,Direct,R1,Accepted
+T1111,2026-10-04,EX-0062,Pod C,Vendor South,R3,Accepted
+T1112,2026-10-04,EX-0065,Pod B,Vendor South,R5,Accepted
+T1113,2026-10-04,EX-0017,Pod B,Vendor South,R1,Accepted
+T1114,2026-10-04,EX-0034,Pod C,Vendor North,R5,Accepted
+T1115,2026-10-04,EX-0079,Pod D,Vendor North,R1,Accepted
+T1116,2026-10-04,EX-0029,Pod B,Vendor South,R4,Rejected
+T1117,2026-10-04,EX-0070,Pod C,Vendor North,R1,Accepted
+T1118,2026-10-04,EX-0023,Pod D,Vendor South,R2,Accepted
+T1119,2026-10-04,EX-0012,Pod A,Direct,R3,Accepted
+T1120,2026-10-04,EX-0042,Pod C,Direct,R3,Accepted
+T1121,2026-10-04,EX-0012,Pod A,Direct,R3,Rejected
+T1122,2026-10-04,EX-0046,Pod C,Vendor North,R4,Accepted
+T1123,2026-10-04,EX-0028,Pod A,Vendor North,R4,Accepted
+T1124,2026-10-04,EX-0011,Pod D,Vendor South,R3,Accepted
+T1125,2026-10-04,EX-0024,Pod A,Direct,R3,Accepted
+T1126,2026-10-04,EX-0051,Pod D,Direct,R2,Accepted
+T1127,2026-10-04,EX-0076,Pod A,Vendor North,R3,Accepted
+T1128,2026-10-04,EX-0050,Pod C,Vendor South,R3,Rejected
+T1129,2026-10-04,EX-0014,Pod C,Vendor South,R3,Accepted
+T1130,2026-10-04,EX-0068,Pod A,Vendor South,R5,Accepted
+T1131,2026-10-04,EX-0033,Pod B,Direct,R3,Accepted
+T1132,2026-10-04,EX-0021,Pod B,Direct,R3,Accepted
+T1133,2026-10-04,EX-0029,Pod B,Vendor South,R3,Accepted
+T1134,2026-10-04,EX-0042,Pod C,Direct,R4,Accepted
+T1135,2026-10-04,EX-0034,Pod C,Vendor North,R3,Accepted
+T1136,2026-10-04,EX-0041,Pod B,Vendor South,R3,Rejected
+T1137,2026-10-04,EX-0046,Pod C,Vendor North,R6,Accepted
+T1138,2026-10-04,EX-0058,Pod C,Vendor North,R3,Accepted
+T1139,2026-10-04,EX-0004,Pod A,Vendor North,R1,Accepted
+T1140,2026-10-04,EX-0045,Pod B,Direct,R4,Accepted
+T1141,2026-10-04,EX-0026,Pod C,Vendor South,R3,Accepted
+T1142,2026-10-04,EX-0038,Pod C,Vendor South,R3,Accepted
+T1143,2026-10-04,EX-0023,Pod D,Vendor South,R6,Rejected
+T1144,2026-10-04,EX-0046,Pod C,Vendor North,R6,Accepted
+T1145,2026-10-04,EX-0023,Pod D,Vendor South,R4,Accepted
+T1146,2026-10-04,EX-0013,Pod B,Vendor North,R6,Accepted
+T1147,2026-10-04,EX-0078,Pod C,Direct,R3,Accepted
+T1148,2026-10-04,EX-0056,Pod A,Vendor South,R6,Accepted
+T1149,2026-10-04,EX-0069,Pod B,Direct,R3,Accepted
+T1150,2026-10-04,EX-0043,Pod D,Vendor North,R3,Accepted
+T1151,2026-10-04,EX-0044,Pod A,Vendor South,R5,Accepted
+T1152,2026-10-04,EX-0008,Pod A,Vendor South,R4,Accepted
+T1153,2026-10-04,EX-0029,Pod B,Vendor South,R3,Accepted
+T1154,2026-10-04,EX-0059,Pod D,Vendor South,R3,Rejected
+T1155,2026-10-04,EX-0042,Pod C,Direct,R6,Rejected
+T1156,2026-10-04,EX-0027,Pod D,Direct,R2,Accepted
+T1157,2026-10-04,EX-0072,Pod A,Direct,R3,Rejected
+T1158,2026-10-04,EX-0016,Pod A,Vendor North,R1,Accepted
+T1159,2026-10-04,EX-0053,Pod B,Vendor South,R3,Accepted
+T1160,2026-10-04,EX-0035,Pod D,Vendor South,R4,Rejected
+T1161,2026-10-04,EX-0052,Pod A,Vendor North,R3,Rejected
+T1162,2026-10-04,EX-0050,Pod C,Vendor South,R3,Rejected
+T1163,2026-10-04,EX-0015,Pod D,Direct,R2,Accepted
+T1164,2026-10-04,EX-0072,Pod A,Direct,R6,Rejected
+T1165,2026-10-04,EX-0074,Pod C,Vendor South,R2,Accepted
+T1166,2026-10-04,EX-0002,Pod C,Vendor South,R5,Rejected
+T1167,2026-10-04,EX-0006,Pod C,Direct,R1,Rejected
+T1168,2026-10-04,EX-0041,Pod B,Vendor South,R1,Rejected
+T1169,2026-10-04,EX-0036,Pod A,Direct,R2,Accepted
+T1170,2026-10-04,EX-0021,Pod B,Direct,R6,Rejected
+T1171,2026-10-04,EX-0042,Pod C,Direct,R6,Rejected
+T1172,2026-10-04,EX-0035,Pod D,Vendor South,R3,Rejected
+T1173,2026-10-04,EX-0015,Pod D,Direct,R6,Accepted
+T1174,2026-10-04,EX-0036,Pod A,Direct,R2,Accepted
+T1175,2026-10-04,EX-0011,Pod D,Vendor South,R3,Accepted
+T1176,2026-10-04,EX-0024,Pod A,Direct,R4,Accepted
+T1177,2026-10-04,EX-0038,Pod C,Vendor South,R5,Rejected
+T1178,2026-10-04,EX-0023,Pod D,Vendor South,R6,Accepted
+T1179,2026-10-04,EX-0010,Pod C,Vendor North,R3,Accepted
+T1180,2026-10-04,EX-0056,Pod A,Vendor South,R3,Rejected
+T1181,2026-10-04,EX-0048,Pod A,Direct,R5,Accepted
+T1182,2026-10-04,EX-0020,Pod A,Vendor South,R3,Accepted
+T1183,2026-10-04,EX-0026,Pod C,Vendor South,R3,Accepted
+T1184,2026-10-04,EX-0070,Pod C,Vendor North,R6,Accepted
+T1185,2026-10-04,EX-0021,Pod B,Direct,R2,Accepted
+T1186,2026-10-04,EX-0056,Pod A,Vendor South,R6,Accepted
+T1187,2026-10-04,EX-0064,Pod A,Vendor North,R2,Accepted
+T1188,2026-10-04,EX-0012,Pod A,Direct,R4,Accepted
+T1189,2026-10-04,EX-0050,Pod C,Vendor South,R2,Rejected
+T1190,2026-10-04,EX-0076,Pod A,Vendor North,R2,Accepted
+T1191,2026-10-04,EX-0014,Pod C,Vendor South,R4,Accepted
+T1192,2026-10-04,EX-0046,Pod C,Vendor North,R3,Accepted
+T1193,2026-10-04,EX-0027,Pod D,Direct,R6,Accepted
+T1194,2026-10-04,EX-0018,Pod C,Direct,R1,Rejected
+T1195,2026-10-04,EX-0037,Pod B,Vendor North,R2,Accepted
+T1196,2026-10-04,EX-0056,Pod A,Vendor South,R6,Accepted
+T1197,2026-10-04,EX-0044,Pod A,Vendor South,R2,Accepted
+T1198,2026-10-04,EX-0015,Pod D,Direct,R3,Accepted
+T1199,2026-10-04,EX-0079,Pod D,Vendor North,R3,Rejected
+T1200,2026-10-04,EX-0024,Pod A,Direct,R3,Rejected
+T1201,2026-10-04,EX-0005,Pod B,Vendor South,R3,Accepted
+T1202,2026-10-04,EX-0039,Pod D,Direct,R3,Accepted
+T1203,2026-10-04,EX-0052,Pod A,Vendor North,R6,Rejected
+T1204,2026-10-04,EX-0022,Pod C,Vendor North,R3,Rejected
+T1205,2026-10-04,EX-0006,Pod C,Direct,R3,Accepted
+T1206,2026-10-04,EX-0042,Pod C,Direct,R2,Rejected
+T1207,2026-10-04,EX-0012,Pod A,Direct,R2,Accepted
+T1208,2026-10-04,EX-0068,Pod A,Vendor South,R4,Accepted
+T1209,2026-10-04,EX-0079,Pod D,Vendor North,R4,Accepted
+T1210,2026-10-04,EX-0051,Pod D,Direct,R3,Accepted
+T1211,2026-10-04,EX-0029,Pod B,Vendor South,R4,Accepted
+T1212,2026-10-04,EX-0025,Pod B,Vendor North,R6,Accepted
+T1213,2026-10-04,EX-0071,Pod D,Vendor South,R4,Accepted
+T1214,2026-10-04,EX-0014,Pod C,Vendor South,R3,Rejected
+T1215,2026-10-04,EX-0079,Pod D,Vendor North,R2,Accepted
+T1216,2026-10-04,EX-0072,Pod A,Direct,R6,Accepted
+T1217,2026-10-04,EX-0053,Pod B,Vendor South,R2,Accepted
+T1218,2026-10-04,EX-0055,Pod D,Vendor North,R4,Rejected
+T1219,2026-10-04,EX-0009,Pod B,Direct,R5,Rejected
+T1220,2026-10-04,EX-0062,Pod C,Vendor South,R3,Accepted
+T1221,2026-10-04,EX-0067,Pod D,Vendor North,R6,Rejected
+T1222,2026-10-04,EX-0029,Pod B,Vendor South,R3,Rejected
+T1223,2026-10-04,EX-0080,Pod A,Vendor South,R3,Accepted
+T1224,2026-10-04,EX-0065,Pod B,Vendor South,R1,Accepted
+T1225,2026-10-04,EX-0037,Pod B,Vendor North,R2,Rejected
+T1226,2026-10-04,EX-0077,Pod B,Vendor South,R3,Rejected
+T1227,2026-10-04,EX-0072,Pod A,Direct,R3,Rejected
+T1228,2026-10-04,EX-0039,Pod D,Direct,R3,Accepted
+T1229,2026-10-04,EX-0052,Pod A,Vendor North,R3,Accepted
+T1230,2026-10-04,EX-0001,Pod B,Vendor North,R5,Accepted
+T1231,2026-10-04,EX-0014,Pod C,Vendor South,R5,Accepted
+T1232,2026-10-04,EX-0026,Pod C,Vendor South,R6,Rejected
+T1233,2026-10-04,EX-0032,Pod A,Vendor South,R5,Accepted
+T1234,2026-10-04,EX-0054,Pod C,Direct,R3,Accepted
+T1235,2026-10-04,EX-0043,Pod D,Vendor North,R3,Accepted
+T1236,2026-10-04,EX-0069,Pod B,Direct,R3,Accepted
+T1237,2026-10-04,EX-0055,Pod D,Vendor North,R6,Accepted
+T1238,2026-10-04,EX-0063,Pod D,Direct,R3,Accepted
+T1239,2026-10-04,EX-0058,Pod C,Vendor North,R4,Accepted
+T1240,2026-10-04,EX-0009,Pod B,Direct,R6,Accepted
+T1241,2026-10-04,EX-0070,Pod C,Vendor North,R5,Accepted
+T1242,2026-10-04,EX-0009,Pod B,Direct,R3,Accepted
+T1243,2026-10-04,EX-0002,Pod C,Vendor South,R4,Rejected
+T1244,2026-10-04,EX-0080,Pod A,Vendor South,R5,Accepted
+T1245,2026-10-04,EX-0057,Pod B,Direct,R4,Accepted
+T1246,2026-10-04,EX-0007,Pod D,Vendor North,R1,Accepted
+T1247,2026-10-04,EX-0008,Pod A,Vendor South,R1,Accepted
+T1248,2026-10-04,EX-0011,Pod D,Vendor South,R1,Rejected
+T1249,2026-10-04,EX-0010,Pod C,Vendor North,R3,Accepted
+T1250,2026-10-04,EX-0072,Pod A,Direct,R1,Accepted
+T1251,2026-10-04,EX-0073,Pod B,Vendor North,R6,Accepted
+T1252,2026-10-04,EX-0020,Pod A,Vendor South,R2,Rejected
+T1253,2026-10-04,EX-0043,Pod D,Vendor North,R4,Accepted
+T1254,2026-10-04,EX-0057,Pod B,Direct,R1,Accepted
+T1255,2026-10-04,EX-0052,Pod A,Vendor North,R5,Rejected
+T1256,2026-10-04,EX-0023,Pod D,Vendor South,R3,Accepted
+T1257,2026-10-04,EX-0067,Pod D,Vendor North,R2,Accepted
+T1258,2026-10-04,EX-0034,Pod C,Vendor North,R3,Accepted
+T1259,2026-10-04,EX-0056,Pod A,Vendor South,R3,Accepted
+T1260,2026-10-04,EX-0026,Pod C,Vendor South,R4,Accepted
+T1261,2026-10-04,EX-0063,Pod D,Direct,R6,Accepted
+T1262,2026-10-04,EX-0062,Pod C,Vendor South,R2,Accepted
+T1263,2026-10-04,EX-0072,Pod A,Direct,R4,Rejected
+T1264,2026-10-04,EX-0054,Pod C,Direct,R1,Accepted
+T1265,2026-10-04,EX-0055,Pod D,Vendor North,R2,Accepted
+T1266,2026-10-04,EX-0076,Pod A,Vendor North,R2,Accepted
+T1267,2026-10-04,EX-0035,Pod D,Vendor South,R1,Accepted
+T1268,2026-10-04,EX-0074,Pod C,Vendor South,R1,Rejected
+T1269,2026-10-04,EX-0036,Pod A,Direct,R5,Accepted
+T1270,2026-10-04,EX-0009,Pod B,Direct,R4,Accepted
+T1271,2026-10-04,EX-0006,Pod C,Direct,R3,Accepted
+T1272,2026-10-04,EX-0074,Pod C,Vendor South,R4,Rejected
+T1273,2026-10-04,EX-0060,Pod A,Direct,R3,Rejected
+T1274,2026-10-04,EX-0047,Pod D,Vendor South,R3,Accepted
+T1275,2026-10-04,EX-0012,Pod A,Direct,R3,Accepted
+T1276,2026-10-04,EX-0061,Pod B,Vendor North,R6,Accepted
+T1277,2026-10-04,EX-0046,Pod C,Vendor North,R6,Accepted
+T1278,2026-10-04,EX-0001,Pod B,Vendor North,R1,Accepted
+T1279,2026-10-04,EX-0043,Pod D,Vendor North,R3,Accepted
+T1280,2026-10-04,EX-0031,Pod D,Vendor North,R5,Accepted
+T1281,2026-10-04,EX-0057,Pod B,Direct,R3,Accepted
+T1282,2026-10-04,EX-0062,Pod C,Vendor South,R4,Accepted
+T1283,2026-10-04,EX-0023,Pod D,Vendor South,R3,Accepted
+T1284,2026-10-04,EX-0033,Pod B,Direct,R6,Accepted
+T1285,2026-10-04,EX-0061,Pod B,Vendor North,R3,Rejected
+T1286,2026-10-04,EX-0079,Pod D,Vendor North,R3,Accepted
+T1287,2026-10-04,EX-0052,Pod A,Vendor North,R3,Accepted
+T1288,2026-10-04,EX-0078,Pod C,Direct,R1,Accepted
+T1289,2026-10-04,EX-0061,Pod B,Vendor North,R2,Accepted
+T1290,2026-10-04,EX-0033,Pod B,Direct,R3,Accepted
+T1291,2026-10-04,EX-0010,Pod C,Vendor North,R1,Accepted
+T1292,2026-10-04,EX-0042,Pod C,Direct,R1,Accepted
+T1293,2026-10-04,EX-0057,Pod B,Direct,R2,Accepted
+T1294,2026-10-04,EX-0007,Pod D,Vendor North,R2,Accepted
+T1295,2026-10-04,EX-0015,Pod D,Direct,R4,Accepted
+T1296,2026-10-04,EX-0027,Pod D,Direct,R5,Rejected
+T1297,2026-10-04,EX-0030,Pod C,Direct,R4,Rejected
+T1298,2026-10-04,EX-0070,Pod C,Vendor North,R3,Accepted
+T1299,2026-10-04,EX-0036,Pod A,Direct,R6,Accepted
+T1300,2026-10-04,EX-0035,Pod D,Vendor South,R4,Accepted
+T1301,2026-10-04,EX-0047,Pod D,Vendor South,R5,Accepted
+T1302,2026-10-04,EX-0077,Pod B,Vendor South,R3,Accepted
+T1303,2026-10-04,EX-0074,Pod C,Vendor South,R4,Accepted
+T1304,2026-10-04,EX-0078,Pod C,Direct,R1,Accepted
+T1305,2026-10-04,EX-0070,Pod C,Vendor North,R1,Accepted
+T1306,2026-10-04,EX-0022,Pod C,Vendor North,R5,Accepted
+T1307,2026-10-05,EX-0044,Pod A,Vendor South,R3,Accepted
+T1308,2026-10-05,EX-0076,Pod A,Vendor North,R4,Accepted
+T1309,2026-10-05,EX-0045,Pod B,Direct,R6,Rejected
+T1310,2026-10-05,EX-0057,Pod B,Direct,R3,Rejected
+T1311,2026-10-05,EX-0055,Pod D,Vendor North,R6,Accepted
+T1312,2026-10-05,EX-0040,Pod A,Vendor North,R1,Accepted
+T1313,2026-10-05,EX-0069,Pod B,Direct,R3,Accepted
+T1314,2026-10-05,EX-0014,Pod C,Vendor South,R4,Accepted
+T1315,2026-10-05,EX-0019,Pod D,Vendor North,R3,Accepted
+T1316,2026-10-05,EX-0045,Pod B,Direct,R3,Accepted
+T1317,2026-10-05,EX-0013,Pod B,Vendor North,R4,Accepted
+T1318,2026-10-05,EX-0046,Pod C,Vendor North,R2,Accepted
+T1319,2026-10-05,EX-0064,Pod A,Vendor North,R3,Accepted
+T1320,2026-10-05,EX-0015,Pod D,Direct,R2,Accepted
+T1321,2026-10-05,EX-0061,Pod B,Vendor North,R3,Accepted
+T1322,2026-10-05,EX-0053,Pod B,Vendor South,R1,Accepted
+T1323,2026-10-05,EX-0049,Pod B,Vendor North,R1,Accepted
+T1324,2026-10-05,EX-0028,Pod A,Vendor North,R5,Rejected
+T1325,2026-10-05,EX-0026,Pod C,Vendor South,R6,Rejected
+T1326,2026-10-05,EX-0037,Pod B,Vendor North,R3,Accepted
+T1327,2026-10-05,EX-0079,Pod D,Vendor North,R3,Accepted
+T1328,2026-10-05,EX-0006,Pod C,Direct,R3,Accepted
+T1329,2026-10-05,EX-0070,Pod C,Vendor North,R5,Accepted
+T1330,2026-10-05,EX-0006,Pod C,Direct,R6,Accepted
+T1331,2026-10-05,EX-0047,Pod D,Vendor South,R4,Rejected
+T1332,2026-10-05,EX-0050,Pod C,Vendor South,R3,Accepted
+T1333,2026-10-05,EX-0038,Pod C,Vendor South,R3,Accepted
+T1334,2026-10-05,EX-0069,Pod B,Direct,R4,Rejected
+T1335,2026-10-05,EX-0075,Pod D,Direct,R3,Accepted
+T1336,2026-10-05,EX-0003,Pod D,Direct,R5,Rejected
+T1337,2026-10-05,EX-0069,Pod B,Direct,R3,Accepted
+T1338,2026-10-05,EX-0032,Pod A,Vendor South,R2,Accepted
+T1339,2026-10-05,EX-0026,Pod C,Vendor South,R3,Accepted
+T1340,2026-10-05,EX-0035,Pod D,Vendor South,R5,Rejected
+T1341,2026-10-05,EX-0025,Pod B,Vendor North,R2,Accepted
+T1342,2026-10-05,EX-0057,Pod B,Direct,R3,Accepted
+T1343,2026-10-05,EX-0080,Pod A,Vendor South,R6,Rejected
+T1344,2026-10-05,EX-0045,Pod B,Direct,R3,Rejected
+T1345,2026-10-05,EX-0065,Pod B,Vendor South,R5,Accepted
+T1346,2026-10-05,EX-0057,Pod B,Direct,R3,Accepted
+T1347,2026-10-05,EX-0047,Pod D,Vendor South,R3,Accepted
+T1348,2026-10-05,EX-0026,Pod C,Vendor South,R3,Rejected
+T1349,2026-10-05,EX-0045,Pod B,Direct,R3,Accepted
+T1350,2026-10-05,EX-0026,Pod C,Vendor South,R2,Accepted
+T1351,2026-10-05,EX-0075,Pod D,Direct,R2,Accepted
+T1352,2026-10-05,EX-0034,Pod C,Vendor North,R6,Accepted
+T1353,2026-10-05,EX-0043,Pod D,Vendor North,R6,Accepted
+T1354,2026-10-05,EX-0072,Pod A,Direct,R4,Rejected
+T1355,2026-10-05,EX-0037,Pod B,Vendor North,R1,Accepted
+T1356,2026-10-05,EX-0041,Pod B,Vendor South,R5,Rejected
+T1357,2026-10-05,EX-0015,Pod D,Direct,R2,Accepted
+T1358,2026-10-05,EX-0079,Pod D,Vendor North,R3,Accepted
+T1359,2026-10-05,EX-0042,Pod C,Direct,R3,Accepted
+T1360,2026-10-05,EX-0060,Pod A,Direct,R3,Accepted
+T1361,2026-10-05,EX-0054,Pod C,Direct,R4,Accepted
+T1362,2026-10-05,EX-0056,Pod A,Vendor South,R3,Accepted
+T1363,2026-10-05,EX-0060,Pod A,Direct,R3,Accepted
+T1364,2026-10-05,EX-0041,Pod B,Vendor South,R3,Accepted
+T1365,2026-10-05,EX-0034,Pod C,Vendor North,R1,Rejected
+T1366,2026-10-05,EX-0019,Pod D,Vendor North,R3,Accepted
+T1367,2026-10-05,EX-0006,Pod C,Direct,R3,Accepted
+T1368,2026-10-05,EX-0054,Pod C,Direct,R5,Rejected
+T1369,2026-10-05,EX-0027,Pod D,Direct,R3,Accepted
+T1370,2026-10-05,EX-0056,Pod A,Vendor South,R2,Rejected
+T1371,2026-10-05,EX-0042,Pod C,Direct,R1,Rejected
+T1372,2026-10-05,EX-0057,Pod B,Direct,R3,Accepted
+T1373,2026-10-05,EX-0050,Pod C,Vendor South,R6,Rejected
+T1374,2026-10-05,EX-0067,Pod D,Vendor North,R5,Accepted
+T1375,2026-10-05,EX-0021,Pod B,Direct,R4,Accepted
+T1376,2026-10-05,EX-0036,Pod A,Direct,R6,Accepted
+T1377,2026-10-05,EX-0042,Pod C,Direct,R3,Rejected
+T1378,2026-10-05,EX-0029,Pod B,Vendor South,R3,Accepted
+T1379,2026-10-05,EX-0021,Pod B,Direct,R3,Accepted
+T1380,2026-10-05,EX-0005,Pod B,Vendor South,R4,Accepted
+T1381,2026-10-05,EX-0050,Pod C,Vendor South,R1,Accepted
+T1382,2026-10-05,EX-0004,Pod A,Vendor North,R3,Accepted
+T1383,2026-10-05,EX-0008,Pod A,Vendor South,R2,Rejected
+T1384,2026-10-05,EX-0076,Pod A,Vendor North,R4,Rejected
+T1385,2026-10-05,EX-0075,Pod D,Direct,R3,Accepted
+T1386,2026-10-05,EX-0033,Pod B,Direct,R3,Accepted
+T1387,2026-10-05,EX-0059,Pod D,Vendor South,R2,Accepted
+T1388,2026-10-05,EX-0058,Pod C,Vendor North,R3,Rejected
+T1389,2026-10-05,EX-0080,Pod A,Vendor South,R6,Rejected
+T1390,2026-10-05,EX-0007,Pod D,Vendor North,R5,Accepted
+T1391,2026-10-05,EX-0073,Pod B,Vendor North,R3,Accepted
+T1392,2026-10-05,EX-0070,Pod C,Vendor North,R1,Accepted
+T1393,2026-10-05,EX-0011,Pod D,Vendor South,R6,Accepted
+T1394,2026-10-05,EX-0036,Pod A,Direct,R1,Accepted
+T1395,2026-10-05,EX-0024,Pod A,Direct,R3,Accepted
+T1396,2026-10-05,EX-0031,Pod D,Vendor North,R6,Rejected
+T1397,2026-10-05,EX-0049,Pod B,Vendor North,R1,Accepted
+T1398,2026-10-05,EX-0048,Pod A,Direct,R3,Accepted
+T1399,2026-10-05,EX-0031,Pod D,Vendor North,R1,Accepted
+T1400,2026-10-05,EX-0040,Pod A,Vendor North,R2,Accepted
+T1401,2026-10-05,EX-0042,Pod C,Direct,R3,Accepted
+T1402,2026-10-05,EX-0067,Pod D,Vendor North,R3,Rejected
+T1403,2026-10-05,EX-0078,Pod C,Direct,R2,Accepted
+T1404,2026-10-05,EX-0038,Pod C,Vendor South,R2,Accepted
+T1405,2026-10-05,EX-0057,Pod B,Direct,R6,Accepted
+T1406,2026-10-05,EX-0042,Pod C,Direct,R6,Accepted
+T1407,2026-10-05,EX-0059,Pod D,Vendor South,R3,Accepted
+T1408,2026-10-05,EX-0073,Pod B,Vendor North,R5,Accepted
+T1409,2026-10-05,EX-0041,Pod B,Vendor South,R6,Accepted
+T1410,2026-10-05,EX-0044,Pod A,Vendor South,R5,Accepted
+T1411,2026-10-05,EX-0040,Pod A,Vendor North,R3,Accepted
+T1412,2026-10-05,EX-0007,Pod D,Vendor North,R4,Rejected
+T1413,2026-10-05,EX-0060,Pod A,Direct,R4,Accepted
+T1414,2026-10-05,EX-0035,Pod D,Vendor South,R2,Accepted
+T1415,2026-10-05,EX-0045,Pod B,Direct,R3,Accepted
+T1416,2026-10-05,EX-0027,Pod D,Direct,R1,Rejected
+T1417,2026-10-05,EX-0031,Pod D,Vendor North,R5,Accepted
+T1418,2026-10-05,EX-0039,Pod D,Direct,R5,Accepted
+T1419,2026-10-05,EX-0024,Pod A,Direct,R3,Accepted
+T1420,2026-10-05,EX-0012,Pod A,Direct,R3,Accepted
+T1421,2026-10-05,EX-0015,Pod D,Direct,R5,Accepted
+T1422,2026-10-05,EX-0076,Pod A,Vendor North,R3,Accepted
+T1423,2026-10-05,EX-0006,Pod C,Direct,R5,Accepted
+T1424,2026-10-05,EX-0074,Pod C,Vendor South,R5,Rejected
+T1425,2026-10-05,EX-0003,Pod D,Direct,R5,Accepted
+T1426,2026-10-05,EX-0079,Pod D,Vendor North,R4,Accepted
+T1427,2026-10-05,EX-0028,Pod A,Vendor North,R3,Accepted
+T1428,2026-10-05,EX-0080,Pod A,Vendor South,R4,Accepted
+T1429,2026-10-05,EX-0042,Pod C,Direct,R1,Accepted
+T1430,2026-10-05,EX-0030,Pod C,Direct,R5,Accepted
+T1431,2026-10-05,EX-0025,Pod B,Vendor North,R3,Accepted
+T1432,2026-10-05,EX-0025,Pod B,Vendor North,R1,Accepted
+T1433,2026-10-05,EX-0056,Pod A,Vendor South,R5,Accepted
+T1434,2026-10-05,EX-0014,Pod C,Vendor South,R1,Rejected
+T1435,2026-10-05,EX-0036,Pod A,Direct,R2,Accepted
+T1436,2026-10-05,EX-0053,Pod B,Vendor South,R3,Accepted
+T1437,2026-10-05,EX-0027,Pod D,Direct,R3,Accepted
+T1438,2026-10-05,EX-0050,Pod C,Vendor South,R6,Accepted
+T1439,2026-10-05,EX-0006,Pod C,Direct,R4,Accepted
+T1440,2026-10-05,EX-0003,Pod D,Direct,R2,Accepted
+T1441,2026-10-05,EX-0036,Pod A,Direct,R6,Accepted
+T1442,2026-10-05,EX-0015,Pod D,Direct,R3,Accepted
+T1443,2026-10-05,EX-0069,Pod B,Direct,R2,Accepted
+T1444,2026-10-05,EX-0056,Pod A,Vendor South,R2,Accepted
+T1445,2026-10-05,EX-0032,Pod A,Vendor South,R3,Accepted
+T1446,2026-10-05,EX-0066,Pod C,Direct,R3,Accepted
+T1447,2026-10-05,EX-0042,Pod C,Direct,R1,Rejected
+T1448,2026-10-05,EX-0065,Pod B,Vendor South,R3,Rejected
+T1449,2026-10-05,EX-0036,Pod A,Direct,R4,Accepted
+T1450,2026-10-05,EX-0021,Pod B,Direct,R2,Accepted
+T1451,2026-10-05,EX-0042,Pod C,Direct,R3,Rejected
+T1452,2026-10-05,EX-0002,Pod C,Vendor South,R5,Rejected
+T1453,2026-10-05,EX-0078,Pod C,Direct,R4,Accepted
+T1454,2026-10-05,EX-0061,Pod B,Vendor North,R3,Accepted
+T1455,2026-10-05,EX-0032,Pod A,Vendor South,R1,Accepted
+T1456,2026-10-05,EX-0078,Pod C,Direct,R3,Rejected
+T1457,2026-10-05,EX-0046,Pod C,Vendor North,R5,Accepted
+T1458,2026-10-05,EX-0040,Pod A,Vendor North,R3,Accepted
+T1459,2026-10-05,EX-0051,Pod D,Direct,R5,Accepted
+T1460,2026-10-05,EX-0057,Pod B,Direct,R3,Accepted
+T1461,2026-10-05,EX-0006,Pod C,Direct,R1,Accepted
+T1462,2026-10-05,EX-0054,Pod C,Direct,R3,Accepted
+T1463,2026-10-05,EX-0065,Pod B,Vendor South,R5,Accepted
+T1464,2026-10-05,EX-0071,Pod D,Vendor South,R4,Rejected
+T1465,2026-10-05,EX-0005,Pod B,Vendor South,R4,Accepted
+T1466,2026-10-05,EX-0032,Pod A,Vendor South,R6,Accepted
+T1467,2026-10-05,EX-0056,Pod A,Vendor South,R1,Rejected
+T1468,2026-10-05,EX-0014,Pod C,Vendor South,R3,Rejected
+T1469,2026-10-05,EX-0067,Pod D,Vendor North,R4,Accepted
+T1470,2026-10-05,EX-0028,Pod A,Vendor North,R4,Accepted
+T1471,2026-10-05,EX-0079,Pod D,Vendor North,R6,Rejected
+T1472,2026-10-05,EX-0043,Pod D,Vendor North,R3,Rejected
+T1473,2026-10-05,EX-0002,Pod C,Vendor South,R3,Accepted
+T1474,2026-10-05,EX-0064,Pod A,Vendor North,R3,Accepted
+T1475,2026-10-05,EX-0080,Pod A,Vendor South,R3,Accepted
+T1476,2026-10-05,EX-0001,Pod B,Vendor North,R3,Accepted
+T1477,2026-10-05,EX-0015,Pod D,Direct,R3,Accepted
+T1478,2026-10-05,EX-0071,Pod D,Vendor South,R3,Rejected
+T1479,2026-10-05,EX-0066,Pod C,Direct,R3,Accepted
+T1480,2026-10-05,EX-0028,Pod A,Vendor North,R3,Accepted
+T1481,2026-10-05,EX-0014,Pod C,Vendor South,R4,Accepted
+T1482,2026-10-05,EX-0034,Pod C,Vendor North,R5,Accepted
+T1483,2026-10-05,EX-0004,Pod A,Vendor North,R3,Accepted
+T1484,2026-10-05,EX-0068,Pod A,Vendor South,R3,Accepted
+T1485,2026-10-05,EX-0010,Pod C,Vendor North,R3,Accepted
+T1486,2026-10-05,EX-0048,Pod A,Direct,R2,Accepted
+T1487,2026-10-05,EX-0064,Pod A,Vendor North,R5,Rejected
+T1488,2026-10-05,EX-0014,Pod C,Vendor South,R5,Accepted
+T1489,2026-10-05,EX-0076,Pod A,Vendor North,R2,Accepted
+T1490,2026-10-05,EX-0042,Pod C,Direct,R2,Rejected
+T1491,2026-10-05,EX-0004,Pod A,Vendor North,R1,Accepted
+T1492,2026-10-05,EX-0077,Pod B,Vendor South,R3,Accepted
+T1493,2026-10-05,EX-0035,Pod D,Vendor South,R2,Accepted
+T1494,2026-10-05,EX-0025,Pod B,Vendor North,R4,Rejected
+T1495,2026-10-05,EX-0017,Pod B,Vendor South,R4,Accepted
+T1496,2026-10-05,EX-0065,Pod B,Vendor South,R3,Accepted
+T1497,2026-10-05,EX-0062,Pod C,Vendor South,R6,Accepted
+T1498,2026-10-05,EX-0034,Pod C,Vendor North,R3,Accepted
+T1499,2026-10-05,EX-0035,Pod D,Vendor South,R1,Rejected
+T1500,2026-10-05,EX-0042,Pod C,Direct,R3,Accepted
+T1501,2026-10-05,EX-0014,Pod C,Vendor South,R3,Rejected
+T1502,2026-10-05,EX-0066,Pod C,Direct,R5,Accepted
+T1503,2026-10-05,EX-0041,Pod B,Vendor South,R2,Accepted
+T1504,2026-10-05,EX-0002,Pod C,Vendor South,R2,Rejected
+T1505,2026-10-05,EX-0075,Pod D,Direct,R2,Accepted
+T1506,2026-10-05,EX-0006,Pod C,Direct,R3,Accepted
+T1507,2026-10-05,EX-0072,Pod A,Direct,R3,Rejected
+T1508,2026-10-05,EX-0026,Pod C,Vendor South,R3,Accepted
+T1509,2026-10-05,EX-0062,Pod C,Vendor South,R1,Accepted
+T1510,2026-10-05,EX-0026,Pod C,Vendor South,R3,Accepted
+T1511,2026-10-05,EX-0057,Pod B,Direct,R1,Accepted
+T1512,2026-10-05,EX-0010,Pod C,Vendor North,R4,Rejected
+T1513,2026-10-05,EX-0048,Pod A,Direct,R3,Accepted
+T1514,2026-10-05,EX-0077,Pod B,Vendor South,R2,Rejected
+T1515,2026-10-05,EX-0016,Pod A,Vendor North,R6,Accepted
+T1516,2026-10-05,EX-0043,Pod D,Vendor North,R1,Accepted
+T1517,2026-10-05,EX-0054,Pod C,Direct,R3,Accepted
+T1518,2026-10-05,EX-0013,Pod B,Vendor North,R6,Accepted
+T1519,2026-10-05,EX-0075,Pod D,Direct,R6,Accepted
+T1520,2026-10-05,EX-0056,Pod A,Vendor South,R1,Accepted
+T1521,2026-10-05,EX-0055,Pod D,Vendor North,R3,Accepted
+T1522,2026-10-05,EX-0079,Pod D,Vendor North,R6,Accepted
+T1523,2026-10-05,EX-0012,Pod A,Direct,R3,Accepted
+T1524,2026-10-05,EX-0049,Pod B,Vendor North,R1,Accepted
+T1525,2026-10-05,EX-0022,Pod C,Vendor North,R3,Accepted
+T1526,2026-10-05,EX-0066,Pod C,Direct,R5,Accepted
+T1527,2026-10-05,EX-0012,Pod A,Direct,R4,Accepted
+T1528,2026-10-05,EX-0061,Pod B,Vendor North,R4,Accepted
+T1529,2026-10-05,EX-0036,Pod A,Direct,R1,Rejected
+T1530,2026-10-05,EX-0012,Pod A,Direct,R3,Accepted
+T1531,2026-10-05,EX-0010,Pod C,Vendor North,R3,Accepted
+T1532,2026-10-05,EX-0014,Pod C,Vendor South,R2,Accepted
+T1533,2026-10-05,EX-0036,Pod A,Direct,R5,Accepted
+T1534,2026-10-05,EX-0027,Pod D,Direct,R2,Accepted
+T1535,2026-10-05,EX-0079,Pod D,Vendor North,R5,Accepted
+T1536,2026-10-05,EX-0049,Pod B,Vendor North,R3,Accepted
+T1537,2026-10-05,EX-0028,Pod A,Vendor North,R1,Accepted
+T1538,2026-10-05,EX-0045,Pod B,Direct,R3,Rejected
+T1539,2026-10-05,EX-0053,Pod B,Vendor South,R3,Rejected
+T1540,2026-10-05,EX-0037,Pod B,Vendor North,R1,Accepted
+T1541,2026-10-05,EX-0052,Pod A,Vendor North,R3,Accepted
+T1542,2026-10-05,EX-0019,Pod D,Vendor North,R3,Accepted
+T1543,2026-10-05,EX-0042,Pod C,Direct,R2,Rejected
+T1544,2026-10-05,EX-0001,Pod B,Vendor North,R2,Accepted
+T1545,2026-10-05,EX-0043,Pod D,Vendor North,R3,Accepted
+T1546,2026-10-05,EX-0006,Pod C,Direct,R2,Rejected
+T1547,2026-10-05,EX-0022,Pod C,Vendor North,R3,Accepted
+T1548,2026-10-05,EX-0055,Pod D,Vendor North,R3,Accepted
+T1549,2026-10-05,EX-0038,Pod C,Vendor South,R4,Accepted
+T1550,2026-10-05,EX-0064,Pod A,Vendor North,R5,Rejected
+T1551,2026-10-05,EX-0074,Pod C,Vendor South,R3,Accepted
+T1552,2026-10-05,EX-0034,Pod C,Vendor North,R3,Accepted
+T1553,2026-10-05,EX-0066,Pod C,Direct,R2,Accepted
+T1554,2026-10-05,EX-0039,Pod D,Direct,R5,Accepted
+T1555,2026-10-05,EX-0002,Pod C,Vendor South,R2,Accepted
+T1556,2026-10-05,EX-0001,Pod B,Vendor North,R6,Accepted
+T1557,2026-10-05,EX-0020,Pod A,Vendor South,R6,Accepted
+T1558,2026-10-05,EX-0001,Pod B,Vendor North,R2,Accepted
+T1559,2026-10-05,EX-0001,Pod B,Vendor North,R2,Accepted
+T1560,2026-10-05,EX-0032,Pod A,Vendor South,R5,Rejected
+T1561,2026-10-05,EX-0023,Pod D,Vendor South,R2,Accepted
+T1562,2026-10-05,EX-0060,Pod A,Direct,R5,Accepted
+T1563,2026-10-05,EX-0023,Pod D,Vendor South,R6,Rejected
+T1564,2026-10-05,EX-0009,Pod B,Direct,R3,Accepted
+T1565,2026-10-05,EX-0026,Pod C,Vendor South,R6,Rejected
+T1566,2026-10-05,EX-0006,Pod C,Direct,R5,Rejected
+T1567,2026-10-05,EX-0032,Pod A,Vendor South,R3,Accepted
+T1568,2026-10-05,EX-0046,Pod C,Vendor North,R3,Accepted
+T1569,2026-10-05,EX-0066,Pod C,Direct,R2,Rejected
+T1570,2026-10-05,EX-0016,Pod A,Vendor North,R1,Accepted
+T1571,2026-10-05,EX-0065,Pod B,Vendor South,R3,Accepted
+T1572,2026-10-05,EX-0037,Pod B,Vendor North,R4,Rejected
+T1573,2026-10-05,EX-0048,Pod A,Direct,R3,Accepted
+T1574,2026-10-05,EX-0005,Pod B,Vendor South,R3,Accepted
+T1575,2026-10-05,EX-0010,Pod C,Vendor North,R3,Accepted
+T1576,2026-10-05,EX-0043,Pod D,Vendor North,R6,Accepted
+T1577,2026-10-05,EX-0019,Pod D,Vendor North,R3,Accepted
+T1578,2026-10-05,EX-0071,Pod D,Vendor South,R3,Accepted
+T1579,2026-10-05,EX-0031,Pod D,Vendor North,R1,Accepted
+T1580,2026-10-05,EX-0034,Pod C,Vendor North,R5,Accepted
+T1581,2026-10-05,EX-0033,Pod B,Direct,R3,Accepted
+T1582,2026-10-05,EX-0048,Pod A,Direct,R5,Rejected
+T1583,2026-10-05,EX-0016,Pod A,Vendor North,R3,Accepted
+T1584,2026-10-05,EX-0043,Pod D,Vendor North,R5,Accepted
+T1585,2026-10-05,EX-0019,Pod D,Vendor North,R3,Accepted
+T1586,2026-10-05,EX-0051,Pod D,Direct,R4,Accepted
+T1587,2026-10-05,EX-0001,Pod B,Vendor North,R3,Accepted
+T1588,2026-10-05,EX-0041,Pod B,Vendor South,R4,Accepted
+T1589,2026-10-05,EX-0054,Pod C,Direct,R4,Accepted
+T1590,2026-10-05,EX-0009,Pod B,Direct,R4,Accepted
+T1591,2026-10-05,EX-0004,Pod A,Vendor North,R3,Accepted
+T1592,2026-10-05,EX-0017,Pod B,Vendor South,R5,Rejected
+T1593,2026-10-05,EX-0069,Pod B,Direct,R4,Accepted
+T1594,2026-10-05,EX-0024,Pod A,Direct,R3,Accepted
+T1595,2026-10-05,EX-0038,Pod C,Vendor South,R3,Accepted
+T1596,2026-10-05,EX-0001,Pod B,Vendor North,R3,Accepted
+T1597,2026-10-05,EX-0043,Pod D,Vendor North,R6,Rejected
+T1598,2026-10-05,EX-0032,Pod A,Vendor South,R4,Accepted
+T1599,2026-10-05,EX-0062,Pod C,Vendor South,R3,Accepted
+T1600,2026-10-05,EX-0032,Pod A,Vendor South,R2,Accepted
+T1601,2026-10-05,EX-0056,Pod A,Vendor South,R3,Rejected
+T1602,2026-10-05,EX-0057,Pod B,Direct,R1,Accepted
+T1603,2026-10-05,EX-0046,Pod C,Vendor North,R1,Accepted
+T1604,2026-10-05,EX-0007,Pod D,Vendor North,R4,Accepted
+T1605,2026-10-05,EX-0003,Pod D,Direct,R3,Accepted
+T1606,2026-10-05,EX-0030,Pod C,Direct,R2,Accepted
+T1607,2026-10-05,EX-0035,Pod D,Vendor South,R3,Accepted
+T1608,2026-10-05,EX-0009,Pod B,Direct,R3,Accepted
+T1609,2026-10-05,EX-0054,Pod C,Direct,R3,Accepted
+T1610,2026-10-05,EX-0022,Pod C,Vendor North,R1,Rejected
+T1611,2026-10-05,EX-0031,Pod D,Vendor North,R3,Accepted
+T1612,2026-10-05,EX-0033,Pod B,Direct,R6,Accepted
+T1613,2026-10-05,EX-0003,Pod D,Direct,R3,Accepted
+T1614,2026-10-05,EX-0070,Pod C,Vendor North,R3,Accepted
+T1615,2026-10-05,EX-0034,Pod C,Vendor North,R3,Accepted
+T1616,2026-10-05,EX-0028,Pod A,Vendor North,R2,Accepted
+T1617,2026-10-05,EX-0018,Pod C,Direct,R2,Accepted
+T1618,2026-10-05,EX-0062,Pod C,Vendor South,R5,Accepted
+T1619,2026-10-05,EX-0053,Pod B,Vendor South,R2,Rejected
+T1620,2026-10-05,EX-0066,Pod C,Direct,R2,Accepted
+T1621,2026-10-05,EX-0009,Pod B,Direct,R2,Accepted
+T1622,2026-10-05,EX-0016,Pod A,Vendor North,R2,Accepted
+T1623,2026-10-05,EX-0013,Pod B,Vendor North,R4,Accepted
+T1624,2026-10-05,EX-0071,Pod D,Vendor South,R2,Accepted
+T1625,2026-10-05,EX-0059,Pod D,Vendor South,R5,Accepted
+T1626,2026-10-05,EX-0052,Pod A,Vendor North,R4,Accepted
+T1627,2026-10-05,EX-0058,Pod C,Vendor North,R3,Accepted
+T1628,2026-10-05,EX-0018,Pod C,Direct,R4,Accepted
+T1629,2026-10-05,EX-0010,Pod C,Vendor North,R3,Accepted
+T1630,2026-10-05,EX-0069,Pod B,Direct,R4,Accepted
+T1631,2026-10-05,EX-0040,Pod A,Vendor North,R6,Accepted
+T1632,2026-10-05,EX-0039,Pod D,Direct,R2,Accepted
+T1633,2026-10-05,EX-0020,Pod A,Vendor South,R6,Accepted
+T1634,2026-10-05,EX-0056,Pod A,Vendor South,R3,Accepted
+T1635,2026-10-05,EX-0010,Pod C,Vendor North,R5,Rejected
+T1636,2026-10-05,EX-0051,Pod D,Direct,R3,Accepted
+T1637,2026-10-05,EX-0046,Pod C,Vendor North,R6,Accepted
+T1638,2026-10-05,EX-0051,Pod D,Direct,R1,Accepted
+T1639,2026-10-05,EX-0008,Pod A,Vendor South,R5,Rejected
+T1640,2026-10-05,EX-0051,Pod D,Direct,R3,Accepted
+T1641,2026-10-05,EX-0047,Pod D,Vendor South,R3,Rejected
+T1642,2026-10-05,EX-0065,Pod B,Vendor South,R3,Rejected
+T1643,2026-10-05,EX-0024,Pod A,Direct,R4,Accepted
+T1644,2026-10-05,EX-0052,Pod A,Vendor North,R4,Accepted
+T1645,2026-10-05,EX-0041,Pod B,Vendor South,R3,Accepted
+T1646,2026-10-05,EX-0017,Pod B,Vendor South,R1,Rejected
+T1647,2026-10-05,EX-0036,Pod A,Direct,R6,Accepted
+T1648,2026-10-05,EX-0031,Pod D,Vendor North,R1,Accepted
+T1649,2026-10-05,EX-0054,Pod C,Direct,R2,Rejected
+T1650,2026-10-05,EX-0018,Pod C,Direct,R1,Accepted
+T1651,2026-10-05,EX-0062,Pod C,Vendor South,R3,Accepted
+T1652,2026-10-05,EX-0051,Pod D,Direct,R3,Rejected
+T1653,2026-10-05,EX-0064,Pod A,Vendor North,R3,Accepted
+T1654,2026-10-05,EX-0013,Pod B,Vendor North,R6,Accepted
+T1655,2026-10-05,EX-0016,Pod A,Vendor North,R3,Rejected
+T1656,2026-10-05,EX-0070,Pod C,Vendor North,R3,Accepted
+T1657,2026-10-05,EX-0051,Pod D,Direct,R2,Accepted
+T1658,2026-10-05,EX-0032,Pod A,Vendor South,R3,Accepted
+T1659,2026-10-05,EX-0071,Pod D,Vendor South,R2,Rejected
+T1660,2026-10-05,EX-0022,Pod C,Vendor North,R3,Accepted
+T1661,2026-10-05,EX-0074,Pod C,Vendor South,R2,Rejected
+T1662,2026-10-05,EX-0035,Pod D,Vendor South,R5,Accepted
+T1663,2026-10-05,EX-0011,Pod D,Vendor South,R1,Accepted
+T1664,2026-10-05,EX-0011,Pod D,Vendor South,R1,Rejected
+T1665,2026-10-05,EX-0075,Pod D,Direct,R3,Accepted
+T1666,2026-10-05,EX-0056,Pod A,Vendor South,R4,Accepted
+T1667,2026-10-05,EX-0078,Pod C,Direct,R6,Accepted
+T1668,2026-10-05,EX-0016,Pod A,Vendor North,R3,Accepted
+T1669,2026-10-06,EX-0034,Pod C,Vendor North,R3,Accepted
+T1670,2026-10-06,EX-0032,Pod A,Vendor South,R3,Rejected
+T1671,2026-10-06,EX-0005,Pod B,Vendor South,R3,Accepted
+T1672,2026-10-06,EX-0073,Pod B,Vendor North,R3,Accepted
+T1673,2026-10-06,EX-0072,Pod A,Direct,R3,Rejected
+T1674,2026-10-06,EX-0033,Pod B,Direct,R6,Accepted
+T1675,2026-10-06,EX-0009,Pod B,Direct,R3,Accepted
+T1676,2026-10-06,EX-0034,Pod C,Vendor North,R2,Accepted
+T1677,2026-10-06,EX-0011,Pod D,Vendor South,R6,Accepted
+T1678,2026-10-06,EX-0062,Pod C,Vendor South,R3,Accepted
+T1679,2026-10-06,EX-0026,Pod C,Vendor South,R2,Rejected
+T1680,2026-10-06,EX-0052,Pod A,Vendor North,R3,Accepted
+T1681,2026-10-06,EX-0014,Pod C,Vendor South,R4,Accepted
+T1682,2026-10-06,EX-0038,Pod C,Vendor South,R4,Rejected
+T1683,2026-10-06,EX-0009,Pod B,Direct,R4,Accepted
+T1684,2026-10-06,EX-0076,Pod A,Vendor North,R6,Accepted
+T1685,2026-10-06,EX-0056,Pod A,Vendor South,R1,Accepted
+T1686,2026-10-06,EX-0024,Pod A,Direct,R3,Accepted
+T1687,2026-10-06,EX-0066,Pod C,Direct,R3,Accepted
+T1688,2026-10-06,EX-0068,Pod A,Vendor South,R2,Accepted
+T1689,2026-10-06,EX-0074,Pod C,Vendor South,R5,Accepted
+T1690,2026-10-06,EX-0041,Pod B,Vendor South,R3,Accepted
+T1691,2026-10-06,EX-0042,Pod C,Direct,R6,Rejected
+T1692,2026-10-06,EX-0066,Pod C,Direct,R3,Accepted
+T1693,2026-10-06,EX-0007,Pod D,Vendor North,R3,Accepted
+T1694,2026-10-06,EX-0031,Pod D,Vendor North,R4,Accepted
+T1695,2026-10-06,EX-0045,Pod B,Direct,R3,Accepted
+T1696,2026-10-06,EX-0018,Pod C,Direct,R6,Accepted
+T1697,2026-10-06,EX-0068,Pod A,Vendor South,R6,Rejected
+T1698,2026-10-06,EX-0067,Pod D,Vendor North,R3,Accepted
+T1699,2026-10-06,EX-0025,Pod B,Vendor North,R4,Accepted
+T1700,2026-10-06,EX-0072,Pod A,Direct,R4,Accepted
+T1701,2026-10-06,EX-0013,Pod B,Vendor North,R3,Accepted
+T1702,2026-10-06,EX-0055,Pod D,Vendor North,R1,Accepted
+T1703,2026-10-06,EX-0064,Pod A,Vendor North,R1,Accepted
+T1704,2026-10-06,EX-0079,Pod D,Vendor North,R5,Rejected
+T1705,2026-10-06,EX-0016,Pod A,Vendor North,R1,Accepted
+T1706,2026-10-06,EX-0068,Pod A,Vendor South,R6,Accepted
+T1707,2026-10-06,EX-0020,Pod A,Vendor South,R4,Accepted
+T1708,2026-10-06,EX-0067,Pod D,Vendor North,R6,Accepted
+T1709,2026-10-06,EX-0026,Pod C,Vendor South,R3,Rejected
+T1710,2026-10-06,EX-0055,Pod D,Vendor North,R3,Accepted
+T1711,2026-10-06,EX-0042,Pod C,Direct,R3,Rejected
+T1712,2026-10-06,EX-0053,Pod B,Vendor South,R3,Accepted
+T1713,2026-10-06,EX-0013,Pod B,Vendor North,R4,Accepted
+T1714,2026-10-06,EX-0032,Pod A,Vendor South,R4,Accepted
+T1715,2026-10-06,EX-0054,Pod C,Direct,R3,Accepted
+T1716,2026-10-06,EX-0021,Pod B,Direct,R4,Accepted
+T1717,2026-10-06,EX-0018,Pod C,Direct,R6,Accepted
+T1718,2026-10-06,EX-0071,Pod D,Vendor South,R3,Accepted
+T1719,2026-10-06,EX-0042,Pod C,Direct,R4,Rejected
+T1720,2026-10-06,EX-0054,Pod C,Direct,R3,Accepted
+T1721,2026-10-06,EX-0040,Pod A,Vendor North,R3,Accepted
+T1722,2026-10-06,EX-0063,Pod D,Direct,R3,Accepted
+T1723,2026-10-06,EX-0071,Pod D,Vendor South,R6,Accepted
+T1724,2026-10-06,EX-0055,Pod D,Vendor North,R4,Accepted
+T1725,2026-10-06,EX-0021,Pod B,Direct,R5,Accepted
+T1726,2026-10-06,EX-0027,Pod D,Direct,R3,Accepted
+T1727,2026-10-06,EX-0066,Pod C,Direct,R3,Accepted
+T1728,2026-10-06,EX-0022,Pod C,Vendor North,R4,Accepted
+T1729,2026-10-06,EX-0024,Pod A,Direct,R2,Accepted
+T1730,2026-10-06,EX-0016,Pod A,Vendor North,R1,Accepted
+T1731,2026-10-06,EX-0038,Pod C,Vendor South,R3,Accepted
+T1732,2026-10-06,EX-0008,Pod A,Vendor South,R5,Accepted
+T1733,2026-10-06,EX-0071,Pod D,Vendor South,R2,Accepted
+T1734,2026-10-06,EX-0058,Pod C,Vendor North,R3,Accepted
+T1735,2026-10-06,EX-0004,Pod A,Vendor North,R4,Accepted
+T1736,2026-10-06,EX-0008,Pod A,Vendor South,R2,Rejected
+T1737,2026-10-06,EX-0013,Pod B,Vendor North,R3,Accepted
+T1738,2026-10-06,EX-0030,Pod C,Direct,R3,Accepted
+T1739,2026-10-06,EX-0015,Pod D,Direct,R4,Accepted
+T1740,2026-10-06,EX-0060,Pod A,Direct,R3,Accepted
+T1741,2026-10-06,EX-0015,Pod D,Direct,R3,Accepted
+T1742,2026-10-06,EX-0071,Pod D,Vendor South,R4,Accepted
+T1743,2026-10-06,EX-0059,Pod D,Vendor South,R6,Rejected
+T1744,2026-10-06,EX-0077,Pod B,Vendor South,R2,Accepted
+T1745,2026-10-06,EX-0070,Pod C,Vendor North,R4,Accepted
+T1746,2026-10-06,EX-0055,Pod D,Vendor North,R3,Accepted
+T1747,2026-10-06,EX-0005,Pod B,Vendor South,R5,Accepted
+T1748,2026-10-06,EX-0067,Pod D,Vendor North,R5,Accepted
+T1749,2026-10-06,EX-0051,Pod D,Direct,R3,Rejected
+T1750,2026-10-06,EX-0077,Pod B,Vendor South,R1,Rejected
+T1751,2026-10-06,EX-0044,Pod A,Vendor South,R3,Rejected
+T1752,2026-10-06,EX-0046,Pod C,Vendor North,R3,Accepted
+T1753,2026-10-06,EX-0077,Pod B,Vendor South,R2,Accepted
+T1754,2026-10-06,EX-0069,Pod B,Direct,R6,Accepted
+T1755,2026-10-06,EX-0014,Pod C,Vendor South,R5,Accepted
+T1756,2026-10-06,EX-0080,Pod A,Vendor South,R6,Accepted
+T1757,2026-10-06,EX-0011,Pod D,Vendor South,R4,Accepted
+T1758,2026-10-06,EX-0075,Pod D,Direct,R1,Accepted
+T1759,2026-10-06,EX-0036,Pod A,Direct,R5,Rejected
+T1760,2026-10-06,EX-0061,Pod B,Vendor North,R5,Accepted
+T1761,2026-10-06,EX-0057,Pod B,Direct,R2,Rejected
+T1762,2026-10-06,EX-0030,Pod C,Direct,R4,Accepted
+T1763,2026-10-06,EX-0013,Pod B,Vendor North,R5,Rejected
+T1764,2026-10-06,EX-0029,Pod B,Vendor South,R6,Rejected
+T1765,2026-10-06,EX-0034,Pod C,Vendor North,R3,Accepted
+T1766,2026-10-06,EX-0005,Pod B,Vendor South,R2,Rejected
+T1767,2026-10-06,EX-0038,Pod C,Vendor South,R5,Accepted
+T1768,2026-10-06,EX-0024,Pod A,Direct,R5,Accepted
+T1769,2026-10-06,EX-0026,Pod C,Vendor South,R6,Accepted
+T1770,2026-10-06,EX-0072,Pod A,Direct,R3,Accepted
+T1771,2026-10-06,EX-0049,Pod B,Vendor North,R1,Accepted
+T1772,2026-10-06,EX-0041,Pod B,Vendor South,R6,Accepted
+T1773,2026-10-06,EX-0079,Pod D,Vendor North,R3,Rejected
+T1774,2026-10-06,EX-0008,Pod A,Vendor South,R1,Accepted
+T1775,2026-10-06,EX-0021,Pod B,Direct,R2,Accepted
+T1776,2026-10-06,EX-0017,Pod B,Vendor South,R5,Rejected
+T1777,2026-10-06,EX-0029,Pod B,Vendor South,R3,Rejected
+T1778,2026-10-06,EX-0025,Pod B,Vendor North,R5,Rejected
+T1779,2026-10-06,EX-0049,Pod B,Vendor North,R3,Accepted
+T1780,2026-10-06,EX-0073,Pod B,Vendor North,R3,Accepted
+T1781,2026-10-06,EX-0072,Pod A,Direct,R2,Accepted
+T1782,2026-10-06,EX-0035,Pod D,Vendor South,R2,Accepted
+T1783,2026-10-06,EX-0045,Pod B,Direct,R3,Accepted
+T1784,2026-10-06,EX-0034,Pod C,Vendor North,R2,Accepted
+T1785,2026-10-06,EX-0034,Pod C,Vendor North,R5,Accepted
+T1786,2026-10-06,EX-0009,Pod B,Direct,R2,Accepted
+T1787,2026-10-06,EX-0045,Pod B,Direct,R3,Accepted
+T1788,2026-10-06,EX-0009,Pod B,Direct,R3,Accepted
+T1789,2026-10-06,EX-0080,Pod A,Vendor South,R5,Accepted
+T1790,2026-10-06,EX-0006,Pod C,Direct,R6,Rejected
+T1791,2026-10-06,EX-0018,Pod C,Direct,R3,Rejected
+T1792,2026-10-06,EX-0055,Pod D,Vendor North,R3,Accepted
+T1793,2026-10-06,EX-0068,Pod A,Vendor South,R3,Accepted
+T1794,2026-10-06,EX-0064,Pod A,Vendor North,R4,Accepted
+T1795,2026-10-06,EX-0059,Pod D,Vendor South,R2,Accepted
+T1796,2026-10-06,EX-0060,Pod A,Direct,R2,Accepted
+T1797,2026-10-06,EX-0053,Pod B,Vendor South,R6,Rejected
+T1798,2026-10-06,EX-0067,Pod D,Vendor North,R6,Accepted
+T1799,2026-10-06,EX-0067,Pod D,Vendor North,R4,Accepted
+T1800,2026-10-06,EX-0060,Pod A,Direct,R1,Accepted
+T1801,2026-10-06,EX-0067,Pod D,Vendor North,R3,Accepted
+T1802,2026-10-06,EX-0066,Pod C,Direct,R1,Accepted
+T1803,2026-10-06,EX-0058,Pod C,Vendor North,R1,Accepted
+T1804,2026-10-06,EX-0004,Pod A,Vendor North,R5,Rejected
+T1805,2026-10-06,EX-0014,Pod C,Vendor South,R1,Accepted
+T1806,2026-10-06,EX-0054,Pod C,Direct,R2,Accepted
+T1807,2026-10-06,EX-0011,Pod D,Vendor South,R4,Accepted
+T1808,2026-10-06,EX-0027,Pod D,Direct,R3,Accepted
+T1809,2026-10-06,EX-0024,Pod A,Direct,R3,Accepted
+T1810,2026-10-06,EX-0066,Pod C,Direct,R3,Accepted
+T1811,2026-10-06,EX-0011,Pod D,Vendor South,R4,Accepted
+T1812,2026-10-06,EX-0037,Pod B,Vendor North,R3,Rejected
+T1813,2026-10-06,EX-0024,Pod A,Direct,R3,Accepted
+T1814,2026-10-06,EX-0078,Pod C,Direct,R4,Accepted
+T1815,2026-10-06,EX-0077,Pod B,Vendor South,R4,Rejected
+T1816,2026-10-06,EX-0031,Pod D,Vendor North,R4,Rejected
+T1817,2026-10-06,EX-0008,Pod A,Vendor South,R3,Accepted
+T1818,2026-10-06,EX-0054,Pod C,Direct,R3,Accepted
+T1819,2026-10-06,EX-0002,Pod C,Vendor South,R2,Accepted
+T1820,2026-10-06,EX-0043,Pod D,Vendor North,R3,Accepted
+T1821,2026-10-06,EX-0055,Pod D,Vendor North,R3,Accepted
+T1822,2026-10-06,EX-0020,Pod A,Vendor South,R1,Accepted
+T1823,2026-10-06,EX-0056,Pod A,Vendor South,R3,Accepted
+T1824,2026-10-06,EX-0015,Pod D,Direct,R4,Accepted
+T1825,2026-10-06,EX-0063,Pod D,Direct,R6,Accepted
+T1826,2026-10-06,EX-0065,Pod B,Vendor South,R6,Accepted
+T1827,2026-10-06,EX-0027,Pod D,Direct,R2,Accepted
+T1828,2026-10-06,EX-0026,Pod C,Vendor South,R3,Rejected
+T1829,2026-10-06,EX-0018,Pod C,Direct,R3,Accepted
+T1830,2026-10-06,EX-0068,Pod A,Vendor South,R3,Rejected
+T1831,2026-10-06,EX-0052,Pod A,Vendor North,R5,Accepted
+T1832,2026-10-06,EX-0021,Pod B,Direct,R3,Rejected
+T1833,2026-10-06,EX-0008,Pod A,Vendor South,R6,Accepted
+T1834,2026-10-06,EX-0072,Pod A,Direct,R5,Accepted
+T1835,2026-10-06,EX-0052,Pod A,Vendor North,R1,Accepted
+T1836,2026-10-06,EX-0032,Pod A,Vendor South,R4,Accepted
+T1837,2026-10-06,EX-0044,Pod A,Vendor South,R3,Accepted
+T1838,2026-10-06,EX-0049,Pod B,Vendor North,R2,Accepted
+T1839,2026-10-06,EX-0019,Pod D,Vendor North,R6,Accepted
+T1840,2026-10-06,EX-0030,Pod C,Direct,R4,Accepted
+T1841,2026-10-06,EX-0050,Pod C,Vendor South,R4,Accepted
+T1842,2026-10-06,EX-0054,Pod C,Direct,R6,Rejected
+T1843,2026-10-06,EX-0030,Pod C,Direct,R2,Rejected
+T1844,2026-10-06,EX-0015,Pod D,Direct,R2,Accepted
+T1845,2026-10-06,EX-0037,Pod B,Vendor North,R5,Accepted
+T1846,2026-10-06,EX-0003,Pod D,Direct,R3,Rejected
+T1847,2026-10-06,EX-0042,Pod C,Direct,R3,Accepted
+T1848,2026-10-06,EX-0024,Pod A,Direct,R3,Accepted
+T1849,2026-10-06,EX-0049,Pod B,Vendor North,R6,Accepted
+T1850,2026-10-06,EX-0004,Pod A,Vendor North,R1,Accepted
+T1851,2026-10-06,EX-0067,Pod D,Vendor North,R3,Accepted
+T1852,2026-10-06,EX-0062,Pod C,Vendor South,R3,Accepted
+T1853,2026-10-06,EX-0009,Pod B,Direct,R3,Accepted
+T1854,2026-10-06,EX-0035,Pod D,Vendor South,R3,Rejected
+T1855,2026-10-06,EX-0018,Pod C,Direct,R3,Accepted
+T1856,2026-10-06,EX-0060,Pod A,Direct,R1,Accepted
+T1857,2026-10-06,EX-0019,Pod D,Vendor North,R3,Accepted
+T1858,2026-10-06,EX-0027,Pod D,Direct,R4,Accepted
+T1859,2026-10-06,EX-0043,Pod D,Vendor North,R3,Accepted
+T1860,2026-10-06,EX-0080,Pod A,Vendor South,R1,Rejected
+T1861,2026-10-06,EX-0077,Pod B,Vendor South,R3,Accepted
+T1862,2026-10-06,EX-0023,Pod D,Vendor South,R1,Accepted
+T1863,2026-10-06,EX-0062,Pod C,Vendor South,R3,Accepted
+T1864,2026-10-06,EX-0008,Pod A,Vendor South,R4,Accepted
+T1865,2026-10-06,EX-0072,Pod A,Direct,R3,Rejected
+T1866,2026-10-06,EX-0037,Pod B,Vendor North,R6,Accepted
+T1867,2026-10-06,EX-0036,Pod A,Direct,R5,Accepted
+T1868,2026-10-06,EX-0047,Pod D,Vendor South,R4,Rejected
+T1869,2026-10-06,EX-0065,Pod B,Vendor South,R5,Rejected
+T1870,2026-10-06,EX-0060,Pod A,Direct,R3,Accepted
+T1871,2026-10-06,EX-0054,Pod C,Direct,R5,Accepted
+T1872,2026-10-06,EX-0046,Pod C,Vendor North,R5,Accepted
+T1873,2026-10-06,EX-0076,Pod A,Vendor North,R3,Accepted
+T1874,2026-10-06,EX-0009,Pod B,Direct,R1,Accepted
+T1875,2026-10-06,EX-0010,Pod C,Vendor North,R5,Accepted
+T1876,2026-10-06,EX-0018,Pod C,Direct,R3,Accepted
+T1877,2026-10-06,EX-0058,Pod C,Vendor North,R1,Accepted
+T1878,2026-10-06,EX-0023,Pod D,Vendor South,R3,Accepted
+T1879,2026-10-06,EX-0027,Pod D,Direct,R4,Rejected
+T1880,2026-10-06,EX-0014,Pod C,Vendor South,R3,Accepted
+T1881,2026-10-06,EX-0070,Pod C,Vendor North,R3,Accepted
+T1882,2026-10-06,EX-0071,Pod D,Vendor South,R6,Accepted
+T1883,2026-10-06,EX-0064,Pod A,Vendor North,R6,Accepted
+T1884,2026-10-06,EX-0015,Pod D,Direct,R5,Accepted
+T1885,2026-10-06,EX-0019,Pod D,Vendor North,R3,Accepted
+T1886,2026-10-06,EX-0074,Pod C,Vendor South,R4,Accepted
+T1887,2026-10-06,EX-0009,Pod B,Direct,R3,Accepted
+T1888,2026-10-06,EX-0050,Pod C,Vendor South,R4,Rejected
+T1889,2026-10-06,EX-0073,Pod B,Vendor North,R3,Accepted
+T1890,2026-10-06,EX-0047,Pod D,Vendor South,R3,Rejected
+T1891,2026-10-06,EX-0066,Pod C,Direct,R1,Accepted
+T1892,2026-10-06,EX-0021,Pod B,Direct,R5,Accepted
+T1893,2026-10-06,EX-0017,Pod B,Vendor South,R3,Rejected
+T1894,2026-10-06,EX-0058,Pod C,Vendor North,R3,Accepted
+T1895,2026-10-06,EX-0063,Pod D,Direct,R3,Accepted
+T1896,2026-10-06,EX-0076,Pod A,Vendor North,R4,Accepted
+T1897,2026-10-06,EX-0028,Pod A,Vendor North,R3,Accepted
+T1898,2026-10-06,EX-0008,Pod A,Vendor South,R3,Accepted
+T1899,2026-10-06,EX-0004,Pod A,Vendor North,R2,Accepted
+T1900,2026-10-06,EX-0055,Pod D,Vendor North,R3,Accepted
+T1901,2026-10-06,EX-0058,Pod C,Vendor North,R2,Accepted
+T1902,2026-10-06,EX-0005,Pod B,Vendor South,R3,Accepted
+T1903,2026-10-06,EX-0034,Pod C,Vendor North,R2,Accepted
+T1904,2026-10-06,EX-0039,Pod D,Direct,R3,Rejected
+T1905,2026-10-06,EX-0016,Pod A,Vendor North,R4,Accepted
+T1906,2026-10-06,EX-0006,Pod C,Direct,R6,Accepted
+T1907,2026-10-06,EX-0070,Pod C,Vendor North,R3,Accepted
+T1908,2026-10-06,EX-0046,Pod C,Vendor North,R1,Rejected
+T1909,2026-10-06,EX-0053,Pod B,Vendor South,R3,Accepted
+T1910,2026-10-06,EX-0053,Pod B,Vendor South,R3,Rejected
+T1911,2026-10-06,EX-0004,Pod A,Vendor North,R3,Accepted
+T1912,2026-10-06,EX-0002,Pod C,Vendor South,R6,Accepted
+T1913,2026-10-06,EX-0004,Pod A,Vendor North,R3,Accepted
+T1914,2026-10-06,EX-0034,Pod C,Vendor North,R2,Accepted
+T1915,2026-10-06,EX-0039,Pod D,Direct,R5,Accepted
+T1916,2026-10-06,EX-0073,Pod B,Vendor North,R3,Accepted
+T1917,2026-10-06,EX-0031,Pod D,Vendor North,R3,Accepted
+T1918,2026-10-06,EX-0013,Pod B,Vendor North,R6,Rejected
+T1919,2026-10-06,EX-0032,Pod A,Vendor South,R6,Rejected
+T1920,2026-10-06,EX-0041,Pod B,Vendor South,R1,Accepted
+T1921,2026-10-06,EX-0061,Pod B,Vendor North,R4,Accepted
+T1922,2026-10-06,EX-0040,Pod A,Vendor North,R3,Rejected
+T1923,2026-10-06,EX-0037,Pod B,Vendor North,R3,Accepted
+T1924,2026-10-06,EX-0079,Pod D,Vendor North,R2,Accepted
+T1925,2026-10-06,EX-0019,Pod D,Vendor North,R4,Accepted
+T1926,2026-10-06,EX-0079,Pod D,Vendor North,R3,Rejected
+T1927,2026-10-06,EX-0042,Pod C,Direct,R2,Rejected
+T1928,2026-10-06,EX-0030,Pod C,Direct,R3,Accepted
+T1929,2026-10-06,EX-0040,Pod A,Vendor North,R4,Rejected
+T1930,2026-10-06,EX-0055,Pod D,Vendor North,R5,Accepted
+T1931,2026-10-06,EX-0009,Pod B,Direct,R5,Accepted
+T1932,2026-10-06,EX-0012,Pod A,Direct,R2,Accepted
+T1933,2026-10-06,EX-0016,Pod A,Vendor North,R1,Accepted
+T1934,2026-10-06,EX-0052,Pod A,Vendor North,R2,Accepted
+T1935,2026-10-06,EX-0002,Pod C,Vendor South,R4,Accepted
+T1936,2026-10-06,EX-0006,Pod C,Direct,R6,Accepted
+T1937,2026-10-06,EX-0004,Pod A,Vendor North,R2,Accepted
+T1938,2026-10-06,EX-0048,Pod A,Direct,R3,Accepted
+T1939,2026-10-06,EX-0044,Pod A,Vendor South,R3,Accepted
+T1940,2026-10-06,EX-0001,Pod B,Vendor North,R3,Accepted
+T1941,2026-10-06,EX-0059,Pod D,Vendor South,R3,Rejected
+T1942,2026-10-06,EX-0021,Pod B,Direct,R1,Accepted
+T1943,2026-10-06,EX-0021,Pod B,Direct,R6,Rejected
+T1944,2026-10-06,EX-0035,Pod D,Vendor South,R4,Accepted
+T1945,2026-10-06,EX-0024,Pod A,Direct,R1,Accepted
+T1946,2026-10-06,EX-0011,Pod D,Vendor South,R2,Accepted
+T1947,2026-10-06,EX-0078,Pod C,Direct,R3,Rejected
+T1948,2026-10-06,EX-0055,Pod D,Vendor North,R6,Accepted
+T1949,2026-10-06,EX-0054,Pod C,Direct,R3,Accepted
+T1950,2026-10-06,EX-0056,Pod A,Vendor South,R3,Accepted
+T1951,2026-10-06,EX-0029,Pod B,Vendor South,R3,Rejected
+T1952,2026-10-06,EX-0030,Pod C,Direct,R3,Accepted
+T1953,2026-10-06,EX-0042,Pod C,Direct,R6,Rejected
+T1954,2026-10-06,EX-0045,Pod B,Direct,R3,Accepted
+T1955,2026-10-06,EX-0057,Pod B,Direct,R3,Accepted
+T1956,2026-10-06,EX-0002,Pod C,Vendor South,R5,Accepted
+T1957,2026-10-06,EX-0005,Pod B,Vendor South,R4,Accepted
+T1958,2026-10-06,EX-0011,Pod D,Vendor South,R1,Rejected
+T1959,2026-10-06,EX-0018,Pod C,Direct,R3,Accepted
+T1960,2026-10-06,EX-0078,Pod C,Direct,R3,Accepted
+T1961,2026-10-06,EX-0045,Pod B,Direct,R4,Accepted
+T1962,2026-10-06,EX-0059,Pod D,Vendor South,R3,Accepted
+T1963,2026-10-06,EX-0055,Pod D,Vendor North,R2,Accepted
+T1964,2026-10-06,EX-0061,Pod B,Vendor North,R3,Accepted
+T1965,2026-10-06,EX-0010,Pod C,Vendor North,R6,Rejected
+T1966,2026-10-06,EX-0078,Pod C,Direct,R1,Accepted
+T1967,2026-10-06,EX-0010,Pod C,Vendor North,R3,Accepted
+T1968,2026-10-06,EX-0025,Pod B,Vendor North,R3,Accepted
+T1969,2026-10-06,EX-0041,Pod B,Vendor South,R5,Accepted
+T1970,2026-10-06,EX-0079,Pod D,Vendor North,R3,Accepted
+T1971,2026-10-06,EX-0080,Pod A,Vendor South,R5,Accepted
+T1972,2026-10-06,EX-0070,Pod C,Vendor North,R5,Accepted
+T1973,2026-10-06,EX-0060,Pod A,Direct,R3,Accepted
+T1974,2026-10-06,EX-0062,Pod C,Vendor South,R3,Rejected
+T1975,2026-10-06,EX-0071,Pod D,Vendor South,R3,Rejected
+T1976,2026-10-06,EX-0056,Pod A,Vendor South,R6,Accepted
+T1977,2026-10-06,EX-0031,Pod D,Vendor North,R4,Accepted
+T1978,2026-10-06,EX-0050,Pod C,Vendor South,R6,Accepted
+T1979,2026-10-06,EX-0033,Pod B,Direct,R4,Accepted
+T1980,2026-10-06,EX-0049,Pod B,Vendor North,R3,Accepted
+T1981,2026-10-06,EX-0017,Pod B,Vendor South,R3,Rejected
+T1982,2026-10-06,EX-0063,Pod D,Direct,R3,Accepted
+T1983,2026-10-06,EX-0009,Pod B,Direct,R2,Accepted
+T1984,2026-10-06,EX-0066,Pod C,Direct,R5,Accepted
+T1985,2026-10-06,EX-0017,Pod B,Vendor South,R3,Accepted
+T1986,2026-10-06,EX-0066,Pod C,Direct,R3,Accepted
+T1987,2026-10-06,EX-0037,Pod B,Vendor North,R4,Accepted
+T1988,2026-10-06,EX-0011,Pod D,Vendor South,R3,Rejected
+T1989,2026-10-06,EX-0010,Pod C,Vendor North,R1,Accepted
+T1990,2026-10-06,EX-0023,Pod D,Vendor South,R3,Rejected
+T1991,2026-10-06,EX-0018,Pod C,Direct,R2,Accepted
+T1992,2026-10-06,EX-0025,Pod B,Vendor North,R3,Accepted
+T1993,2026-10-06,EX-0067,Pod D,Vendor North,R4,Accepted
+T1994,2026-10-06,EX-0065,Pod B,Vendor South,R6,Accepted
+T1995,2026-10-06,EX-0049,Pod B,Vendor North,R1,Accepted
+T1996,2026-10-06,EX-0026,Pod C,Vendor South,R5,Rejected
+T1997,2026-10-06,EX-0006,Pod C,Direct,R3,Accepted
+T1998,2026-10-06,EX-0018,Pod C,Direct,R5,Accepted
+T1999,2026-10-06,EX-0065,Pod B,Vendor South,R6,Rejected
+T2000,2026-10-06,EX-0061,Pod B,Vendor North,R4,Accepted
+T2001,2026-10-06,EX-0001,Pod B,Vendor North,R5,Accepted
+T2002,2026-10-06,EX-0056,Pod A,Vendor South,R3,Accepted
+T2003,2026-10-06,EX-0069,Pod B,Direct,R3,Accepted
+T2004,2026-10-06,EX-0064,Pod A,Vendor North,R3,Rejected
+T2005,2026-10-06,EX-0018,Pod C,Direct,R6,Accepted
+T2006,2026-10-06,EX-0036,Pod A,Direct,R6,Rejected
+T2007,2026-10-06,EX-0007,Pod D,Vendor North,R3,Accepted
+T2008,2026-10-06,EX-0022,Pod C,Vendor North,R2,Accepted
+T2009,2026-10-06,EX-0072,Pod A,Direct,R4,Accepted
+T2010,2026-10-06,EX-0073,Pod B,Vendor North,R3,Accepted
+T2011,2026-10-06,EX-0027,Pod D,Direct,R3,Accepted
+T2012,2026-10-06,EX-0009,Pod B,Direct,R3,Accepted
+T2013,2026-10-06,EX-0022,Pod C,Vendor North,R4,Accepted
+T2014,2026-10-06,EX-0005,Pod B,Vendor South,R5,Accepted
+T2015,2026-10-06,EX-0026,Pod C,Vendor South,R3,Accepted
+T2016,2026-10-06,EX-0046,Pod C,Vendor North,R3,Accepted
+T2017,2026-10-06,EX-0033,Pod B,Direct,R4,Rejected
+T2018,2026-10-06,EX-0008,Pod A,Vendor South,R5,Accepted
+T2019,2026-10-06,EX-0069,Pod B,Direct,R3,Accepted
+T2020,2026-10-06,EX-0079,Pod D,Vendor North,R4,Accepted
+T2021,2026-10-06,EX-0078,Pod C,Direct,R3,Rejected
+T2022,2026-10-06,EX-0069,Pod B,Direct,R4,Accepted
+T2023,2026-10-06,EX-0062,Pod C,Vendor South,R3,Accepted
+T2024,2026-10-06,EX-0054,Pod C,Direct,R3,Rejected
+T2025,2026-10-06,EX-0043,Pod D,Vendor North,R3,Rejected
+T2026,2026-10-06,EX-0073,Pod B,Vendor North,R3,Accepted
+T2027,2026-10-06,EX-0040,Pod A,Vendor North,R3,Accepted
+T2028,2026-10-06,EX-0076,Pod A,Vendor North,R3,Accepted
+T2029,2026-10-06,EX-0042,Pod C,Direct,R6,Rejected
+T2030,2026-10-06,EX-0024,Pod A,Direct,R3,Accepted
+T2031,2026-10-06,EX-0035,Pod D,Vendor South,R3,Rejected
+T2032,2026-10-06,EX-0009,Pod B,Direct,R2,Accepted
+T2033,2026-10-06,EX-0021,Pod B,Direct,R1,Accepted
+T2034,2026-10-06,EX-0051,Pod D,Direct,R3,Accepted
+T2035,2026-10-06,EX-0056,Pod A,Vendor South,R3,Accepted
+T2036,2026-10-06,EX-0019,Pod D,Vendor North,R6,Accepted
+T2037,2026-10-06,EX-0010,Pod C,Vendor North,R2,Accepted
+T2038,2026-10-06,EX-0067,Pod D,Vendor North,R1,Accepted
+T2039,2026-10-06,EX-0073,Pod B,Vendor North,R5,Accepted
+T2040,2026-10-06,EX-0012,Pod A,Direct,R4,Accepted
+T2041,2026-10-06,EX-0059,Pod D,Vendor South,R2,Accepted
+T2042,2026-10-07,EX-0057,Pod B,Direct,R3,Accepted
+T2043,2026-10-07,EX-0046,Pod C,Vendor North,R3,Accepted
+T2044,2026-10-07,EX-0002,Pod C,Vendor South,R3,Accepted
+T2045,2026-10-07,EX-0021,Pod B,Direct,R4,Rejected
+T2046,2026-10-07,EX-0051,Pod D,Direct,R4,Accepted
+T2047,2026-10-07,EX-0064,Pod A,Vendor North,R6,Accepted
+T2048,2026-10-07,EX-0028,Pod A,Vendor North,R3,Accepted
+T2049,2026-10-07,EX-0014,Pod C,Vendor South,R3,Accepted
+T2050,2026-10-07,EX-0059,Pod D,Vendor South,R3,Accepted
+T2051,2026-10-07,EX-0060,Pod A,Direct,R3,Accepted
+T2052,2026-10-07,EX-0011,Pod D,Vendor South,R1,Rejected
+T2053,2026-10-07,EX-0045,Pod B,Direct,R5,Accepted
+T2054,2026-10-07,EX-0002,Pod C,Vendor South,R3,Accepted
+T2055,2026-10-07,EX-0019,Pod D,Vendor North,R3,Accepted
+T2056,2026-10-07,EX-0076,Pod A,Vendor North,R3,Rejected
+T2057,2026-10-07,EX-0001,Pod B,Vendor North,R1,Accepted
+T2058,2026-10-07,EX-0038,Pod C,Vendor South,R3,Accepted
+T2059,2026-10-07,EX-0012,Pod A,Direct,R3,Rejected
+T2060,2026-10-07,EX-0066,Pod C,Direct,R5,Accepted
+T2061,2026-10-07,EX-0033,Pod B,Direct,R1,Accepted
+T2062,2026-10-07,EX-0021,Pod B,Direct,R6,Accepted
+T2063,2026-10-07,EX-0037,Pod B,Vendor North,R6,Accepted
+T2064,2026-10-07,EX-0024,Pod A,Direct,R4,Accepted
+T2065,2026-10-07,EX-0060,Pod A,Direct,R1,Accepted
+T2066,2026-10-07,EX-0040,Pod A,Vendor North,R3,Accepted
+T2067,2026-10-07,EX-0007,Pod D,Vendor North,R1,Accepted
+T2068,2026-10-07,EX-0011,Pod D,Vendor South,R5,Accepted
+T2069,2026-10-07,EX-0060,Pod A,Direct,R4,Accepted
+T2070,2026-10-07,EX-0069,Pod B,Direct,R3,Accepted
+T2071,2026-10-07,EX-0023,Pod D,Vendor South,R4,Accepted
+T2072,2026-10-07,EX-0026,Pod C,Vendor South,R5,Accepted
+T2073,2026-10-07,EX-0033,Pod B,Direct,R3,Accepted
+T2074,2026-10-07,EX-0063,Pod D,Direct,R3,Accepted
+T2075,2026-10-07,EX-0080,Pod A,Vendor South,R2,Accepted
+T2076,2026-10-07,EX-0036,Pod A,Direct,R4,Accepted
+T2077,2026-10-07,EX-0036,Pod A,Direct,R6,Accepted
+T2078,2026-10-07,EX-0011,Pod D,Vendor South,R3,Accepted
+T2079,2026-10-07,EX-0062,Pod C,Vendor South,R4,Rejected
+T2080,2026-10-07,EX-0078,Pod C,Direct,R6,Accepted
+T2081,2026-10-07,EX-0029,Pod B,Vendor South,R3,Accepted
+T2082,2026-10-07,EX-0016,Pod A,Vendor North,R3,Accepted
+T2083,2026-10-07,EX-0063,Pod D,Direct,R6,Accepted
+T2084,2026-10-07,EX-0021,Pod B,Direct,R3,Accepted
+T2085,2026-10-07,EX-0044,Pod A,Vendor South,R3,Rejected
+T2086,2026-10-07,EX-0054,Pod C,Direct,R2,Accepted
+T2087,2026-10-07,EX-0055,Pod D,Vendor North,R5,Accepted
+T2088,2026-10-07,EX-0006,Pod C,Direct,R3,Accepted
+T2089,2026-10-07,EX-0053,Pod B,Vendor South,R4,Accepted
+T2090,2026-10-07,EX-0056,Pod A,Vendor South,R3,Accepted
+T2091,2026-10-07,EX-0047,Pod D,Vendor South,R3,Rejected
+T2092,2026-10-07,EX-0074,Pod C,Vendor South,R4,Accepted
+T2093,2026-10-07,EX-0007,Pod D,Vendor North,R3,Accepted
+T2094,2026-10-07,EX-0032,Pod A,Vendor South,R3,Accepted
+T2095,2026-10-07,EX-0050,Pod C,Vendor South,R2,Accepted
+T2096,2026-10-07,EX-0068,Pod A,Vendor South,R3,Accepted
+T2097,2026-10-07,EX-0026,Pod C,Vendor South,R3,Accepted
+T2098,2026-10-07,EX-0061,Pod B,Vendor North,R3,Rejected
+T2099,2026-10-07,EX-0025,Pod B,Vendor North,R3,Accepted
+T2100,2026-10-07,EX-0046,Pod C,Vendor North,R3,Rejected
+T2101,2026-10-07,EX-0075,Pod D,Direct,R3,Accepted
+T2102,2026-10-07,EX-0043,Pod D,Vendor North,R2,Accepted
+T2103,2026-10-07,EX-0058,Pod C,Vendor North,R3,Accepted
+T2104,2026-10-07,EX-0036,Pod A,Direct,R3,Accepted
+T2105,2026-10-07,EX-0037,Pod B,Vendor North,R5,Rejected
+T2106,2026-10-07,EX-0080,Pod A,Vendor South,R2,Accepted
+T2107,2026-10-07,EX-0017,Pod B,Vendor South,R6,Accepted
+T2108,2026-10-07,EX-0019,Pod D,Vendor North,R3,Accepted
+T2109,2026-10-07,EX-0041,Pod B,Vendor South,R3,Accepted
+T2110,2026-10-07,EX-0046,Pod C,Vendor North,R4,Accepted
+T2111,2026-10-07,EX-0010,Pod C,Vendor North,R4,Accepted
+T2112,2026-10-07,EX-0015,Pod D,Direct,R6,Accepted
+T2113,2026-10-07,EX-0079,Pod D,Vendor North,R2,Accepted
+T2114,2026-10-07,EX-0065,Pod B,Vendor South,R3,Accepted
+T2115,2026-10-07,EX-0014,Pod C,Vendor South,R6,Accepted
+T2116,2026-10-07,EX-0078,Pod C,Direct,R3,Accepted
+T2117,2026-10-07,EX-0060,Pod A,Direct,R3,Rejected
+T2118,2026-10-07,EX-0003,Pod D,Direct,R5,Accepted
+T2119,2026-10-07,EX-0020,Pod A,Vendor South,R6,Accepted
+T2120,2026-10-07,EX-0065,Pod B,Vendor South,R1,Accepted
+T2121,2026-10-07,EX-0074,Pod C,Vendor South,R3,Accepted
+T2122,2026-10-07,EX-0009,Pod B,Direct,R6,Accepted
+T2123,2026-10-07,EX-0059,Pod D,Vendor South,R1,Rejected
+T2124,2026-10-07,EX-0036,Pod A,Direct,R4,Accepted
+T2125,2026-10-07,EX-0051,Pod D,Direct,R3,Accepted
+T2126,2026-10-07,EX-0033,Pod B,Direct,R3,Accepted
+T2127,2026-10-07,EX-0059,Pod D,Vendor South,R4,Accepted
+T2128,2026-10-07,EX-0012,Pod A,Direct,R3,Accepted
+T2129,2026-10-07,EX-0050,Pod C,Vendor South,R3,Rejected
+T2130,2026-10-07,EX-0044,Pod A,Vendor South,R3,Rejected
+T2131,2026-10-07,EX-0049,Pod B,Vendor North,R6,Accepted
+T2132,2026-10-07,EX-0005,Pod B,Vendor South,R3,Rejected
+T2133,2026-10-07,EX-0007,Pod D,Vendor North,R1,Accepted
+T2134,2026-10-07,EX-0012,Pod A,Direct,R4,Rejected
+T2135,2026-10-07,EX-0045,Pod B,Direct,R3,Accepted
+T2136,2026-10-07,EX-0057,Pod B,Direct,R1,Accepted
+T2137,2026-10-07,EX-0069,Pod B,Direct,R4,Accepted
+T2138,2026-10-07,EX-0075,Pod D,Direct,R3,Accepted
+T2139,2026-10-07,EX-0072,Pod A,Direct,R1,Accepted
+T2140,2026-10-07,EX-0034,Pod C,Vendor North,R3,Accepted
+T2141,2026-10-07,EX-0072,Pod A,Direct,R3,Accepted
+T2142,2026-10-07,EX-0028,Pod A,Vendor North,R6,Accepted
+T2143,2026-10-07,EX-0045,Pod B,Direct,R3,Accepted
+T2144,2026-10-07,EX-0011,Pod D,Vendor South,R4,Accepted
+T2145,2026-10-07,EX-0033,Pod B,Direct,R1,Accepted
+T2146,2026-10-07,EX-0070,Pod C,Vendor North,R3,Accepted
+T2147,2026-10-07,EX-0005,Pod B,Vendor South,R3,Accepted
+T2148,2026-10-07,EX-0026,Pod C,Vendor South,R6,Accepted
+T2149,2026-10-07,EX-0001,Pod B,Vendor North,R1,Accepted
+T2150,2026-10-07,EX-0051,Pod D,Direct,R3,Rejected
+T2151,2026-10-07,EX-0043,Pod D,Vendor North,R3,Accepted
+T2152,2026-10-07,EX-0079,Pod D,Vendor North,R3,Accepted
+T2153,2026-10-07,EX-0008,Pod A,Vendor South,R3,Accepted
+T2154,2026-10-07,EX-0051,Pod D,Direct,R3,Accepted
+T2155,2026-10-07,EX-0049,Pod B,Vendor North,R6,Accepted
+T2156,2026-10-07,EX-0028,Pod A,Vendor North,R3,Accepted
+T2157,2026-10-07,EX-0048,Pod A,Direct,R3,Rejected
+T2158,2026-10-07,EX-0078,Pod C,Direct,R5,Accepted
+T2159,2026-10-07,EX-0075,Pod D,Direct,R3,Accepted
+T2160,2026-10-07,EX-0049,Pod B,Vendor North,R3,Accepted
+T2161,2026-10-07,EX-0013,Pod B,Vendor North,R3,Accepted
+T2162,2026-10-07,EX-0046,Pod C,Vendor North,R6,Accepted
+T2163,2026-10-07,EX-0065,Pod B,Vendor South,R4,Rejected
+T2164,2026-10-07,EX-0036,Pod A,Direct,R5,Accepted
+T2165,2026-10-07,EX-0021,Pod B,Direct,R2,Accepted
+T2166,2026-10-07,EX-0052,Pod A,Vendor North,R4,Rejected
+T2167,2026-10-07,EX-0059,Pod D,Vendor South,R2,Accepted
+T2168,2026-10-07,EX-0059,Pod D,Vendor South,R5,Accepted
+T2169,2026-10-07,EX-0044,Pod A,Vendor South,R3,Accepted
+T2170,2026-10-07,EX-0035,Pod D,Vendor South,R3,Rejected
+T2171,2026-10-07,EX-0056,Pod A,Vendor South,R3,Accepted
+T2172,2026-10-07,EX-0032,Pod A,Vendor South,R3,Accepted
+T2173,2026-10-07,EX-0049,Pod B,Vendor North,R3,Accepted
+T2174,2026-10-07,EX-0012,Pod A,Direct,R1,Rejected
+T2175,2026-10-07,EX-0024,Pod A,Direct,R6,Accepted
+T2176,2026-10-07,EX-0056,Pod A,Vendor South,R2,Rejected
+T2177,2026-10-07,EX-0056,Pod A,Vendor South,R4,Rejected
+T2178,2026-10-07,EX-0011,Pod D,Vendor South,R6,Accepted
+T2179,2026-10-07,EX-0055,Pod D,Vendor North,R4,Accepted
+T2180,2026-10-07,EX-0004,Pod A,Vendor North,R3,Accepted
+T2181,2026-10-07,EX-0007,Pod D,Vendor North,R3,Accepted
+T2182,2026-10-07,EX-0070,Pod C,Vendor North,R4,Accepted
+T2183,2026-10-07,EX-0044,Pod A,Vendor South,R3,Accepted
+T2184,2026-10-07,EX-0073,Pod B,Vendor North,R5,Accepted
+T2185,2026-10-07,EX-0029,Pod B,Vendor South,R5,Rejected
+T2186,2026-10-07,EX-0074,Pod C,Vendor South,R1,Accepted
+T2187,2026-10-07,EX-0005,Pod B,Vendor South,R3,Accepted
+T2188,2026-10-07,EX-0063,Pod D,Direct,R4,Accepted
+T2189,2026-10-07,EX-0038,Pod C,Vendor South,R1,Accepted
+T2190,2026-10-07,EX-0075,Pod D,Direct,R5,Accepted
+T2191,2026-10-07,EX-0069,Pod B,Direct,R3,Accepted
+T2192,2026-10-07,EX-0005,Pod B,Vendor South,R3,Rejected
+T2193,2026-10-07,EX-0048,Pod A,Direct,R3,Rejected
+T2194,2026-10-07,EX-0024,Pod A,Direct,R3,Accepted
+T2195,2026-10-07,EX-0050,Pod C,Vendor South,R3,Accepted
+T2196,2026-10-07,EX-0015,Pod D,Direct,R5,Accepted
+T2197,2026-10-07,EX-0051,Pod D,Direct,R1,Accepted
+T2198,2026-10-07,EX-0035,Pod D,Vendor South,R1,Accepted
+T2199,2026-10-07,EX-0062,Pod C,Vendor South,R5,Rejected
+T2200,2026-10-07,EX-0023,Pod D,Vendor South,R4,Accepted
+T2201,2026-10-07,EX-0035,Pod D,Vendor South,R1,Accepted
+T2202,2026-10-07,EX-0015,Pod D,Direct,R1,Accepted
+T2203,2026-10-07,EX-0020,Pod A,Vendor South,R4,Rejected
+T2204,2026-10-07,EX-0075,Pod D,Direct,R1,Accepted
+T2205,2026-10-07,EX-0014,Pod C,Vendor South,R6,Accepted
+T2206,2026-10-07,EX-0021,Pod B,Direct,R5,Accepted
+T2207,2026-10-07,EX-0041,Pod B,Vendor South,R5,Accepted
+T2208,2026-10-07,EX-0059,Pod D,Vendor South,R5,Rejected
+T2209,2026-10-07,EX-0021,Pod B,Direct,R1,Accepted
+T2210,2026-10-07,EX-0001,Pod B,Vendor North,R3,Accepted
+T2211,2026-10-07,EX-0062,Pod C,Vendor South,R1,Rejected
+T2212,2026-10-07,EX-0028,Pod A,Vendor North,R6,Accepted
+T2213,2026-10-07,EX-0062,Pod C,Vendor South,R5,Rejected
+T2214,2026-10-07,EX-0075,Pod D,Direct,R1,Rejected
+T2215,2026-10-07,EX-0042,Pod C,Direct,R5,Accepted
+T2216,2026-10-07,EX-0032,Pod A,Vendor South,R1,Accepted
+T2217,2026-10-07,EX-0026,Pod C,Vendor South,R3,Accepted
+T2218,2026-10-07,EX-0069,Pod B,Direct,R3,Accepted
+T2219,2026-10-07,EX-0041,Pod B,Vendor South,R3,Accepted
+T2220,2026-10-07,EX-0030,Pod C,Direct,R4,Accepted
+T2221,2026-10-07,EX-0035,Pod D,Vendor South,R4,Accepted
+T2222,2026-10-07,EX-0048,Pod A,Direct,R3,Accepted
+T2223,2026-10-07,EX-0074,Pod C,Vendor South,R3,Accepted
+T2224,2026-10-07,EX-0031,Pod D,Vendor North,R2,Accepted
+T2225,2026-10-07,EX-0011,Pod D,Vendor South,R4,Rejected
+T2226,2026-10-07,EX-0002,Pod C,Vendor South,R5,Rejected
+T2227,2026-10-07,EX-0003,Pod D,Direct,R2,Accepted
+T2228,2026-10-07,EX-0058,Pod C,Vendor North,R3,Rejected
+T2229,2026-10-07,EX-0074,Pod C,Vendor South,R3,Accepted
+T2230,2026-10-07,EX-0044,Pod A,Vendor South,R2,Accepted
+T2231,2026-10-07,EX-0058,Pod C,Vendor North,R3,Accepted
+T2232,2026-10-07,EX-0006,Pod C,Direct,R1,Accepted
+T2233,2026-10-07,EX-0017,Pod B,Vendor South,R3,Accepted
+T2234,2026-10-07,EX-0024,Pod A,Direct,R5,Accepted
+T2235,2026-10-07,EX-0004,Pod A,Vendor North,R1,Rejected
+T2236,2026-10-07,EX-0054,Pod C,Direct,R3,Accepted
+T2237,2026-10-07,EX-0041,Pod B,Vendor South,R3,Accepted
+T2238,2026-10-07,EX-0026,Pod C,Vendor South,R3,Accepted
+T2239,2026-10-07,EX-0052,Pod A,Vendor North,R4,Accepted
+T2240,2026-10-07,EX-0080,Pod A,Vendor South,R6,Accepted
+T2241,2026-10-07,EX-0052,Pod A,Vendor North,R3,Accepted
+T2242,2026-10-07,EX-0021,Pod B,Direct,R4,Accepted
+T2243,2026-10-07,EX-0025,Pod B,Vendor North,R2,Rejected
+T2244,2026-10-07,EX-0011,Pod D,Vendor South,R3,Accepted
+T2245,2026-10-07,EX-0006,Pod C,Direct,R3,Accepted
+T2246,2026-10-07,EX-0052,Pod A,Vendor North,R3,Accepted
+T2247,2026-10-07,EX-0037,Pod B,Vendor North,R3,Accepted
+T2248,2026-10-07,EX-0043,Pod D,Vendor North,R3,Accepted
+T2249,2026-10-07,EX-0057,Pod B,Direct,R1,Accepted
+T2250,2026-10-07,EX-0010,Pod C,Vendor North,R3,Accepted
+T2251,2026-10-07,EX-0009,Pod B,Direct,R4,Accepted
+T2252,2026-10-07,EX-0034,Pod C,Vendor North,R6,Accepted
+T2253,2026-10-07,EX-0050,Pod C,Vendor South,R5,Accepted
+T2254,2026-10-07,EX-0032,Pod A,Vendor South,R6,Accepted
+T2255,2026-10-07,EX-0062,Pod C,Vendor South,R5,Rejected
+T2256,2026-10-07,EX-0065,Pod B,Vendor South,R5,Rejected
+T2257,2026-10-07,EX-0076,Pod A,Vendor North,R6,Accepted
+T2258,2026-10-07,EX-0001,Pod B,Vendor North,R6,Accepted
+T2259,2026-10-07,EX-0055,Pod D,Vendor North,R1,Accepted
+T2260,2026-10-07,EX-0068,Pod A,Vendor South,R3,Accepted
+T2261,2026-10-07,EX-0074,Pod C,Vendor South,R3,Accepted
+T2262,2026-10-07,EX-0017,Pod B,Vendor South,R2,Rejected
+T2263,2026-10-07,EX-0057,Pod B,Direct,R4,Rejected
+T2264,2026-10-07,EX-0056,Pod A,Vendor South,R1,Rejected
+T2265,2026-10-07,EX-0075,Pod D,Direct,R2,Accepted
+T2266,2026-10-07,EX-0031,Pod D,Vendor North,R3,Accepted
+T2267,2026-10-07,EX-0025,Pod B,Vendor North,R4,Accepted
+T2268,2026-10-07,EX-0003,Pod D,Direct,R2,Accepted
+T2269,2026-10-07,EX-0044,Pod A,Vendor South,R3,Accepted
+T2270,2026-10-07,EX-0052,Pod A,Vendor North,R3,Accepted
+T2271,2026-10-07,EX-0031,Pod D,Vendor North,R3,Accepted
+T2272,2026-10-07,EX-0030,Pod C,Direct,R3,Accepted
+T2273,2026-10-07,EX-0019,Pod D,Vendor North,R3,Rejected
+T2274,2026-10-07,EX-0008,Pod A,Vendor South,R3,Accepted
+T2275,2026-10-07,EX-0006,Pod C,Direct,R5,Accepted
+T2276,2026-10-07,EX-0025,Pod B,Vendor North,R2,Accepted
+T2277,2026-10-07,EX-0011,Pod D,Vendor South,R1,Accepted
+T2278,2026-10-07,EX-0043,Pod D,Vendor North,R3,Accepted
+T2279,2026-10-07,EX-0015,Pod D,Direct,R2,Accepted
+T2280,2026-10-07,EX-0058,Pod C,Vendor North,R3,Accepted
+T2281,2026-10-07,EX-0030,Pod C,Direct,R1,Accepted
+T2282,2026-10-07,EX-0052,Pod A,Vendor North,R2,Accepted
+T2283,2026-10-07,EX-0074,Pod C,Vendor South,R2,Accepted
+T2284,2026-10-07,EX-0032,Pod A,Vendor South,R3,Accepted
+T2285,2026-10-07,EX-0042,Pod C,Direct,R2,Accepted
+T2286,2026-10-07,EX-0074,Pod C,Vendor South,R3,Accepted
+T2287,2026-10-07,EX-0001,Pod B,Vendor North,R2,Accepted
+T2288,2026-10-07,EX-0026,Pod C,Vendor South,R3,Rejected
+T2289,2026-10-07,EX-0041,Pod B,Vendor South,R1,Accepted
+T2290,2026-10-07,EX-0023,Pod D,Vendor South,R3,Rejected
+T2291,2026-10-07,EX-0072,Pod A,Direct,R2,Rejected
+T2292,2026-10-07,EX-0034,Pod C,Vendor North,R5,Accepted
+T2293,2026-10-07,EX-0011,Pod D,Vendor South,R4,Accepted
+T2294,2026-10-07,EX-0080,Pod A,Vendor South,R5,Accepted
+T2295,2026-10-07,EX-0002,Pod C,Vendor South,R3,Rejected
+T2296,2026-10-07,EX-0011,Pod D,Vendor South,R4,Accepted
+T2297,2026-10-07,EX-0044,Pod A,Vendor South,R3,Accepted
+T2298,2026-10-07,EX-0037,Pod B,Vendor North,R5,Accepted
+T2299,2026-10-07,EX-0062,Pod C,Vendor South,R1,Rejected
+T2300,2026-10-07,EX-0063,Pod D,Direct,R3,Accepted
+T2301,2026-10-07,EX-0006,Pod C,Direct,R5,Accepted
+T2302,2026-10-07,EX-0037,Pod B,Vendor North,R3,Accepted
+T2303,2026-10-07,EX-0069,Pod B,Direct,R3,Accepted
+T2304,2026-10-07,EX-0054,Pod C,Direct,R2,Accepted
+T2305,2026-10-07,EX-0073,Pod B,Vendor North,R3,Accepted
+T2306,2026-10-07,EX-0004,Pod A,Vendor North,R3,Accepted
+T2307,2026-10-07,EX-0013,Pod B,Vendor North,R6,Rejected
+T2308,2026-10-07,EX-0018,Pod C,Direct,R4,Accepted
+T2309,2026-10-07,EX-0015,Pod D,Direct,R3,Accepted
+T2310,2026-10-07,EX-0013,Pod B,Vendor North,R5,Accepted
+T2311,2026-10-07,EX-0007,Pod D,Vendor North,R1,Accepted
+T2312,2026-10-07,EX-0073,Pod B,Vendor North,R1,Rejected
+T2313,2026-10-07,EX-0060,Pod A,Direct,R1,Accepted
+T2314,2026-10-07,EX-0018,Pod C,Direct,R3,Accepted
+T2315,2026-10-07,EX-0043,Pod D,Vendor North,R3,Accepted
+T2316,2026-10-07,EX-0068,Pod A,Vendor South,R3,Rejected
+T2317,2026-10-07,EX-0038,Pod C,Vendor South,R2,Accepted
+T2318,2026-10-07,EX-0006,Pod C,Direct,R3,Accepted
+T2319,2026-10-07,EX-0040,Pod A,Vendor North,R1,Accepted
+T2320,2026-10-07,EX-0053,Pod B,Vendor South,R4,Accepted
+T2321,2026-10-07,EX-0003,Pod D,Direct,R2,Accepted
+T2322,2026-10-07,EX-0065,Pod B,Vendor South,R4,Accepted
+T2323,2026-10-07,EX-0001,Pod B,Vendor North,R5,Accepted
+T2324,2026-10-07,EX-0068,Pod A,Vendor South,R5,Rejected
+T2325,2026-10-07,EX-0038,Pod C,Vendor South,R1,Accepted
+T2326,2026-10-07,EX-0032,Pod A,Vendor South,R3,Accepted
+T2327,2026-10-07,EX-0071,Pod D,Vendor South,R3,Rejected
+T2328,2026-10-07,EX-0068,Pod A,Vendor South,R4,Accepted
+T2329,2026-10-07,EX-0047,Pod D,Vendor South,R5,Accepted
+T2330,2026-10-07,EX-0011,Pod D,Vendor South,R2,Accepted
+T2331,2026-10-07,EX-0015,Pod D,Direct,R1,Accepted
+T2332,2026-10-07,EX-0022,Pod C,Vendor North,R1,Accepted
+T2333,2026-10-07,EX-0064,Pod A,Vendor North,R3,Accepted
+T2334,2026-10-07,EX-0042,Pod C,Direct,R3,Rejected
+T2335,2026-10-07,EX-0017,Pod B,Vendor South,R2,Rejected
+T2336,2026-10-07,EX-0031,Pod D,Vendor North,R1,Accepted
+T2337,2026-10-07,EX-0014,Pod C,Vendor South,R5,Accepted
+T2338,2026-10-07,EX-0058,Pod C,Vendor North,R3,Accepted
+T2339,2026-10-07,EX-0069,Pod B,Direct,R5,Accepted
+T2340,2026-10-07,EX-0025,Pod B,Vendor North,R4,Accepted
+T2341,2026-10-07,EX-0079,Pod D,Vendor North,R3,Accepted
+T2342,2026-10-07,EX-0006,Pod C,Direct,R3,Accepted
+T2343,2026-10-07,EX-0053,Pod B,Vendor South,R2,Accepted
+T2344,2026-10-07,EX-0061,Pod B,Vendor North,R3,Accepted
+T2345,2026-10-07,EX-0002,Pod C,Vendor South,R1,Accepted
+T2346,2026-10-07,EX-0078,Pod C,Direct,R3,Accepted
+T2347,2026-10-07,EX-0002,Pod C,Vendor South,R1,Rejected
+T2348,2026-10-07,EX-0028,Pod A,Vendor North,R3,Accepted
+T2349,2026-10-07,EX-0072,Pod A,Direct,R4,Accepted
+T2350,2026-10-07,EX-0028,Pod A,Vendor North,R6,Accepted
+T2351,2026-10-07,EX-0047,Pod D,Vendor South,R3,Rejected
+T2352,2026-10-07,EX-0068,Pod A,Vendor South,R2,Rejected
+T2353,2026-10-07,EX-0048,Pod A,Direct,R1,Accepted
+T2354,2026-10-07,EX-0073,Pod B,Vendor North,R2,Accepted
+T2355,2026-10-07,EX-0015,Pod D,Direct,R3,Accepted
+T2356,2026-10-07,EX-0061,Pod B,Vendor North,R6,Accepted
+T2357,2026-10-07,EX-0032,Pod A,Vendor South,R3,Accepted
+T2358,2026-10-07,EX-0029,Pod B,Vendor South,R5,Rejected
+T2359,2026-10-07,EX-0050,Pod C,Vendor South,R4,Accepted
+T2360,2026-10-07,EX-0022,Pod C,Vendor North,R5,Accepted
+T2361,2026-10-07,EX-0048,Pod A,Direct,R5,Accepted
+T2362,2026-10-07,EX-0055,Pod D,Vendor North,R3,Accepted
+T2363,2026-10-07,EX-0058,Pod C,Vendor North,R1,Accepted
+T2364,2026-10-07,EX-0067,Pod D,Vendor North,R2,Accepted
+T2365,2026-10-07,EX-0068,Pod A,Vendor South,R3,Rejected
+T2366,2026-10-07,EX-0037,Pod B,Vendor North,R1,Accepted
+T2367,2026-10-07,EX-0007,Pod D,Vendor North,R3,Accepted
+T2368,2026-10-07,EX-0029,Pod B,Vendor South,R5,Accepted
+T2369,2026-10-07,EX-0034,Pod C,Vendor North,R3,Rejected
+T2370,2026-10-07,EX-0068,Pod A,Vendor South,R6,Accepted
+T2371,2026-10-07,EX-0033,Pod B,Direct,R6,Accepted
+T2372,2026-10-07,EX-0025,Pod B,Vendor North,R6,Accepted
+T2373,2026-10-07,EX-0005,Pod B,Vendor South,R2,Accepted
+T2374,2026-10-07,EX-0019,Pod D,Vendor North,R3,Accepted
+T2375,2026-10-07,EX-0077,Pod B,Vendor South,R2,Accepted
+T2376,2026-10-07,EX-0054,Pod C,Direct,R4,Accepted
+T2377,2026-10-07,EX-0050,Pod C,Vendor South,R6,Accepted
+T2378,2026-10-07,EX-0034,Pod C,Vendor North,R1,Accepted
+T2379,2026-10-07,EX-0061,Pod B,Vendor North,R3,Accepted
+T2380,2026-10-07,EX-0068,Pod A,Vendor South,R3,Rejected
+T2381,2026-10-07,EX-0010,Pod C,Vendor North,R2,Accepted
+T2382,2026-10-07,EX-0040,Pod A,Vendor North,R3,Accepted
+T2383,2026-10-07,EX-0043,Pod D,Vendor North,R1,Accepted
+T2384,2026-10-07,EX-0064,Pod A,Vendor North,R3,Accepted
+T2385,2026-10-07,EX-0018,Pod C,Direct,R1,Accepted
+T2386,2026-10-07,EX-0056,Pod A,Vendor South,R5,Rejected
+T2387,2026-10-07,EX-0004,Pod A,Vendor North,R1,Rejected
+T2388,2026-10-07,EX-0057,Pod B,Direct,R2,Accepted
+T2389,2026-10-07,EX-0054,Pod C,Direct,R3,Accepted
+T2390,2026-10-07,EX-0037,Pod B,Vendor North,R5,Accepted
+T2391,2026-10-07,EX-0073,Pod B,Vendor North,R3,Accepted
+T2392,2026-10-07,EX-0011,Pod D,Vendor South,R6,Accepted
+T2393,2026-10-07,EX-0009,Pod B,Direct,R5,Accepted
+T2394,2026-10-07,EX-0025,Pod B,Vendor North,R3,Accepted
+T2395,2026-10-07,EX-0041,Pod B,Vendor South,R3,Accepted
+T2396,2026-10-07,EX-0040,Pod A,Vendor North,R6,Accepted
+T2397,2026-10-07,EX-0013,Pod B,Vendor North,R6,Accepted
+T2398,2026-10-07,EX-0056,Pod A,Vendor South,R3,Accepted
+T2399,2026-10-07,EX-0042,Pod C,Direct,R5,Rejected
+T2400,2026-10-07,EX-0045,Pod B,Direct,R3,Rejected
+T2401,2026-10-07,EX-0025,Pod B,Vendor North,R2,Accepted
+T2402,2026-10-07,EX-0079,Pod D,Vendor North,R5,Accepted
+T2403,2026-10-07,EX-0065,Pod B,Vendor South,R5,Rejected
+T2404,2026-10-07,EX-0046,Pod C,Vendor North,R3,Accepted
+T2405,2026-10-07,EX-0051,Pod D,Direct,R5,Accepted
+T2406,2026-10-07,EX-0056,Pod A,Vendor South,R3,Accepted
+T2407,2026-10-07,EX-0077,Pod B,Vendor South,R6,Accepted
+T2408,2026-10-07,EX-0009,Pod B,Direct,R3,Rejected
+T2409,2026-10-07,EX-0061,Pod B,Vendor North,R6,Accepted
+T2410,2026-10-07,EX-0037,Pod B,Vendor North,R1,Accepted
+T2411,2026-10-07,EX-0024,Pod A,Direct,R3,Accepted
+T2412,2026-10-07,EX-0001,Pod B,Vendor North,R5,Accepted
+T2413,2026-10-07,EX-0052,Pod A,Vendor North,R1,Accepted
+T2414,2026-10-07,EX-0049,Pod B,Vendor North,R3,Accepted
+T2415,2026-10-07,EX-0014,Pod C,Vendor South,R3,Accepted
+T2416,2026-10-07,EX-0054,Pod C,Direct,R4,Accepted
+T2417,2026-10-07,EX-0003,Pod D,Direct,R3,Accepted
+T2418,2026-10-07,EX-0019,Pod D,Vendor North,R3,Accepted
+T2419,2026-10-07,EX-0040,Pod A,Vendor North,R6,Accepted
+T2420,2026-10-07,EX-0079,Pod D,Vendor North,R3,Accepted
+T2421,2026-10-07,EX-0047,Pod D,Vendor South,R6,Accepted
+T2422,2026-10-07,EX-0034,Pod C,Vendor North,R4,Accepted
+T2423,2026-10-07,EX-0062,Pod C,Vendor South,R1,Accepted
+T2424,2026-10-07,EX-0023,Pod D,Vendor South,R3,Rejected
+T2425,2026-10-07,EX-0034,Pod C,Vendor North,R2,Rejected
+T2426,2026-10-07,EX-0074,Pod C,Vendor South,R3,Accepted
+T2427,2026-10-07,EX-0045,Pod B,Direct,R3,Accepted
+T2428,2026-10-07,EX-0010,Pod C,Vendor North,R1,Accepted
+T2429,2026-10-07,EX-0068,Pod A,Vendor South,R3,Accepted
+T2430,2026-10-07,EX-0066,Pod C,Direct,R1,Accepted
+T2431,2026-10-07,EX-0008,Pod A,Vendor South,R3,Accepted
+T2432,2026-10-07,EX-0062,Pod C,Vendor South,R3,Accepted
+T2433,2026-10-07,EX-0002,Pod C,Vendor South,R5,Accepted
+T2434,2026-10-07,EX-0070,Pod C,Vendor North,R5,Accepted
+T2435,2026-10-07,EX-0028,Pod A,Vendor North,R1,Accepted
+T2436,2026-10-07,EX-0026,Pod C,Vendor South,R6,Rejected
+T2437,2026-10-08,EX-0029,Pod B,Vendor South,R6,Accepted
+T2438,2026-10-08,EX-0066,Pod C,Direct,R3,Accepted
+T2439,2026-10-08,EX-0022,Pod C,Vendor North,R2,Accepted
+T2440,2026-10-08,EX-0031,Pod D,Vendor North,R2,Accepted
+T2441,2026-10-08,EX-0050,Pod C,Vendor South,R5,Accepted
+T2442,2026-10-08,EX-0051,Pod D,Direct,R3,Accepted
+T2443,2026-10-08,EX-0024,Pod A,Direct,R3,Accepted
+T2444,2026-10-08,EX-0024,Pod A,Direct,R3,Accepted
+T2445,2026-10-08,EX-0040,Pod A,Vendor North,R3,Accepted
+T2446,2026-10-08,EX-0078,Pod C,Direct,R4,Accepted
+T2447,2026-10-08,EX-0050,Pod C,Vendor South,R5,Accepted
+T2448,2026-10-08,EX-0014,Pod C,Vendor South,R5,Accepted
+T2449,2026-10-08,EX-0034,Pod C,Vendor North,R3,Accepted
+T2450,2026-10-08,EX-0069,Pod B,Direct,R4,Accepted
+T2451,2026-10-08,EX-0034,Pod C,Vendor North,R3,Accepted
+T2452,2026-10-08,EX-0072,Pod A,Direct,R4,Rejected
+T2453,2026-10-08,EX-0017,Pod B,Vendor South,R3,Accepted
+T2454,2026-10-08,EX-0001,Pod B,Vendor North,R2,Accepted
+T2455,2026-10-08,EX-0047,Pod D,Vendor South,R5,Rejected
+T2456,2026-10-08,EX-0015,Pod D,Direct,R3,Accepted
+T2457,2026-10-08,EX-0021,Pod B,Direct,R5,Accepted
+T2458,2026-10-08,EX-0064,Pod A,Vendor North,R3,Rejected
+T2459,2026-10-08,EX-0070,Pod C,Vendor North,R3,Accepted
+T2460,2026-10-08,EX-0067,Pod D,Vendor North,R4,Accepted
+T2461,2026-10-08,EX-0023,Pod D,Vendor South,R3,Accepted
+T2462,2026-10-08,EX-0019,Pod D,Vendor North,R4,Accepted
+T2463,2026-10-08,EX-0077,Pod B,Vendor South,R3,Accepted
+T2464,2026-10-08,EX-0043,Pod D,Vendor North,R3,Accepted
+T2465,2026-10-08,EX-0024,Pod A,Direct,R3,Accepted
+T2466,2026-10-08,EX-0055,Pod D,Vendor North,R2,Rejected
+T2467,2026-10-08,EX-0053,Pod B,Vendor South,R3,Accepted
+T2468,2026-10-08,EX-0031,Pod D,Vendor North,R3,Accepted
+T2469,2026-10-08,EX-0042,Pod C,Direct,R3,Accepted
+T2470,2026-10-08,EX-0064,Pod A,Vendor North,R3,Accepted
+T2471,2026-10-08,EX-0073,Pod B,Vendor North,R3,Accepted
+T2472,2026-10-08,EX-0063,Pod D,Direct,R3,Accepted
+T2473,2026-10-08,EX-0014,Pod C,Vendor South,R3,Accepted
+T2474,2026-10-08,EX-0040,Pod A,Vendor North,R2,Accepted
+T2475,2026-10-08,EX-0069,Pod B,Direct,R4,Accepted
+T2476,2026-10-08,EX-0045,Pod B,Direct,R3,Accepted
+T2477,2026-10-08,EX-0070,Pod C,Vendor North,R3,Accepted
+T2478,2026-10-08,EX-0071,Pod D,Vendor South,R4,Accepted
+T2479,2026-10-08,EX-0027,Pod D,Direct,R3,Accepted
+T2480,2026-10-08,EX-0077,Pod B,Vendor South,R2,Accepted
+T2481,2026-10-08,EX-0034,Pod C,Vendor North,R6,Rejected
+T2482,2026-10-08,EX-0078,Pod C,Direct,R2,Accepted
+T2483,2026-10-08,EX-0017,Pod B,Vendor South,R2,Rejected
+T2484,2026-10-08,EX-0067,Pod D,Vendor North,R5,Accepted
+T2485,2026-10-08,EX-0075,Pod D,Direct,R2,Accepted
+T2486,2026-10-08,EX-0043,Pod D,Vendor North,R3,Rejected
+T2487,2026-10-08,EX-0071,Pod D,Vendor South,R3,Accepted
+T2488,2026-10-08,EX-0068,Pod A,Vendor South,R5,Accepted
+T2489,2026-10-08,EX-0060,Pod A,Direct,R1,Accepted
+T2490,2026-10-08,EX-0021,Pod B,Direct,R3,Accepted
+T2491,2026-10-08,EX-0055,Pod D,Vendor North,R3,Accepted
+T2492,2026-10-08,EX-0020,Pod A,Vendor South,R3,Accepted
+T2493,2026-10-08,EX-0014,Pod C,Vendor South,R1,Accepted
+T2494,2026-10-08,EX-0038,Pod C,Vendor South,R5,Accepted
+T2495,2026-10-08,EX-0020,Pod A,Vendor South,R3,Rejected
+T2496,2026-10-08,EX-0077,Pod B,Vendor South,R3,Rejected
+T2497,2026-10-08,EX-0068,Pod A,Vendor South,R3,Accepted
+T2498,2026-10-08,EX-0021,Pod B,Direct,R1,Accepted
+T2499,2026-10-08,EX-0058,Pod C,Vendor North,R6,Accepted
+T2500,2026-10-08,EX-0059,Pod D,Vendor South,R5,Rejected
+T2501,2026-10-08,EX-0057,Pod B,Direct,R3,Accepted
+T2502,2026-10-08,EX-0014,Pod C,Vendor South,R4,Accepted
+T2503,2026-10-08,EX-0030,Pod C,Direct,R3,Accepted
+T2504,2026-10-08,EX-0004,Pod A,Vendor North,R3,Accepted
+T2505,2026-10-08,EX-0073,Pod B,Vendor North,R3,Rejected
+T2506,2026-10-08,EX-0075,Pod D,Direct,R6,Rejected
+T2507,2026-10-08,EX-0070,Pod C,Vendor North,R6,Accepted
+T2508,2026-10-08,EX-0059,Pod D,Vendor South,R3,Accepted
+T2509,2026-10-08,EX-0015,Pod D,Direct,R5,Accepted
+T2510,2026-10-08,EX-0006,Pod C,Direct,R1,Accepted
+T2511,2026-10-08,EX-0068,Pod A,Vendor South,R4,Accepted
+T2512,2026-10-08,EX-0023,Pod D,Vendor South,R2,Accepted
+T2513,2026-10-08,EX-0011,Pod D,Vendor South,R3,Rejected
+T2514,2026-10-08,EX-0031,Pod D,Vendor North,R5,Rejected
+T2515,2026-10-08,EX-0061,Pod B,Vendor North,R6,Accepted
+T2516,2026-10-08,EX-0008,Pod A,Vendor South,R4,Accepted
+T2517,2026-10-08,EX-0054,Pod C,Direct,R1,Accepted
+T2518,2026-10-08,EX-0038,Pod C,Vendor South,R3,Rejected
+T2519,2026-10-08,EX-0071,Pod D,Vendor South,R3,Accepted
+T2520,2026-10-08,EX-0039,Pod D,Direct,R5,Accepted
+T2521,2026-10-08,EX-0062,Pod C,Vendor South,R5,Rejected
+T2522,2026-10-08,EX-0077,Pod B,Vendor South,R6,Accepted
+T2523,2026-10-08,EX-0029,Pod B,Vendor South,R6,Accepted
+T2524,2026-10-08,EX-0029,Pod B,Vendor South,R4,Rejected
+T2525,2026-10-08,EX-0002,Pod C,Vendor South,R3,Accepted
+T2526,2026-10-08,EX-0008,Pod A,Vendor South,R6,Accepted
+T2527,2026-10-08,EX-0019,Pod D,Vendor North,R3,Accepted
+T2528,2026-10-08,EX-0008,Pod A,Vendor South,R6,Accepted
+T2529,2026-10-08,EX-0043,Pod D,Vendor North,R2,Accepted
+T2530,2026-10-08,EX-0039,Pod D,Direct,R1,Accepted
+T2531,2026-10-08,EX-0066,Pod C,Direct,R3,Accepted
+T2532,2026-10-08,EX-0009,Pod B,Direct,R3,Accepted
+T2533,2026-10-08,EX-0002,Pod C,Vendor South,R3,Rejected
+T2534,2026-10-08,EX-0044,Pod A,Vendor South,R1,Accepted
+T2535,2026-10-08,EX-0068,Pod A,Vendor South,R2,Accepted
+T2536,2026-10-08,EX-0020,Pod A,Vendor South,R3,Accepted
+T2537,2026-10-08,EX-0006,Pod C,Direct,R4,Rejected
+T2538,2026-10-08,EX-0059,Pod D,Vendor South,R3,Accepted
+T2539,2026-10-08,EX-0027,Pod D,Direct,R3,Accepted
+T2540,2026-10-08,EX-0065,Pod B,Vendor South,R6,Accepted
+T2541,2026-10-08,EX-0050,Pod C,Vendor South,R3,Accepted
+T2542,2026-10-08,EX-0073,Pod B,Vendor North,R3,Accepted
+T2543,2026-10-08,EX-0034,Pod C,Vendor North,R1,Accepted
+T2544,2026-10-08,EX-0051,Pod D,Direct,R3,Accepted
+T2545,2026-10-08,EX-0055,Pod D,Vendor North,R3,Accepted
+T2546,2026-10-08,EX-0060,Pod A,Direct,R2,Accepted
+T2547,2026-10-08,EX-0035,Pod D,Vendor South,R1,Accepted
+T2548,2026-10-08,EX-0019,Pod D,Vendor North,R3,Accepted
+T2549,2026-10-08,EX-0072,Pod A,Direct,R3,Accepted
+T2550,2026-10-08,EX-0035,Pod D,Vendor South,R1,Accepted
+T2551,2026-10-08,EX-0059,Pod D,Vendor South,R3,Accepted
+T2552,2026-10-08,EX-0004,Pod A,Vendor North,R5,Rejected
+T2553,2026-10-08,EX-0014,Pod C,Vendor South,R2,Accepted
+T2554,2026-10-08,EX-0019,Pod D,Vendor North,R6,Accepted
+T2555,2026-10-08,EX-0015,Pod D,Direct,R3,Accepted
+T2556,2026-10-08,EX-0022,Pod C,Vendor North,R1,Accepted
+T2557,2026-10-08,EX-0036,Pod A,Direct,R1,Accepted
+T2558,2026-10-08,EX-0056,Pod A,Vendor South,R5,Rejected
+T2559,2026-10-08,EX-0059,Pod D,Vendor South,R2,Rejected
+T2560,2026-10-08,EX-0080,Pod A,Vendor South,R6,Accepted
+T2561,2026-10-08,EX-0034,Pod C,Vendor North,R5,Accepted
+T2562,2026-10-08,EX-0034,Pod C,Vendor North,R4,Accepted
+T2563,2026-10-08,EX-0044,Pod A,Vendor South,R3,Rejected
+T2564,2026-10-08,EX-0020,Pod A,Vendor South,R3,Accepted
+T2565,2026-10-08,EX-0017,Pod B,Vendor South,R3,Accepted
+T2566,2026-10-08,EX-0017,Pod B,Vendor South,R1,Accepted
+T2567,2026-10-08,EX-0025,Pod B,Vendor North,R3,Rejected
+T2568,2026-10-08,EX-0042,Pod C,Direct,R5,Rejected
+T2569,2026-10-08,EX-0079,Pod D,Vendor North,R2,Accepted
+T2570,2026-10-08,EX-0076,Pod A,Vendor North,R3,Accepted
+T2571,2026-10-08,EX-0045,Pod B,Direct,R6,Accepted
+T2572,2026-10-08,EX-0051,Pod D,Direct,R6,Accepted
+T2573,2026-10-08,EX-0075,Pod D,Direct,R5,Accepted
+T2574,2026-10-08,EX-0062,Pod C,Vendor South,R2,Accepted
+T2575,2026-10-08,EX-0074,Pod C,Vendor South,R3,Rejected
+T2576,2026-10-08,EX-0027,Pod D,Direct,R3,Accepted
+T2577,2026-10-08,EX-0032,Pod A,Vendor South,R3,Accepted
+T2578,2026-10-08,EX-0069,Pod B,Direct,R3,Rejected
+T2579,2026-10-08,EX-0025,Pod B,Vendor North,R6,Accepted
+T2580,2026-10-08,EX-0034,Pod C,Vendor North,R6,Accepted
+T2581,2026-10-08,EX-0020,Pod A,Vendor South,R3,Accepted
+T2582,2026-10-08,EX-0057,Pod B,Direct,R1,Accepted
+T2583,2026-10-08,EX-0001,Pod B,Vendor North,R5,Rejected
+T2584,2026-10-08,EX-0047,Pod D,Vendor South,R3,Accepted
+T2585,2026-10-08,EX-0048,Pod A,Direct,R3,Accepted
+T2586,2026-10-08,EX-0034,Pod C,Vendor North,R5,Accepted
+T2587,2026-10-08,EX-0061,Pod B,Vendor North,R6,Accepted
+T2588,2026-10-08,EX-0044,Pod A,Vendor South,R2,Accepted
+T2589,2026-10-08,EX-0016,Pod A,Vendor North,R3,Accepted
+T2590,2026-10-08,EX-0028,Pod A,Vendor North,R3,Accepted
+T2591,2026-10-08,EX-0074,Pod C,Vendor South,R3,Accepted
+T2592,2026-10-08,EX-0013,Pod B,Vendor North,R4,Accepted
+T2593,2026-10-08,EX-0058,Pod C,Vendor North,R5,Accepted
+T2594,2026-10-08,EX-0066,Pod C,Direct,R3,Rejected
+T2595,2026-10-08,EX-0044,Pod A,Vendor South,R3,Accepted
+T2596,2026-10-08,EX-0069,Pod B,Direct,R5,Rejected
+T2597,2026-10-08,EX-0059,Pod D,Vendor South,R6,Accepted
+T2598,2026-10-08,EX-0013,Pod B,Vendor North,R3,Accepted
+T2599,2026-10-08,EX-0022,Pod C,Vendor North,R5,Accepted
+T2600,2026-10-08,EX-0045,Pod B,Direct,R1,Accepted
+T2601,2026-10-08,EX-0008,Pod A,Vendor South,R1,Rejected
+T2602,2026-10-08,EX-0026,Pod C,Vendor South,R3,Accepted
+T2603,2026-10-08,EX-0055,Pod D,Vendor North,R3,Accepted
+T2604,2026-10-08,EX-0023,Pod D,Vendor South,R2,Accepted
+T2605,2026-10-08,EX-0007,Pod D,Vendor North,R6,Accepted
+T2606,2026-10-08,EX-0026,Pod C,Vendor South,R5,Accepted
+T2607,2026-10-08,EX-0072,Pod A,Direct,R5,Accepted
+T2608,2026-10-08,EX-0070,Pod C,Vendor North,R3,Rejected
+T2609,2026-10-08,EX-0008,Pod A,Vendor South,R5,Rejected
+T2610,2026-10-08,EX-0067,Pod D,Vendor North,R2,Accepted
+T2611,2026-10-08,EX-0019,Pod D,Vendor North,R3,Accepted
+T2612,2026-10-08,EX-0041,Pod B,Vendor South,R2,Accepted
+T2613,2026-10-08,EX-0021,Pod B,Direct,R2,Accepted
+T2614,2026-10-08,EX-0067,Pod D,Vendor North,R2,Accepted
+T2615,2026-10-08,EX-0038,Pod C,Vendor South,R3,Accepted
+T2616,2026-10-08,EX-0043,Pod D,Vendor North,R3,Accepted
+T2617,2026-10-08,EX-0061,Pod B,Vendor North,R5,Accepted
+T2618,2026-10-08,EX-0013,Pod B,Vendor North,R3,Accepted
+T2619,2026-10-08,EX-0063,Pod D,Direct,R5,Accepted
+T2620,2026-10-08,EX-0073,Pod B,Vendor North,R1,Accepted
+T2621,2026-10-08,EX-0006,Pod C,Direct,R3,Accepted
+T2622,2026-10-08,EX-0078,Pod C,Direct,R3,Rejected
+T2623,2026-10-08,EX-0057,Pod B,Direct,R3,Accepted
+T2624,2026-10-08,EX-0034,Pod C,Vendor North,R4,Rejected
+T2625,2026-10-08,EX-0008,Pod A,Vendor South,R3,Rejected
+T2626,2026-10-08,EX-0041,Pod B,Vendor South,R4,Rejected
+T2627,2026-10-08,EX-0042,Pod C,Direct,R3,Rejected
+T2628,2026-10-08,EX-0023,Pod D,Vendor South,R3,Accepted
+T2629,2026-10-08,EX-0020,Pod A,Vendor South,R3,Accepted
+T2630,2026-10-08,EX-0069,Pod B,Direct,R4,Accepted
+T2631,2026-10-08,EX-0007,Pod D,Vendor North,R5,Accepted
+T2632,2026-10-08,EX-0007,Pod D,Vendor North,R3,Accepted
+T2633,2026-10-08,EX-0053,Pod B,Vendor South,R3,Accepted
+T2634,2026-10-08,EX-0079,Pod D,Vendor North,R6,Rejected
+T2635,2026-10-08,EX-0016,Pod A,Vendor North,R3,Accepted
+T2636,2026-10-08,EX-0010,Pod C,Vendor North,R1,Accepted
+T2637,2026-10-08,EX-0001,Pod B,Vendor North,R3,Rejected
+T2638,2026-10-08,EX-0079,Pod D,Vendor North,R1,Accepted
+T2639,2026-10-08,EX-0071,Pod D,Vendor South,R4,Accepted
+T2640,2026-10-08,EX-0071,Pod D,Vendor South,R6,Accepted
+T2641,2026-10-08,EX-0046,Pod C,Vendor North,R1,Accepted
+T2642,2026-10-08,EX-0033,Pod B,Direct,R3,Accepted
+T2643,2026-10-08,EX-0030,Pod C,Direct,R3,Accepted
+T2644,2026-10-08,EX-0073,Pod B,Vendor North,R3,Accepted
+T2645,2026-10-08,EX-0012,Pod A,Direct,R2,Accepted
+T2646,2026-10-08,EX-0006,Pod C,Direct,R4,Accepted
+T2647,2026-10-08,EX-0070,Pod C,Vendor North,R3,Accepted
+T2648,2026-10-08,EX-0034,Pod C,Vendor North,R6,Accepted
+T2649,2026-10-08,EX-0004,Pod A,Vendor North,R1,Accepted
+T2650,2026-10-08,EX-0029,Pod B,Vendor South,R3,Accepted
+T2651,2026-10-08,EX-0080,Pod A,Vendor South,R4,Accepted
+T2652,2026-10-08,EX-0041,Pod B,Vendor South,R2,Accepted
+T2653,2026-10-08,EX-0054,Pod C,Direct,R3,Rejected
+T2654,2026-10-08,EX-0068,Pod A,Vendor South,R4,Accepted
+T2655,2026-10-08,EX-0026,Pod C,Vendor South,R1,Accepted
+T2656,2026-10-08,EX-0050,Pod C,Vendor South,R3,Rejected
+T2657,2026-10-08,EX-0013,Pod B,Vendor North,R3,Accepted
+T2658,2026-10-08,EX-0018,Pod C,Direct,R6,Accepted
+T2659,2026-10-08,EX-0044,Pod A,Vendor South,R3,Accepted
+T2660,2026-10-08,EX-0018,Pod C,Direct,R4,Accepted
+T2661,2026-10-08,EX-0012,Pod A,Direct,R3,Accepted
+T2662,2026-10-08,EX-0033,Pod B,Direct,R5,Accepted
+T2663,2026-10-08,EX-0061,Pod B,Vendor North,R1,Rejected
+T2664,2026-10-08,EX-0003,Pod D,Direct,R3,Accepted
+T2665,2026-10-08,EX-0020,Pod A,Vendor South,R3,Accepted
+T2666,2026-10-08,EX-0021,Pod B,Direct,R3,Accepted
+T2667,2026-10-08,EX-0036,Pod A,Direct,R5,Accepted
+T2668,2026-10-08,EX-0076,Pod A,Vendor North,R3,Accepted
+T2669,2026-10-08,EX-0047,Pod D,Vendor South,R2,Rejected
+T2670,2026-10-08,EX-0005,Pod B,Vendor South,R5,Accepted
+T2671,2026-10-08,EX-0068,Pod A,Vendor South,R6,Accepted
+T2672,2026-10-08,EX-0064,Pod A,Vendor North,R3,Accepted
+T2673,2026-10-08,EX-0057,Pod B,Direct,R6,Rejected
+T2674,2026-10-08,EX-0041,Pod B,Vendor South,R4,Accepted
+T2675,2026-10-08,EX-0006,Pod C,Direct,R2,Accepted
+T2676,2026-10-08,EX-0067,Pod D,Vendor North,R6,Rejected
+T2677,2026-10-08,EX-0066,Pod C,Direct,R4,Accepted
+T2678,2026-10-08,EX-0070,Pod C,Vendor North,R6,Accepted
+T2679,2026-10-08,EX-0026,Pod C,Vendor South,R1,Rejected
+T2680,2026-10-08,EX-0068,Pod A,Vendor South,R4,Accepted
+T2681,2026-10-08,EX-0076,Pod A,Vendor North,R3,Accepted
+T2682,2026-10-08,EX-0032,Pod A,Vendor South,R4,Accepted
+T2683,2026-10-08,EX-0043,Pod D,Vendor North,R6,Rejected
+T2684,2026-10-08,EX-0015,Pod D,Direct,R6,Accepted
+T2685,2026-10-08,EX-0017,Pod B,Vendor South,R6,Accepted
+T2686,2026-10-08,EX-0028,Pod A,Vendor North,R4,Rejected
+T2687,2026-10-08,EX-0043,Pod D,Vendor North,R3,Rejected
+T2688,2026-10-08,EX-0051,Pod D,Direct,R3,Accepted
+T2689,2026-10-08,EX-0013,Pod B,Vendor North,R4,Rejected
+T2690,2026-10-08,EX-0069,Pod B,Direct,R6,Accepted
+T2691,2026-10-08,EX-0073,Pod B,Vendor North,R6,Accepted
+T2692,2026-10-08,EX-0057,Pod B,Direct,R3,Accepted
+T2693,2026-10-08,EX-0074,Pod C,Vendor South,R3,Accepted
+T2694,2026-10-08,EX-0053,Pod B,Vendor South,R3,Accepted
+T2695,2026-10-08,EX-0076,Pod A,Vendor North,R1,Accepted
+T2696,2026-10-08,EX-0059,Pod D,Vendor South,R5,Rejected
+T2697,2026-10-08,EX-0057,Pod B,Direct,R6,Accepted
+T2698,2026-10-08,EX-0042,Pod C,Direct,R2,Rejected
+T2699,2026-10-08,EX-0067,Pod D,Vendor North,R3,Accepted
+T2700,2026-10-08,EX-0030,Pod C,Direct,R3,Accepted
+T2701,2026-10-08,EX-0030,Pod C,Direct,R5,Accepted
+T2702,2026-10-08,EX-0017,Pod B,Vendor South,R6,Rejected
+T2703,2026-10-08,EX-0025,Pod B,Vendor North,R1,Accepted
+T2704,2026-10-08,EX-0037,Pod B,Vendor North,R3,Accepted
+T2705,2026-10-08,EX-0054,Pod C,Direct,R3,Accepted
+T2706,2026-10-08,EX-0009,Pod B,Direct,R1,Accepted
+T2707,2026-10-08,EX-0079,Pod D,Vendor North,R6,Accepted
+T2708,2026-10-08,EX-0070,Pod C,Vendor North,R2,Accepted
+T2709,2026-10-08,EX-0055,Pod D,Vendor North,R2,Accepted
+T2710,2026-10-08,EX-0031,Pod D,Vendor North,R2,Accepted
+T2711,2026-10-08,EX-0059,Pod D,Vendor South,R6,Rejected
+T2712,2026-10-08,EX-0062,Pod C,Vendor South,R3,Accepted
+T2713,2026-10-08,EX-0019,Pod D,Vendor North,R3,Accepted
+T2714,2026-10-08,EX-0019,Pod D,Vendor North,R3,Accepted
+T2715,2026-10-08,EX-0016,Pod A,Vendor North,R3,Accepted
+T2716,2026-10-08,EX-0032,Pod A,Vendor South,R3,Rejected
+T2717,2026-10-08,EX-0028,Pod A,Vendor North,R4,Accepted
+T2718,2026-10-08,EX-0073,Pod B,Vendor North,R3,Accepted
+T2719,2026-10-08,EX-0021,Pod B,Direct,R3,Accepted
+T2720,2026-10-08,EX-0019,Pod D,Vendor North,R5,Accepted
+T2721,2026-10-08,EX-0014,Pod C,Vendor South,R3,Accepted
+T2722,2026-10-08,EX-0069,Pod B,Direct,R1,Accepted
+T2723,2026-10-08,EX-0022,Pod C,Vendor North,R5,Accepted
+T2724,2026-10-08,EX-0079,Pod D,Vendor North,R3,Accepted
+T2725,2026-10-08,EX-0016,Pod A,Vendor North,R3,Accepted
+T2726,2026-10-08,EX-0005,Pod B,Vendor South,R4,Accepted
+T2727,2026-10-08,EX-0003,Pod D,Direct,R6,Accepted
+T2728,2026-10-08,EX-0017,Pod B,Vendor South,R3,Rejected
+T2729,2026-10-08,EX-0057,Pod B,Direct,R2,Accepted
+T2730,2026-10-08,EX-0056,Pod A,Vendor South,R3,Accepted
+T2731,2026-10-08,EX-0078,Pod C,Direct,R6,Accepted
+T2732,2026-10-08,EX-0026,Pod C,Vendor South,R1,Rejected
+T2733,2026-10-08,EX-0043,Pod D,Vendor North,R4,Accepted
+T2734,2026-10-08,EX-0067,Pod D,Vendor North,R3,Accepted
+T2735,2026-10-08,EX-0061,Pod B,Vendor North,R3,Accepted
+T2736,2026-10-08,EX-0073,Pod B,Vendor North,R3,Accepted
+T2737,2026-10-08,EX-0015,Pod D,Direct,R3,Accepted
+T2738,2026-10-08,EX-0017,Pod B,Vendor South,R1,Rejected
+T2739,2026-10-08,EX-0034,Pod C,Vendor North,R3,Accepted
+T2740,2026-10-08,EX-0074,Pod C,Vendor South,R6,Rejected
+T2741,2026-10-08,EX-0003,Pod D,Direct,R3,Accepted
+T2742,2026-10-08,EX-0005,Pod B,Vendor South,R5,Accepted
+T2743,2026-10-08,EX-0066,Pod C,Direct,R1,Accepted
+T2744,2026-10-08,EX-0078,Pod C,Direct,R6,Accepted
+T2745,2026-10-08,EX-0034,Pod C,Vendor North,R3,Accepted
+T2746,2026-10-08,EX-0077,Pod B,Vendor South,R4,Accepted
+T2747,2026-10-08,EX-0013,Pod B,Vendor North,R4,Accepted
+T2748,2026-10-08,EX-0057,Pod B,Direct,R3,Rejected
+T2749,2026-10-08,EX-0052,Pod A,Vendor North,R3,Accepted
+T2750,2026-10-08,EX-0037,Pod B,Vendor North,R5,Accepted
+T2751,2026-10-08,EX-0007,Pod D,Vendor North,R3,Accepted
+T2752,2026-10-08,EX-0018,Pod C,Direct,R3,Accepted
+T2753,2026-10-08,EX-0034,Pod C,Vendor North,R1,Rejected
+T2754,2026-10-08,EX-0045,Pod B,Direct,R3,Rejected
+T2755,2026-10-08,EX-0055,Pod D,Vendor North,R4,Accepted
+T2756,2026-10-08,EX-0035,Pod D,Vendor South,R4,Accepted
+T2757,2026-10-08,EX-0071,Pod D,Vendor South,R6,Accepted
+T2758,2026-10-08,EX-0016,Pod A,Vendor North,R4,Accepted
+T2759,2026-10-08,EX-0025,Pod B,Vendor North,R5,Accepted
+T2760,2026-10-08,EX-0036,Pod A,Direct,R3,Accepted
+T2761,2026-10-08,EX-0040,Pod A,Vendor North,R3,Accepted
+T2762,2026-10-08,EX-0064,Pod A,Vendor North,R2,Accepted
+T2763,2026-10-08,EX-0029,Pod B,Vendor South,R3,Accepted
+T2764,2026-10-08,EX-0045,Pod B,Direct,R3,Rejected
+T2765,2026-10-08,EX-0007,Pod D,Vendor North,R3,Accepted
+T2766,2026-10-08,EX-0007,Pod D,Vendor North,R6,Accepted
+T2767,2026-10-08,EX-0076,Pod A,Vendor North,R2,Accepted
+T2768,2026-10-08,EX-0040,Pod A,Vendor North,R3,Rejected
+T2769,2026-10-08,EX-0066,Pod C,Direct,R6,Rejected
+T2770,2026-10-08,EX-0042,Pod C,Direct,R3,Rejected
+T2771,2026-10-08,EX-0053,Pod B,Vendor South,R3,Rejected
+T2772,2026-10-08,EX-0073,Pod B,Vendor North,R1,Accepted
+T2773,2026-10-08,EX-0047,Pod D,Vendor South,R3,Rejected
+T2774,2026-10-08,EX-0024,Pod A,Direct,R6,Rejected
+T2775,2026-10-08,EX-0059,Pod D,Vendor South,R5,Accepted
+T2776,2026-10-08,EX-0066,Pod C,Direct,R5,Accepted
+T2777,2026-10-08,EX-0048,Pod A,Direct,R1,Rejected
+T2778,2026-10-08,EX-0078,Pod C,Direct,R6,Accepted
+T2779,2026-10-08,EX-0043,Pod D,Vendor North,R2,Accepted
+T2780,2026-10-08,EX-0013,Pod B,Vendor North,R2,Accepted
+T2781,2026-10-08,EX-0008,Pod A,Vendor South,R6,Accepted
+T2782,2026-10-08,EX-0057,Pod B,Direct,R3,Accepted
+T2783,2026-10-08,EX-0058,Pod C,Vendor North,R3,Rejected
+T2784,2026-10-08,EX-0018,Pod C,Direct,R3,Accepted
+T2785,2026-10-08,EX-0058,Pod C,Vendor North,R3,Accepted
+T2786,2026-10-08,EX-0063,Pod D,Direct,R4,Accepted
+T2787,2026-10-08,EX-0006,Pod C,Direct,R3,Accepted
+T2788,2026-10-08,EX-0027,Pod D,Direct,R3,Accepted
+T2789,2026-10-09,EX-0070,Pod C,Vendor North,R3,Accepted
+T2790,2026-10-09,EX-0012,Pod A,Direct,R5,Accepted
+T2791,2026-10-09,EX-0079,Pod D,Vendor North,R2,Accepted
+T2792,2026-10-09,EX-0005,Pod B,Vendor South,R3,Accepted
+T2793,2026-10-09,EX-0035,Pod D,Vendor South,R2,Accepted
+T2794,2026-10-09,EX-0047,Pod D,Vendor South,R4,Accepted
+T2795,2026-10-09,EX-0004,Pod A,Vendor North,R5,Accepted
+T2796,2026-10-09,EX-0046,Pod C,Vendor North,R3,Accepted
+T2797,2026-10-09,EX-0040,Pod A,Vendor North,R3,Accepted
+T2798,2026-10-09,EX-0017,Pod B,Vendor South,R2,Rejected
+T2799,2026-10-09,EX-0048,Pod A,Direct,R2,Accepted
+T2800,2026-10-09,EX-0003,Pod D,Direct,R1,Accepted
+T2801,2026-10-09,EX-0053,Pod B,Vendor South,R5,Accepted
+T2802,2026-10-09,EX-0047,Pod D,Vendor South,R4,Accepted
+T2803,2026-10-09,EX-0065,Pod B,Vendor South,R4,Accepted
+T2804,2026-10-09,EX-0068,Pod A,Vendor South,R3,Accepted
+T2805,2026-10-09,EX-0045,Pod B,Direct,R3,Accepted
+T2806,2026-10-09,EX-0047,Pod D,Vendor South,R6,Accepted
+T2807,2026-10-09,EX-0043,Pod D,Vendor North,R3,Accepted
+T2808,2026-10-09,EX-0022,Pod C,Vendor North,R3,Accepted
+T2809,2026-10-09,EX-0072,Pod A,Direct,R2,Accepted
+T2810,2026-10-09,EX-0034,Pod C,Vendor North,R4,Accepted
+T2811,2026-10-09,EX-0078,Pod C,Direct,R4,Accepted
+T2812,2026-10-09,EX-0011,Pod D,Vendor South,R3,Rejected
+T2813,2026-10-09,EX-0003,Pod D,Direct,R3,Accepted
+T2814,2026-10-09,EX-0055,Pod D,Vendor North,R3,Accepted
+T2815,2026-10-09,EX-0030,Pod C,Direct,R3,Accepted
+T2816,2026-10-09,EX-0029,Pod B,Vendor South,R3,Rejected
+T2817,2026-10-09,EX-0043,Pod D,Vendor North,R2,Accepted
+T2818,2026-10-09,EX-0057,Pod B,Direct,R3,Accepted
+T2819,2026-10-09,EX-0053,Pod B,Vendor South,R3,Accepted
+T2820,2026-10-09,EX-0070,Pod C,Vendor North,R2,Rejected
+T2821,2026-10-09,EX-0015,Pod D,Direct,R4,Rejected
+T2822,2026-10-09,EX-0057,Pod B,Direct,R3,Rejected
+T2823,2026-10-09,EX-0062,Pod C,Vendor South,R6,Accepted
+T2824,2026-10-09,EX-0066,Pod C,Direct,R3,Accepted
+T2825,2026-10-09,EX-0024,Pod A,Direct,R3,Accepted
+T2826,2026-10-09,EX-0078,Pod C,Direct,R5,Accepted
+T2827,2026-10-09,EX-0032,Pod A,Vendor South,R3,Rejected
+T2828,2026-10-09,EX-0022,Pod C,Vendor North,R3,Accepted
+T2829,2026-10-09,EX-0052,Pod A,Vendor North,R3,Accepted
+T2830,2026-10-09,EX-0016,Pod A,Vendor North,R3,Accepted
+T2831,2026-10-09,EX-0021,Pod B,Direct,R3,Accepted
+T2832,2026-10-09,EX-0068,Pod A,Vendor South,R3,Rejected
+T2833,2026-10-09,EX-0041,Pod B,Vendor South,R4,Accepted
+T2834,2026-10-09,EX-0060,Pod A,Direct,R3,Accepted
+T2835,2026-10-09,EX-0039,Pod D,Direct,R3,Accepted
+T2836,2026-10-09,EX-0070,Pod C,Vendor North,R2,Accepted
+T2837,2026-10-09,EX-0037,Pod B,Vendor North,R1,Accepted
+T2838,2026-10-09,EX-0039,Pod D,Direct,R3,Accepted
+T2839,2026-10-09,EX-0042,Pod C,Direct,R3,Rejected
+T2840,2026-10-09,EX-0053,Pod B,Vendor South,R1,Accepted
+T2841,2026-10-09,EX-0031,Pod D,Vendor North,R3,Accepted
+T2842,2026-10-09,EX-0051,Pod D,Direct,R3,Accepted
+T2843,2026-10-09,EX-0026,Pod C,Vendor South,R3,Accepted
+T2844,2026-10-09,EX-0039,Pod D,Direct,R4,Accepted
+T2845,2026-10-09,EX-0046,Pod C,Vendor North,R1,Rejected
+T2846,2026-10-09,EX-0044,Pod A,Vendor South,R5,Accepted
+T2847,2026-10-09,EX-0022,Pod C,Vendor North,R2,Accepted
+T2848,2026-10-09,EX-0076,Pod A,Vendor North,R3,Accepted
+T2849,2026-10-09,EX-0071,Pod D,Vendor South,R3,Rejected
+T2850,2026-10-09,EX-0044,Pod A,Vendor South,R3,Accepted
+T2851,2026-10-09,EX-0072,Pod A,Direct,R4,Rejected
+T2852,2026-10-09,EX-0059,Pod D,Vendor South,R3,Accepted
+T2853,2026-10-09,EX-0018,Pod C,Direct,R4,Accepted
+T2854,2026-10-09,EX-0026,Pod C,Vendor South,R4,Accepted
+T2855,2026-10-09,EX-0077,Pod B,Vendor South,R4,Rejected
+T2856,2026-10-09,EX-0043,Pod D,Vendor North,R3,Rejected
+T2857,2026-10-09,EX-0020,Pod A,Vendor South,R6,Rejected
+T2858,2026-10-09,EX-0043,Pod D,Vendor North,R3,Accepted
+T2859,2026-10-09,EX-0033,Pod B,Direct,R5,Accepted
+T2860,2026-10-09,EX-0054,Pod C,Direct,R2,Accepted
+T2861,2026-10-09,EX-0079,Pod D,Vendor North,R4,Accepted
+T2862,2026-10-09,EX-0027,Pod D,Direct,R3,Accepted
+T2863,2026-10-09,EX-0025,Pod B,Vendor North,R2,Rejected
+T2864,2026-10-09,EX-0058,Pod C,Vendor North,R3,Rejected
+T2865,2026-10-09,EX-0055,Pod D,Vendor North,R4,Accepted
+T2866,2026-10-09,EX-0061,Pod B,Vendor North,R3,Rejected
+T2867,2026-10-09,EX-0053,Pod B,Vendor South,R3,Accepted
+T2868,2026-10-09,EX-0015,Pod D,Direct,R2,Accepted
+T2869,2026-10-09,EX-0075,Pod D,Direct,R3,Rejected
+T2870,2026-10-09,EX-0046,Pod C,Vendor North,R3,Accepted
+T2871,2026-10-09,EX-0057,Pod B,Direct,R1,Accepted
+T2872,2026-10-09,EX-0023,Pod D,Vendor South,R6,Accepted
+T2873,2026-10-09,EX-0017,Pod B,Vendor South,R3,Accepted
+T2874,2026-10-09,EX-0053,Pod B,Vendor South,R6,Accepted
+T2875,2026-10-09,EX-0078,Pod C,Direct,R3,Accepted
+T2876,2026-10-09,EX-0016,Pod A,Vendor North,R6,Accepted
+T2877,2026-10-09,EX-0062,Pod C,Vendor South,R3,Rejected
+T2878,2026-10-09,EX-0077,Pod B,Vendor South,R4,Accepted
+T2879,2026-10-09,EX-0005,Pod B,Vendor South,R5,Accepted
+T2880,2026-10-09,EX-0019,Pod D,Vendor North,R6,Accepted
+T2881,2026-10-09,EX-0063,Pod D,Direct,R3,Accepted
+T2882,2026-10-09,EX-0060,Pod A,Direct,R3,Accepted
+T2883,2026-10-09,EX-0047,Pod D,Vendor South,R1,Rejected
+T2884,2026-10-09,EX-0032,Pod A,Vendor South,R3,Accepted
+T2885,2026-10-09,EX-0064,Pod A,Vendor North,R3,Accepted
+T2886,2026-10-09,EX-0077,Pod B,Vendor South,R1,Accepted
+T2887,2026-10-09,EX-0040,Pod A,Vendor North,R3,Accepted
+T2888,2026-10-09,EX-0026,Pod C,Vendor South,R5,Accepted
+T2889,2026-10-09,EX-0029,Pod B,Vendor South,R3,Rejected
+T2890,2026-10-09,EX-0064,Pod A,Vendor North,R1,Accepted
+T2891,2026-10-09,EX-0078,Pod C,Direct,R2,Accepted
+T2892,2026-10-09,EX-0052,Pod A,Vendor North,R4,Accepted
+T2893,2026-10-09,EX-0031,Pod D,Vendor North,R2,Accepted
+T2894,2026-10-09,EX-0015,Pod D,Direct,R2,Rejected
+T2895,2026-10-09,EX-0013,Pod B,Vendor North,R5,Accepted
+T2896,2026-10-09,EX-0055,Pod D,Vendor North,R3,Accepted
+T2897,2026-10-09,EX-0064,Pod A,Vendor North,R4,Rejected
+T2898,2026-10-09,EX-0019,Pod D,Vendor North,R1,Accepted
+T2899,2026-10-09,EX-0026,Pod C,Vendor South,R3,Accepted
+T2900,2026-10-09,EX-0009,Pod B,Direct,R4,Accepted
+T2901,2026-10-09,EX-0042,Pod C,Direct,R3,Rejected
+T2902,2026-10-09,EX-0054,Pod C,Direct,R6,Accepted
+T2903,2026-10-09,EX-0059,Pod D,Vendor South,R3,Rejected
+T2904,2026-10-09,EX-0076,Pod A,Vendor North,R3,Accepted
+T2905,2026-10-09,EX-0034,Pod C,Vendor North,R3,Accepted
+T2906,2026-10-09,EX-0077,Pod B,Vendor South,R3,Accepted
+T2907,2026-10-09,EX-0074,Pod C,Vendor South,R2,Accepted
+T2908,2026-10-09,EX-0065,Pod B,Vendor South,R3,Rejected
+T2909,2026-10-09,EX-0029,Pod B,Vendor South,R2,Accepted
+T2910,2026-10-09,EX-0056,Pod A,Vendor South,R6,Accepted
+T2911,2026-10-09,EX-0031,Pod D,Vendor North,R3,Accepted
+T2912,2026-10-09,EX-0013,Pod B,Vendor North,R4,Accepted
+T2913,2026-10-09,EX-0068,Pod A,Vendor South,R2,Accepted
+T2914,2026-10-09,EX-0056,Pod A,Vendor South,R5,Accepted
+T2915,2026-10-09,EX-0034,Pod C,Vendor North,R5,Accepted
+T2916,2026-10-09,EX-0014,Pod C,Vendor South,R1,Accepted
+T2917,2026-10-09,EX-0024,Pod A,Direct,R3,Rejected
+T2918,2026-10-09,EX-0053,Pod B,Vendor South,R5,Accepted
+T2919,2026-10-09,EX-0034,Pod C,Vendor North,R3,Accepted
+T2920,2026-10-09,EX-0061,Pod B,Vendor North,R4,Accepted
+T2921,2026-10-09,EX-0066,Pod C,Direct,R3,Rejected
+T2922,2026-10-09,EX-0060,Pod A,Direct,R3,Accepted
+T2923,2026-10-09,EX-0073,Pod B,Vendor North,R3,Accepted
+T2924,2026-10-09,EX-0035,Pod D,Vendor South,R4,Accepted
+T2925,2026-10-09,EX-0031,Pod D,Vendor North,R3,Accepted
+T2926,2026-10-09,EX-0055,Pod D,Vendor North,R1,Accepted
+T2927,2026-10-09,EX-0034,Pod C,Vendor North,R3,Accepted
+T2928,2026-10-09,EX-0074,Pod C,Vendor South,R6,Accepted
+T2929,2026-10-09,EX-0015,Pod D,Direct,R3,Accepted
+T2930,2026-10-09,EX-0032,Pod A,Vendor South,R1,Accepted
+T2931,2026-10-09,EX-0018,Pod C,Direct,R3,Accepted
+T2932,2026-10-09,EX-0006,Pod C,Direct,R6,Accepted
+T2933,2026-10-09,EX-0002,Pod C,Vendor South,R2,Accepted
+T2934,2026-10-09,EX-0014,Pod C,Vendor South,R3,Rejected
+T2935,2026-10-09,EX-0065,Pod B,Vendor South,R1,Rejected
+T2936,2026-10-09,EX-0052,Pod A,Vendor North,R3,Rejected
+T2937,2026-10-09,EX-0024,Pod A,Direct,R3,Accepted
+T2938,2026-10-09,EX-0071,Pod D,Vendor South,R4,Accepted
+T2939,2026-10-09,EX-0017,Pod B,Vendor South,R2,Rejected
+T2940,2026-10-09,EX-0039,Pod D,Direct,R3,Accepted
+T2941,2026-10-09,EX-0027,Pod D,Direct,R3,Accepted
+T2942,2026-10-09,EX-0053,Pod B,Vendor South,R4,Accepted
+T2943,2026-10-09,EX-0015,Pod D,Direct,R4,Accepted
+T2944,2026-10-09,EX-0073,Pod B,Vendor North,R5,Accepted
+T2945,2026-10-09,EX-0011,Pod D,Vendor South,R3,Accepted
+T2946,2026-10-09,EX-0022,Pod C,Vendor North,R3,Rejected
+T2947,2026-10-09,EX-0025,Pod B,Vendor North,R3,Rejected
+T2948,2026-10-09,EX-0074,Pod C,Vendor South,R5,Accepted
+T2949,2026-10-09,EX-0061,Pod B,Vendor North,R3,Accepted
+T2950,2026-10-09,EX-0017,Pod B,Vendor South,R2,Rejected
+T2951,2026-10-09,EX-0048,Pod A,Direct,R6,Accepted
+T2952,2026-10-09,EX-0002,Pod C,Vendor South,R6,Accepted
+T2953,2026-10-09,EX-0059,Pod D,Vendor South,R5,Accepted
+T2954,2026-10-09,EX-0008,Pod A,Vendor South,R2,Accepted
+T2955,2026-10-09,EX-0017,Pod B,Vendor South,R3,Rejected
+T2956,2026-10-09,EX-0050,Pod C,Vendor South,R3,Accepted
+T2957,2026-10-09,EX-0027,Pod D,Direct,R3,Accepted
+T2958,2026-10-09,EX-0070,Pod C,Vendor North,R4,Accepted
+T2959,2026-10-09,EX-0033,Pod B,Direct,R3,Accepted
+T2960,2026-10-09,EX-0063,Pod D,Direct,R3,Rejected
+T2961,2026-10-09,EX-0076,Pod A,Vendor North,R2,Accepted
+T2962,2026-10-09,EX-0027,Pod D,Direct,R4,Accepted
+T2963,2026-10-09,EX-0067,Pod D,Vendor North,R3,Accepted
+T2964,2026-10-09,EX-0024,Pod A,Direct,R3,Accepted
+T2965,2026-10-09,EX-0077,Pod B,Vendor South,R6,Accepted
+T2966,2026-10-09,EX-0071,Pod D,Vendor South,R1,Accepted
+T2967,2026-10-09,EX-0046,Pod C,Vendor North,R5,Accepted
+T2968,2026-10-09,EX-0011,Pod D,Vendor South,R6,Accepted
+T2969,2026-10-09,EX-0025,Pod B,Vendor North,R2,Rejected
+T2970,2026-10-09,EX-0011,Pod D,Vendor South,R2,Rejected
+T2971,2026-10-09,EX-0025,Pod B,Vendor North,R3,Accepted
+T2972,2026-10-09,EX-0050,Pod C,Vendor South,R2,Accepted
+T2973,2026-10-09,EX-0020,Pod A,Vendor South,R5,Accepted
+T2974,2026-10-09,EX-0075,Pod D,Direct,R6,Accepted
+T2975,2026-10-09,EX-0054,Pod C,Direct,R5,Accepted
+T2976,2026-10-09,EX-0007,Pod D,Vendor North,R2,Accepted
+T2977,2026-10-09,EX-0043,Pod D,Vendor North,R1,Rejected
+T2978,2026-10-09,EX-0022,Pod C,Vendor North,R3,Accepted
+T2979,2026-10-09,EX-0079,Pod D,Vendor North,R3,Accepted
+T2980,2026-10-09,EX-0059,Pod D,Vendor South,R6,Accepted
+T2981,2026-10-09,EX-0053,Pod B,Vendor South,R5,Rejected
+T2982,2026-10-09,EX-0013,Pod B,Vendor North,R2,Accepted
+T2983,2026-10-09,EX-0025,Pod B,Vendor North,R5,Accepted
+T2984,2026-10-09,EX-0047,Pod D,Vendor South,R4,Accepted
+T2985,2026-10-09,EX-0039,Pod D,Direct,R4,Rejected
+T2986,2026-10-09,EX-0028,Pod A,Vendor North,R3,Accepted
+T2987,2026-10-09,EX-0025,Pod B,Vendor North,R5,Accepted
+T2988,2026-10-09,EX-0036,Pod A,Direct,R3,Accepted
+T2989,2026-10-09,EX-0041,Pod B,Vendor South,R3,Accepted
+T2990,2026-10-09,EX-0035,Pod D,Vendor South,R3,Accepted
+T2991,2026-10-09,EX-0078,Pod C,Direct,R4,Accepted
+T2992,2026-10-09,EX-0067,Pod D,Vendor North,R3,Accepted
+T2993,2026-10-09,EX-0018,Pod C,Direct,R3,Accepted
+T2994,2026-10-09,EX-0023,Pod D,Vendor South,R6,Accepted
+T2995,2026-10-09,EX-0043,Pod D,Vendor North,R2,Accepted
+T2996,2026-10-09,EX-0057,Pod B,Direct,R1,Accepted
+T2997,2026-10-09,EX-0014,Pod C,Vendor South,R4,Accepted
+T2998,2026-10-09,EX-0031,Pod D,Vendor North,R3,Accepted
+T2999,2026-10-09,EX-0051,Pod D,Direct,R4,Accepted
+T3000,2026-10-09,EX-0019,Pod D,Vendor North,R3,Rejected
+T3001,2026-10-09,EX-0012,Pod A,Direct,R1,Accepted
+T3002,2026-10-09,EX-0078,Pod C,Direct,R1,Rejected
+T3003,2026-10-09,EX-0051,Pod D,Direct,R4,Accepted
+T3004,2026-10-09,EX-0077,Pod B,Vendor South,R6,Accepted
+T3005,2026-10-09,EX-0035,Pod D,Vendor South,R3,Rejected
+T3006,2026-10-09,EX-0034,Pod C,Vendor North,R3,Rejected
+T3007,2026-10-09,EX-0053,Pod B,Vendor South,R2,Accepted
+T3008,2026-10-09,EX-0051,Pod D,Direct,R6,Accepted
+T3009,2026-10-09,EX-0053,Pod B,Vendor South,R2,Accepted
+T3010,2026-10-09,EX-0035,Pod D,Vendor South,R6,Rejected
+T3011,2026-10-09,EX-0019,Pod D,Vendor North,R4,Accepted
+T3012,2026-10-09,EX-0015,Pod D,Direct,R3,Accepted
+T3013,2026-10-09,EX-0035,Pod D,Vendor South,R4,Accepted
+T3014,2026-10-09,EX-0028,Pod A,Vendor North,R3,Accepted
+T3015,2026-10-09,EX-0001,Pod B,Vendor North,R5,Accepted
+T3016,2026-10-09,EX-0050,Pod C,Vendor South,R3,Accepted
+T3017,2026-10-09,EX-0032,Pod A,Vendor South,R5,Rejected
+T3018,2026-10-09,EX-0059,Pod D,Vendor South,R3,Accepted
+T3019,2026-10-09,EX-0049,Pod B,Vendor North,R4,Accepted
+T3020,2026-10-09,EX-0036,Pod A,Direct,R6,Accepted
+T3021,2026-10-09,EX-0006,Pod C,Direct,R2,Accepted
+T3022,2026-10-09,EX-0021,Pod B,Direct,R3,Accepted
+T3023,2026-10-09,EX-0060,Pod A,Direct,R3,Accepted
+T3024,2026-10-09,EX-0068,Pod A,Vendor South,R2,Accepted
+T3025,2026-10-09,EX-0031,Pod D,Vendor North,R3,Accepted
+T3026,2026-10-09,EX-0032,Pod A,Vendor South,R2,Accepted
+T3027,2026-10-09,EX-0010,Pod C,Vendor North,R3,Accepted
+T3028,2026-10-09,EX-0005,Pod B,Vendor South,R3,Accepted
+T3029,2026-10-09,EX-0012,Pod A,Direct,R3,Accepted
+T3030,2026-10-09,EX-0047,Pod D,Vendor South,R4,Accepted
+T3031,2026-10-09,EX-0006,Pod C,Direct,R3,Rejected
+T3032,2026-10-09,EX-0053,Pod B,Vendor South,R2,Accepted
+T3033,2026-10-09,EX-0070,Pod C,Vendor North,R3,Accepted
+T3034,2026-10-09,EX-0063,Pod D,Direct,R3,Accepted
+T3035,2026-10-09,EX-0025,Pod B,Vendor North,R5,Accepted
+T3036,2026-10-09,EX-0042,Pod C,Direct,R5,Rejected
+T3037,2026-10-09,EX-0023,Pod D,Vendor South,R1,Accepted
+T3038,2026-10-09,EX-0023,Pod D,Vendor South,R3,Accepted
+T3039,2026-10-09,EX-0073,Pod B,Vendor North,R1,Accepted
+T3040,2026-10-09,EX-0047,Pod D,Vendor South,R3,Accepted
+T3041,2026-10-09,EX-0075,Pod D,Direct,R3,Rejected
+T3042,2026-10-09,EX-0079,Pod D,Vendor North,R4,Accepted
+T3043,2026-10-09,EX-0035,Pod D,Vendor South,R5,Rejected
+T3044,2026-10-09,EX-0080,Pod A,Vendor South,R3,Rejected
+T3045,2026-10-09,EX-0040,Pod A,Vendor North,R1,Accepted
+T3046,2026-10-09,EX-0077,Pod B,Vendor South,R2,Accepted
+T3047,2026-10-09,EX-0012,Pod A,Direct,R5,Accepted
+T3048,2026-10-09,EX-0015,Pod D,Direct,R6,Rejected
+T3049,2026-10-09,EX-0064,Pod A,Vendor North,R3,Accepted
+T3050,2026-10-09,EX-0040,Pod A,Vendor North,R3,Accepted
+T3051,2026-10-09,EX-0015,Pod D,Direct,R2,Accepted
+T3052,2026-10-09,EX-0044,Pod A,Vendor South,R1,Accepted
+T3053,2026-10-09,EX-0014,Pod C,Vendor South,R4,Accepted
+T3054,2026-10-09,EX-0060,Pod A,Direct,R4,Accepted
+T3055,2026-10-09,EX-0006,Pod C,Direct,R3,Accepted
+T3056,2026-10-09,EX-0065,Pod B,Vendor South,R5,Accepted
+T3057,2026-10-09,EX-0039,Pod D,Direct,R3,Accepted
+T3058,2026-10-09,EX-0068,Pod A,Vendor South,R2,Accepted
+T3059,2026-10-09,EX-0008,Pod A,Vendor South,R2,Rejected
+T3060,2026-10-09,EX-0027,Pod D,Direct,R3,Accepted
+T3061,2026-10-09,EX-0009,Pod B,Direct,R3,Accepted
+T3062,2026-10-09,EX-0031,Pod D,Vendor North,R5,Accepted
+T3063,2026-10-09,EX-0065,Pod B,Vendor South,R2,Accepted
+T3064,2026-10-09,EX-0020,Pod A,Vendor South,R1,Rejected
+T3065,2026-10-09,EX-0065,Pod B,Vendor South,R3,Rejected
+T3066,2026-10-09,EX-0037,Pod B,Vendor North,R6,Accepted
+T3067,2026-10-09,EX-0059,Pod D,Vendor South,R3,Rejected
+T3068,2026-10-09,EX-0062,Pod C,Vendor South,R3,Accepted
+T3069,2026-10-09,EX-0056,Pod A,Vendor South,R3,Accepted
+T3070,2026-10-09,EX-0013,Pod B,Vendor North,R5,Accepted
+T3071,2026-10-09,EX-0031,Pod D,Vendor North,R3,Accepted
+T3072,2026-10-09,EX-0057,Pod B,Direct,R3,Accepted
+T3073,2026-10-09,EX-0041,Pod B,Vendor South,R5,Rejected
+T3074,2026-10-09,EX-0018,Pod C,Direct,R3,Accepted
+T3075,2026-10-09,EX-0029,Pod B,Vendor South,R5,Accepted
+T3076,2026-10-09,EX-0074,Pod C,Vendor South,R6,Accepted
+T3077,2026-10-09,EX-0005,Pod B,Vendor South,R6,Accepted
+T3078,2026-10-09,EX-0071,Pod D,Vendor South,R1,Accepted
+T3079,2026-10-09,EX-0069,Pod B,Direct,R1,Accepted
+T3080,2026-10-09,EX-0033,Pod B,Direct,R2,Accepted
+T3081,2026-10-09,EX-0056,Pod A,Vendor South,R3,Accepted
+T3082,2026-10-09,EX-0012,Pod A,Direct,R1,Accepted
+T3083,2026-10-09,EX-0031,Pod D,Vendor North,R4,Accepted
+T3084,2026-10-09,EX-0025,Pod B,Vendor North,R4,Accepted
+T3085,2026-10-09,EX-0072,Pod A,Direct,R5,Accepted
+T3086,2026-10-09,EX-0042,Pod C,Direct,R3,Rejected
+T3087,2026-10-09,EX-0015,Pod D,Direct,R6,Accepted
+T3088,2026-10-09,EX-0005,Pod B,Vendor South,R3,Accepted
+T3089,2026-10-09,EX-0023,Pod D,Vendor South,R2,Accepted
+T3090,2026-10-09,EX-0012,Pod A,Direct,R2,Accepted
+T3091,2026-10-09,EX-0062,Pod C,Vendor South,R4,Rejected
+T3092,2026-10-09,EX-0010,Pod C,Vendor North,R4,Accepted
+T3093,2026-10-09,EX-0004,Pod A,Vendor North,R4,Accepted
+T3094,2026-10-09,EX-0029,Pod B,Vendor South,R5,Accepted
+T3095,2026-10-09,EX-0040,Pod A,Vendor North,R4,Rejected
+T3096,2026-10-09,EX-0007,Pod D,Vendor North,R4,Accepted
+T3097,2026-10-09,EX-0034,Pod C,Vendor North,R5,Accepted
+T3098,2026-10-09,EX-0073,Pod B,Vendor North,R5,Accepted
+T3099,2026-10-09,EX-0058,Pod C,Vendor North,R3,Accepted
+T3100,2026-10-09,EX-0037,Pod B,Vendor North,R3,Accepted
+T3101,2026-10-09,EX-0059,Pod D,Vendor South,R4,Rejected
+T3102,2026-10-09,EX-0059,Pod D,Vendor South,R5,Accepted
+T3103,2026-10-09,EX-0041,Pod B,Vendor South,R3,Accepted
+T3104,2026-10-09,EX-0059,Pod D,Vendor South,R2,Rejected
+T3105,2026-10-09,EX-0054,Pod C,Direct,R3,Accepted
+T3106,2026-10-09,EX-0017,Pod B,Vendor South,R3,Rejected
+T3107,2026-10-09,EX-0021,Pod B,Direct,R1,Rejected
+T3108,2026-10-09,EX-0047,Pod D,Vendor South,R1,Accepted
+T3109,2026-10-09,EX-0060,Pod A,Direct,R1,Accepted
+T3110,2026-10-09,EX-0080,Pod A,Vendor South,R4,Accepted
+T3111,2026-10-09,EX-0049,Pod B,Vendor North,R1,Rejected
+T3112,2026-10-09,EX-0011,Pod D,Vendor South,R3,Rejected
+T3113,2026-10-09,EX-0055,Pod D,Vendor North,R1,Accepted
+T3114,2026-10-09,EX-0037,Pod B,Vendor North,R3,Accepted
+T3115,2026-10-09,EX-0060,Pod A,Direct,R3,Accepted
+T3116,2026-10-09,EX-0020,Pod A,Vendor South,R3,Accepted
+T3117,2026-10-09,EX-0042,Pod C,Direct,R5,Accepted
+T3118,2026-10-09,EX-0013,Pod B,Vendor North,R3,Accepted
+T3119,2026-10-09,EX-0053,Pod B,Vendor South,R6,Accepted
+T3120,2026-10-09,EX-0078,Pod C,Direct,R6,Accepted
+T3121,2026-10-09,EX-0068,Pod A,Vendor South,R6,Rejected
+T3122,2026-10-09,EX-0058,Pod C,Vendor North,R5,Rejected
+T3123,2026-10-09,EX-0040,Pod A,Vendor North,R1,Accepted
+T3124,2026-10-09,EX-0048,Pod A,Direct,R3,Accepted
+T3125,2026-10-09,EX-0076,Pod A,Vendor North,R6,Accepted
+T3126,2026-10-09,EX-0013,Pod B,Vendor North,R3,Accepted
+T3127,2026-10-09,EX-0001,Pod B,Vendor North,R1,Accepted
+T3128,2026-10-10,EX-0069,Pod B,Direct,R3,Accepted
+T3129,2026-10-10,EX-0066,Pod C,Direct,R3,Accepted
+T3130,2026-10-10,EX-0031,Pod D,Vendor North,R6,Accepted
+T3131,2026-10-10,EX-0025,Pod B,Vendor North,R5,Accepted
+T3132,2026-10-10,EX-0076,Pod A,Vendor North,R3,Accepted
+T3133,2026-10-10,EX-0017,Pod B,Vendor South,R2,Accepted
+T3134,2026-10-10,EX-0026,Pod C,Vendor South,R5,Rejected
+T3135,2026-10-10,EX-0053,Pod B,Vendor South,R1,Accepted
+T3136,2026-10-10,EX-0063,Pod D,Direct,R3,Accepted
+T3137,2026-10-10,EX-0033,Pod B,Direct,R1,Accepted
+T3138,2026-10-10,EX-0005,Pod B,Vendor South,R1,Rejected
+T3139,2026-10-10,EX-0068,Pod A,Vendor South,R1,Accepted
+T3140,2026-10-10,EX-0017,Pod B,Vendor South,R6,Accepted
+T3141,2026-10-10,EX-0035,Pod D,Vendor South,R3,Rejected
+T3142,2026-10-10,EX-0007,Pod D,Vendor North,R6,Accepted
+T3143,2026-10-10,EX-0057,Pod B,Direct,R1,Accepted
+T3144,2026-10-10,EX-0006,Pod C,Direct,R3,Accepted
+T3145,2026-10-10,EX-0003,Pod D,Direct,R3,Rejected
+T3146,2026-10-10,EX-0017,Pod B,Vendor South,R4,Rejected
+T3147,2026-10-10,EX-0070,Pod C,Vendor North,R6,Accepted
+T3148,2026-10-10,EX-0048,Pod A,Direct,R3,Rejected
+T3149,2026-10-10,EX-0036,Pod A,Direct,R3,Accepted
+T3150,2026-10-10,EX-0027,Pod D,Direct,R3,Accepted
+T3151,2026-10-10,EX-0026,Pod C,Vendor South,R4,Accepted
+T3152,2026-10-10,EX-0016,Pod A,Vendor North,R2,Rejected
+T3153,2026-10-10,EX-0069,Pod B,Direct,R5,Accepted
+T3154,2026-10-10,EX-0020,Pod A,Vendor South,R3,Accepted
+T3155,2026-10-10,EX-0006,Pod C,Direct,R1,Accepted
+T3156,2026-10-10,EX-0045,Pod B,Direct,R5,Accepted
+T3157,2026-10-10,EX-0031,Pod D,Vendor North,R3,Accepted
+T3158,2026-10-10,EX-0055,Pod D,Vendor North,R3,Rejected
+T3159,2026-10-10,EX-0041,Pod B,Vendor South,R6,Accepted
+T3160,2026-10-10,EX-0044,Pod A,Vendor South,R6,Rejected
+T3161,2026-10-10,EX-0010,Pod C,Vendor North,R6,Accepted
+T3162,2026-10-10,EX-0025,Pod B,Vendor North,R5,Rejected
+T3163,2026-10-10,EX-0073,Pod B,Vendor North,R3,Accepted
+T3164,2026-10-10,EX-0005,Pod B,Vendor South,R1,Accepted
+T3165,2026-10-10,EX-0072,Pod A,Direct,R3,Accepted
+T3166,2026-10-10,EX-0048,Pod A,Direct,R6,Accepted
+T3167,2026-10-10,EX-0066,Pod C,Direct,R3,Accepted
+T3168,2026-10-10,EX-0042,Pod C,Direct,R5,Rejected
+T3169,2026-10-10,EX-0007,Pod D,Vendor North,R6,Accepted
+T3170,2026-10-10,EX-0034,Pod C,Vendor North,R6,Accepted
+T3171,2026-10-10,EX-0015,Pod D,Direct,R1,Accepted
+T3172,2026-10-10,EX-0007,Pod D,Vendor North,R6,Accepted
+T3173,2026-10-10,EX-0072,Pod A,Direct,R3,Accepted
+T3174,2026-10-10,EX-0069,Pod B,Direct,R1,Accepted
+T3175,2026-10-10,EX-0057,Pod B,Direct,R4,Accepted
+T3176,2026-10-10,EX-0050,Pod C,Vendor South,R3,Accepted
+T3177,2026-10-10,EX-0039,Pod D,Direct,R4,Accepted
+T3178,2026-10-10,EX-0052,Pod A,Vendor North,R3,Rejected
+T3179,2026-10-10,EX-0074,Pod C,Vendor South,R1,Rejected
+T3180,2026-10-10,EX-0034,Pod C,Vendor North,R3,Accepted
+T3181,2026-10-10,EX-0025,Pod B,Vendor North,R5,Accepted
+T3182,2026-10-10,EX-0077,Pod B,Vendor South,R6,Accepted
+T3183,2026-10-10,EX-0007,Pod D,Vendor North,R5,Accepted
+T3184,2026-10-10,EX-0076,Pod A,Vendor North,R1,Accepted
+T3185,2026-10-10,EX-0039,Pod D,Direct,R3,Accepted
+T3186,2026-10-10,EX-0013,Pod B,Vendor North,R5,Accepted
+T3187,2026-10-10,EX-0019,Pod D,Vendor North,R3,Accepted
+T3188,2026-10-10,EX-0004,Pod A,Vendor North,R5,Accepted
+T3189,2026-10-10,EX-0014,Pod C,Vendor South,R6,Accepted
+T3190,2026-10-10,EX-0022,Pod C,Vendor North,R6,Accepted
+T3191,2026-10-10,EX-0064,Pod A,Vendor North,R4,Accepted
+T3192,2026-10-10,EX-0052,Pod A,Vendor North,R5,Accepted
+T3193,2026-10-10,EX-0053,Pod B,Vendor South,R3,Accepted
+T3194,2026-10-10,EX-0060,Pod A,Direct,R5,Accepted
+T3195,2026-10-10,EX-0064,Pod A,Vendor North,R3,Accepted
+T3196,2026-10-10,EX-0001,Pod B,Vendor North,R6,Accepted
+T3197,2026-10-10,EX-0044,Pod A,Vendor South,R4,Accepted
+T3198,2026-10-10,EX-0044,Pod A,Vendor South,R6,Accepted
+T3199,2026-10-10,EX-0065,Pod B,Vendor South,R6,Accepted
+T3200,2026-10-10,EX-0029,Pod B,Vendor South,R3,Accepted
+T3201,2026-10-10,EX-0040,Pod A,Vendor North,R3,Accepted
+T3202,2026-10-10,EX-0046,Pod C,Vendor North,R1,Accepted
+T3203,2026-10-10,EX-0012,Pod A,Direct,R3,Rejected
+T3204,2026-10-10,EX-0033,Pod B,Direct,R3,Accepted
+T3205,2026-10-10,EX-0005,Pod B,Vendor South,R5,Accepted
+T3206,2026-10-10,EX-0013,Pod B,Vendor North,R4,Rejected
+T3207,2026-10-10,EX-0039,Pod D,Direct,R1,Rejected
+T3208,2026-10-10,EX-0073,Pod B,Vendor North,R5,Accepted
+T3209,2026-10-10,EX-0010,Pod C,Vendor North,R1,Accepted
+T3210,2026-10-10,EX-0014,Pod C,Vendor South,R5,Accepted
+T3211,2026-10-10,EX-0079,Pod D,Vendor North,R3,Accepted
+T3212,2026-10-10,EX-0017,Pod B,Vendor South,R3,Accepted
+T3213,2026-10-10,EX-0071,Pod D,Vendor South,R5,Rejected
+T3214,2026-10-10,EX-0015,Pod D,Direct,R4,Accepted
+T3215,2026-10-10,EX-0060,Pod A,Direct,R5,Accepted
+T3216,2026-10-10,EX-0023,Pod D,Vendor South,R3,Rejected
+T3217,2026-10-10,EX-0029,Pod B,Vendor South,R5,Rejected
+T3218,2026-10-10,EX-0025,Pod B,Vendor North,R1,Accepted
+T3219,2026-10-10,EX-0050,Pod C,Vendor South,R3,Accepted
+T3220,2026-10-10,EX-0050,Pod C,Vendor South,R6,Accepted
+T3221,2026-10-10,EX-0013,Pod B,Vendor North,R5,Accepted
+T3222,2026-10-10,EX-0029,Pod B,Vendor South,R3,Accepted
+T3223,2026-10-10,EX-0080,Pod A,Vendor South,R2,Accepted
+T3224,2026-10-10,EX-0062,Pod C,Vendor South,R6,Accepted
+T3225,2026-10-10,EX-0001,Pod B,Vendor North,R6,Accepted
+T3226,2026-10-10,EX-0037,Pod B,Vendor North,R5,Accepted
+T3227,2026-10-10,EX-0052,Pod A,Vendor North,R3,Accepted
+T3228,2026-10-10,EX-0008,Pod A,Vendor South,R6,Accepted
+T3229,2026-10-10,EX-0050,Pod C,Vendor South,R1,Accepted
+T3230,2026-10-10,EX-0011,Pod D,Vendor South,R3,Accepted
+T3231,2026-10-10,EX-0012,Pod A,Direct,R2,Accepted
+T3232,2026-10-10,EX-0037,Pod B,Vendor North,R3,Accepted
+T3233,2026-10-10,EX-0048,Pod A,Direct,R3,Accepted
+T3234,2026-10-10,EX-0073,Pod B,Vendor North,R3,Accepted
+T3235,2026-10-10,EX-0049,Pod B,Vendor North,R3,Accepted
+T3236,2026-10-10,EX-0007,Pod D,Vendor North,R3,Accepted
+T3237,2026-10-10,EX-0034,Pod C,Vendor North,R3,Accepted
+T3238,2026-10-10,EX-0002,Pod C,Vendor South,R6,Accepted
+T3239,2026-10-10,EX-0026,Pod C,Vendor South,R1,Accepted
+T3240,2026-10-10,EX-0064,Pod A,Vendor North,R4,Accepted
+T3241,2026-10-10,EX-0053,Pod B,Vendor South,R2,Accepted
+T3242,2026-10-10,EX-0013,Pod B,Vendor North,R3,Accepted
+T3243,2026-10-10,EX-0020,Pod A,Vendor South,R4,Rejected
+T3244,2026-10-10,EX-0062,Pod C,Vendor South,R3,Rejected
+T3245,2026-10-10,EX-0021,Pod B,Direct,R3,Accepted
+T3246,2026-10-10,EX-0006,Pod C,Direct,R6,Accepted
+T3247,2026-10-10,EX-0034,Pod C,Vendor North,R6,Accepted
+T3248,2026-10-10,EX-0054,Pod C,Direct,R1,Accepted
+T3249,2026-10-10,EX-0044,Pod A,Vendor South,R1,Accepted
+T3250,2026-10-10,EX-0023,Pod D,Vendor South,R3,Accepted
+T3251,2026-10-10,EX-0041,Pod B,Vendor South,R3,Rejected
+T3252,2026-10-10,EX-0029,Pod B,Vendor South,R3,Rejected
+T3253,2026-10-10,EX-0054,Pod C,Direct,R1,Accepted
+T3254,2026-10-10,EX-0002,Pod C,Vendor South,R3,Accepted
+T3255,2026-10-10,EX-0003,Pod D,Direct,R3,Accepted
+T3256,2026-10-10,EX-0045,Pod B,Direct,R3,Accepted
+T3257,2026-10-10,EX-0001,Pod B,Vendor North,R6,Accepted
+T3258,2026-10-10,EX-0004,Pod A,Vendor North,R3,Rejected
+T3259,2026-10-10,EX-0033,Pod B,Direct,R3,Rejected
+T3260,2026-10-10,EX-0072,Pod A,Direct,R1,Accepted
+T3261,2026-10-10,EX-0004,Pod A,Vendor North,R1,Accepted
+T3262,2026-10-10,EX-0026,Pod C,Vendor South,R3,Accepted
+T3263,2026-10-10,EX-0053,Pod B,Vendor South,R3,Accepted
+T3264,2026-10-10,EX-0050,Pod C,Vendor South,R6,Accepted
+T3265,2026-10-10,EX-0066,Pod C,Direct,R3,Accepted
+T3266,2026-10-10,EX-0009,Pod B,Direct,R1,Accepted
+T3267,2026-10-10,EX-0053,Pod B,Vendor South,R3,Accepted
+T3268,2026-10-10,EX-0022,Pod C,Vendor North,R2,Accepted
+T3269,2026-10-10,EX-0073,Pod B,Vendor North,R3,Accepted
+T3270,2026-10-10,EX-0001,Pod B,Vendor North,R5,Accepted
+T3271,2026-10-10,EX-0022,Pod C,Vendor North,R2,Accepted
+T3272,2026-10-10,EX-0061,Pod B,Vendor North,R5,Accepted
+T3273,2026-10-10,EX-0010,Pod C,Vendor North,R1,Rejected
+T3274,2026-10-10,EX-0009,Pod B,Direct,R3,Accepted
+T3275,2026-10-10,EX-0021,Pod B,Direct,R3,Accepted
+T3276,2026-10-10,EX-0031,Pod D,Vendor North,R3,Accepted
+T3277,2026-10-10,EX-0071,Pod D,Vendor South,R3,Accepted
+T3278,2026-10-10,EX-0027,Pod D,Direct,R3,Rejected
+T3279,2026-10-10,EX-0023,Pod D,Vendor South,R6,Accepted
+T3280,2026-10-10,EX-0026,Pod C,Vendor South,R6,Accepted
+T3281,2026-10-10,EX-0021,Pod B,Direct,R4,Accepted
+T3282,2026-10-10,EX-0005,Pod B,Vendor South,R3,Accepted
+T3283,2026-10-10,EX-0071,Pod D,Vendor South,R4,Rejected
+T3284,2026-10-10,EX-0013,Pod B,Vendor North,R3,Accepted
+T3285,2026-10-10,EX-0014,Pod C,Vendor South,R5,Rejected
+T3286,2026-10-10,EX-0041,Pod B,Vendor South,R4,Accepted
+T3287,2026-10-10,EX-0049,Pod B,Vendor North,R3,Accepted
+T3288,2026-10-10,EX-0043,Pod D,Vendor North,R3,Accepted
+T3289,2026-10-10,EX-0032,Pod A,Vendor South,R1,Rejected
+T3290,2026-10-10,EX-0064,Pod A,Vendor North,R3,Accepted
+T3291,2026-10-10,EX-0034,Pod C,Vendor North,R2,Rejected
+T3292,2026-10-10,EX-0075,Pod D,Direct,R6,Accepted
+T3293,2026-10-10,EX-0027,Pod D,Direct,R2,Accepted
+T3294,2026-10-10,EX-0018,Pod C,Direct,R3,Accepted
+T3295,2026-10-10,EX-0011,Pod D,Vendor South,R3,Rejected
+T3296,2026-10-10,EX-0042,Pod C,Direct,R3,Rejected
+T3297,2026-10-10,EX-0034,Pod C,Vendor North,R3,Accepted
+T3298,2026-10-10,EX-0069,Pod B,Direct,R3,Accepted
+T3299,2026-10-10,EX-0022,Pod C,Vendor North,R5,Accepted
+T3300,2026-10-10,EX-0062,Pod C,Vendor South,R4,Accepted
+T3301,2026-10-10,EX-0073,Pod B,Vendor North,R2,Accepted
+T3302,2026-10-10,EX-0032,Pod A,Vendor South,R3,Rejected
+T3303,2026-10-10,EX-0075,Pod D,Direct,R3,Accepted
+T3304,2026-10-10,EX-0011,Pod D,Vendor South,R2,Accepted
+T3305,2026-10-10,EX-0066,Pod C,Direct,R3,Accepted
+T3306,2026-10-10,EX-0043,Pod D,Vendor North,R4,Accepted
+T3307,2026-10-10,EX-0025,Pod B,Vendor North,R3,Accepted
+T3308,2026-10-10,EX-0068,Pod A,Vendor South,R6,Rejected
+T3309,2026-10-10,EX-0016,Pod A,Vendor North,R3,Accepted
+T3310,2026-10-10,EX-0002,Pod C,Vendor South,R1,Accepted
+T3311,2026-10-10,EX-0069,Pod B,Direct,R3,Accepted
+T3312,2026-10-10,EX-0003,Pod D,Direct,R3,Accepted
+T3313,2026-10-10,EX-0070,Pod C,Vendor North,R3,Accepted
+T3314,2026-10-10,EX-0049,Pod B,Vendor North,R5,Accepted
+T3315,2026-10-10,EX-0004,Pod A,Vendor North,R2,Accepted
+T3316,2026-10-10,EX-0048,Pod A,Direct,R5,Accepted
+T3317,2026-10-10,EX-0045,Pod B,Direct,R4,Accepted
+T3318,2026-10-10,EX-0005,Pod B,Vendor South,R2,Rejected
+T3319,2026-10-10,EX-0011,Pod D,Vendor South,R3,Rejected
+T3320,2026-10-10,EX-0010,Pod C,Vendor North,R5,Accepted
+T3321,2026-10-10,EX-0013,Pod B,Vendor North,R3,Accepted
+T3322,2026-10-10,EX-0001,Pod B,Vendor North,R3,Accepted
+T3323,2026-10-10,EX-0066,Pod C,Direct,R4,Accepted
+T3324,2026-10-10,EX-0034,Pod C,Vendor North,R2,Accepted
+T3325,2026-10-10,EX-0073,Pod B,Vendor North,R3,Accepted
+T3326,2026-10-10,EX-0010,Pod C,Vendor North,R3,Accepted
+T3327,2026-10-10,EX-0059,Pod D,Vendor South,R6,Accepted
+T3328,2026-10-10,EX-0029,Pod B,Vendor South,R6,Accepted
+T3329,2026-10-10,EX-0075,Pod D,Direct,R6,Accepted
+T3330,2026-10-10,EX-0042,Pod C,Direct,R4,Rejected
+T3331,2026-10-10,EX-0027,Pod D,Direct,R5,Accepted
+T3332,2026-10-10,EX-0075,Pod D,Direct,R5,Accepted
+T3333,2026-10-10,EX-0038,Pod C,Vendor South,R5,Accepted
+T3334,2026-10-10,EX-0001,Pod B,Vendor North,R3,Accepted
+T3335,2026-10-10,EX-0035,Pod D,Vendor South,R6,Rejected
+T3336,2026-10-10,EX-0050,Pod C,Vendor South,R5,Accepted
+T3337,2026-10-10,EX-0044,Pod A,Vendor South,R2,Rejected
+T3338,2026-10-10,EX-0059,Pod D,Vendor South,R2,Rejected
+T3339,2026-10-10,EX-0021,Pod B,Direct,R3,Accepted
+T3340,2026-10-10,EX-0077,Pod B,Vendor South,R5,Accepted
+T3341,2026-10-10,EX-0076,Pod A,Vendor North,R3,Accepted
+T3342,2026-10-10,EX-0080,Pod A,Vendor South,R3,Rejected
+T3343,2026-10-10,EX-0064,Pod A,Vendor North,R6,Accepted
+T3344,2026-10-10,EX-0047,Pod D,Vendor South,R3,Accepted
+T3345,2026-10-10,EX-0059,Pod D,Vendor South,R3,Accepted
+T3346,2026-10-10,EX-0058,Pod C,Vendor North,R4,Accepted
+T3347,2026-10-10,EX-0002,Pod C,Vendor South,R1,Accepted
+T3348,2026-10-10,EX-0044,Pod A,Vendor South,R1,Accepted
+T3349,2026-10-10,EX-0006,Pod C,Direct,R4,Accepted
+T3350,2026-10-10,EX-0061,Pod B,Vendor North,R3,Accepted
+T3351,2026-10-10,EX-0079,Pod D,Vendor North,R3,Rejected
+T3352,2026-10-10,EX-0012,Pod A,Direct,R4,Rejected
+T3353,2026-10-10,EX-0051,Pod D,Direct,R5,Accepted
+T3354,2026-10-10,EX-0074,Pod C,Vendor South,R4,Accepted
+T3355,2026-10-10,EX-0056,Pod A,Vendor South,R3,Accepted
+T3356,2026-10-10,EX-0038,Pod C,Vendor South,R3,Rejected
+T3357,2026-10-10,EX-0029,Pod B,Vendor South,R3,Rejected
+T3358,2026-10-10,EX-0038,Pod C,Vendor South,R3,Accepted
+T3359,2026-10-10,EX-0072,Pod A,Direct,R6,Accepted
+T3360,2026-10-10,EX-0034,Pod C,Vendor North,R3,Accepted
+T3361,2026-10-10,EX-0067,Pod D,Vendor North,R6,Accepted
+T3362,2026-10-10,EX-0008,Pod A,Vendor South,R5,Accepted
+T3363,2026-10-10,EX-0016,Pod A,Vendor North,R2,Accepted
+T3364,2026-10-10,EX-0046,Pod C,Vendor North,R3,Accepted
+T3365,2026-10-10,EX-0041,Pod B,Vendor South,R6,Accepted
+T3366,2026-10-10,EX-0040,Pod A,Vendor North,R4,Accepted
+T3367,2026-10-10,EX-0007,Pod D,Vendor North,R3,Accepted
+T3368,2026-10-10,EX-0067,Pod D,Vendor North,R3,Rejected
+T3369,2026-10-10,EX-0029,Pod B,Vendor South,R2,Rejected
+T3370,2026-10-10,EX-0017,Pod B,Vendor South,R3,Accepted
+T3371,2026-10-10,EX-0060,Pod A,Direct,R1,Accepted
+T3372,2026-10-10,EX-0063,Pod D,Direct,R3,Accepted
+T3373,2026-10-10,EX-0021,Pod B,Direct,R3,Accepted
+T3374,2026-10-10,EX-0006,Pod C,Direct,R3,Rejected
+T3375,2026-10-10,EX-0008,Pod A,Vendor South,R3,Accepted
+T3376,2026-10-10,EX-0012,Pod A,Direct,R3,Accepted
+T3377,2026-10-10,EX-0062,Pod C,Vendor South,R1,Accepted
+T3378,2026-10-10,EX-0031,Pod D,Vendor North,R2,Accepted
+T3379,2026-10-10,EX-0049,Pod B,Vendor North,R1,Accepted
+T3380,2026-10-10,EX-0009,Pod B,Direct,R3,Accepted
+T3381,2026-10-10,EX-0033,Pod B,Direct,R3,Accepted
+T3382,2026-10-10,EX-0023,Pod D,Vendor South,R3,Accepted
+T3383,2026-10-10,EX-0067,Pod D,Vendor North,R3,Accepted
+T3384,2026-10-10,EX-0039,Pod D,Direct,R4,Accepted
+T3385,2026-10-10,EX-0059,Pod D,Vendor South,R3,Accepted
+T3386,2026-10-10,EX-0072,Pod A,Direct,R3,Accepted
+T3387,2026-10-10,EX-0024,Pod A,Direct,R2,Accepted
+T3388,2026-10-10,EX-0029,Pod B,Vendor South,R3,Accepted
+T3389,2026-10-10,EX-0042,Pod C,Direct,R3,Accepted
+T3390,2026-10-10,EX-0079,Pod D,Vendor North,R2,Accepted
+T3391,2026-10-10,EX-0058,Pod C,Vendor North,R5,Accepted
+T3392,2026-10-10,EX-0072,Pod A,Direct,R5,Accepted
+T3393,2026-10-10,EX-0071,Pod D,Vendor South,R5,Rejected
+T3394,2026-10-10,EX-0077,Pod B,Vendor South,R5,Rejected
+T3395,2026-10-10,EX-0055,Pod D,Vendor North,R3,Accepted
+T3396,2026-10-10,EX-0034,Pod C,Vendor North,R6,Rejected
+T3397,2026-10-10,EX-0056,Pod A,Vendor South,R6,Accepted
+T3398,2026-10-10,EX-0034,Pod C,Vendor North,R3,Accepted
+T3399,2026-10-10,EX-0029,Pod B,Vendor South,R3,Accepted
+T3400,2026-10-10,EX-0004,Pod A,Vendor North,R5,Accepted
+T3401,2026-10-10,EX-0037,Pod B,Vendor North,R3,Accepted
+T3402,2026-10-10,EX-0045,Pod B,Direct,R4,Accepted
+T3403,2026-10-10,EX-0060,Pod A,Direct,R1,Accepted
+T3404,2026-10-10,EX-0060,Pod A,Direct,R3,Accepted
+T3405,2026-10-10,EX-0071,Pod D,Vendor South,R3,Accepted
+T3406,2026-10-10,EX-0029,Pod B,Vendor South,R1,Accepted
+T3407,2026-10-10,EX-0042,Pod C,Direct,R4,Accepted
+T3408,2026-10-10,EX-0059,Pod D,Vendor South,R3,Accepted
+T3409,2026-10-10,EX-0011,Pod D,Vendor South,R2,Rejected
+T3410,2026-10-10,EX-0005,Pod B,Vendor South,R3,Rejected
+T3411,2026-10-10,EX-0025,Pod B,Vendor North,R3,Accepted
+T3412,2026-10-10,EX-0069,Pod B,Direct,R3,Accepted
+T3413,2026-10-10,EX-0075,Pod D,Direct,R3,Accepted
+T3414,2026-10-10,EX-0030,Pod C,Direct,R3,Accepted
+T3415,2026-10-10,EX-0018,Pod C,Direct,R6,Accepted
+T3416,2026-10-10,EX-0037,Pod B,Vendor North,R3,Accepted
+T3417,2026-10-10,EX-0054,Pod C,Direct,R6,Accepted
+T3418,2026-10-10,EX-0040,Pod A,Vendor North,R2,Accepted
+T3419,2026-10-10,EX-0008,Pod A,Vendor South,R3,Accepted
+T3420,2026-10-10,EX-0033,Pod B,Direct,R3,Accepted
+T3421,2026-10-10,EX-0048,Pod A,Direct,R2,Accepted
+T3422,2026-10-10,EX-0041,Pod B,Vendor South,R3,Accepted
+T3423,2026-10-10,EX-0063,Pod D,Direct,R4,Accepted
+T3424,2026-10-10,EX-0012,Pod A,Direct,R3,Accepted
+T3425,2026-10-10,EX-0031,Pod D,Vendor North,R1,Accepted
+T3426,2026-10-10,EX-0006,Pod C,Direct,R3,Accepted
+T3427,2026-10-10,EX-0069,Pod B,Direct,R1,Accepted
+T3428,2026-10-10,EX-0001,Pod B,Vendor North,R3,Accepted
+T3429,2026-10-10,EX-0072,Pod A,Direct,R2,Rejected
+T3430,2026-10-10,EX-0063,Pod D,Direct,R3,Rejected
+T3431,2026-10-10,EX-0020,Pod A,Vendor South,R3,Accepted
+T3432,2026-10-10,EX-0026,Pod C,Vendor South,R5,Accepted
+T3433,2026-10-10,EX-0023,Pod D,Vendor South,R1,Accepted
+T3434,2026-10-10,EX-0029,Pod B,Vendor South,R3,Rejected
+T3435,2026-10-10,EX-0024,Pod A,Direct,R6,Accepted
+T3436,2026-10-10,EX-0001,Pod B,Vendor North,R3,Accepted
+T3437,2026-10-10,EX-0017,Pod B,Vendor South,R5,Rejected
+T3438,2026-10-10,EX-0009,Pod B,Direct,R4,Accepted
+T3439,2026-10-10,EX-0036,Pod A,Direct,R5,Accepted
+T3440,2026-10-10,EX-0007,Pod D,Vendor North,R4,Rejected
+T3441,2026-10-10,EX-0061,Pod B,Vendor North,R3,Accepted
+T3442,2026-10-10,EX-0070,Pod C,Vendor North,R5,Accepted
+T3443,2026-10-10,EX-0071,Pod D,Vendor South,R6,Rejected
+T3444,2026-10-10,EX-0072,Pod A,Direct,R3,Accepted
+T3445,2026-10-10,EX-0053,Pod B,Vendor South,R6,Accepted
+T3446,2026-10-10,EX-0055,Pod D,Vendor North,R3,Accepted
+T3447,2026-10-10,EX-0047,Pod D,Vendor South,R2,Accepted
+T3448,2026-10-10,EX-0025,Pod B,Vendor North,R3,Accepted
+T3449,2026-10-10,EX-0070,Pod C,Vendor North,R3,Rejected
+T3450,2026-10-10,EX-0051,Pod D,Direct,R1,Accepted
+T3451,2026-10-10,EX-0040,Pod A,Vendor North,R3,Accepted
+T3452,2026-10-10,EX-0008,Pod A,Vendor South,R3,Accepted
+T3453,2026-10-10,EX-0057,Pod B,Direct,R5,Accepted
+T3454,2026-10-10,EX-0071,Pod D,Vendor South,R3,Accepted
+T3455,2026-10-10,EX-0043,Pod D,Vendor North,R6,Accepted
+T3456,2026-10-10,EX-0023,Pod D,Vendor South,R2,Accepted
+T3457,2026-10-10,EX-0035,Pod D,Vendor South,R3,Accepted
+T3458,2026-10-10,EX-0080,Pod A,Vendor South,R1,Rejected
+T3459,2026-10-10,EX-0040,Pod A,Vendor North,R3,Accepted
+T3460,2026-10-10,EX-0061,Pod B,Vendor North,R3,Accepted
+T3461,2026-10-10,EX-0052,Pod A,Vendor North,R3,Rejected
+T3462,2026-10-10,EX-0054,Pod C,Direct,R4,Accepted
+T3463,2026-10-10,EX-0035,Pod D,Vendor South,R3,Accepted
+T3464,2026-10-10,EX-0055,Pod D,Vendor North,R3,Accepted
+T3465,2026-10-10,EX-0010,Pod C,Vendor North,R3,Accepted
+T3466,2026-10-10,EX-0070,Pod C,Vendor North,R3,Accepted
+T3467,2026-10-10,EX-0019,Pod D,Vendor North,R3,Accepted
+T3468,2026-10-10,EX-0015,Pod D,Direct,R1,Accepted
+T3469,2026-10-10,EX-0062,Pod C,Vendor South,R3,Accepted
+T3470,2026-10-10,EX-0045,Pod B,Direct,R1,Accepted
+T3471,2026-10-10,EX-0037,Pod B,Vendor North,R3,Accepted
+T3472,2026-10-10,EX-0043,Pod D,Vendor North,R1,Accepted
+T3473,2026-10-10,EX-0031,Pod D,Vendor North,R3,Rejected
+T3474,2026-10-10,EX-0009,Pod B,Direct,R2,Accepted
+T3475,2026-10-10,EX-0070,Pod C,Vendor North,R3,Accepted
+T3476,2026-10-10,EX-0074,Pod C,Vendor South,R3,Accepted
+T3477,2026-10-10,EX-0053,Pod B,Vendor South,R4,Accepted
+T3478,2026-10-10,EX-0055,Pod D,Vendor North,R3,Accepted
+T3479,2026-10-10,EX-0061,Pod B,Vendor North,R3,Accepted
+T3480,2026-10-10,EX-0054,Pod C,Direct,R3,Rejected
+T3481,2026-10-10,EX-0031,Pod D,Vendor North,R6,Accepted
+T3482,2026-10-10,EX-0070,Pod C,Vendor North,R3,Accepted
+T3483,2026-10-10,EX-0015,Pod D,Direct,R5,Accepted
+T3484,2026-10-10,EX-0010,Pod C,Vendor North,R3,Accepted
+T3485,2026-10-10,EX-0052,Pod A,Vendor North,R5,Accepted
+T3486,2026-10-10,EX-0051,Pod D,Direct,R3,Accepted
+T3487,2026-10-10,EX-0033,Pod B,Direct,R6,Accepted
+T3488,2026-10-10,EX-0075,Pod D,Direct,R3,Accepted
+T3489,2026-10-10,EX-0053,Pod B,Vendor South,R3,Accepted
+T3490,2026-10-10,EX-0039,Pod D,Direct,R2,Accepted
+T3491,2026-10-10,EX-0019,Pod D,Vendor North,R4,Accepted
+T3492,2026-10-10,EX-0053,Pod B,Vendor South,R5,Accepted
+T3493,2026-10-10,EX-0067,Pod D,Vendor North,R3,Accepted
+T3494,2026-10-10,EX-0059,Pod D,Vendor South,R3,Accepted
+T3495,2026-10-10,EX-0078,Pod C,Direct,R4,Accepted
+T3496,2026-10-10,EX-0080,Pod A,Vendor South,R4,Rejected
+T3497,2026-10-10,EX-0053,Pod B,Vendor South,R6,Accepted
+T3498,2026-10-10,EX-0035,Pod D,Vendor South,R2,Rejected

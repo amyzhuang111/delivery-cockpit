@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delivery Cockpit — throughput, quality and contributor ramp</title>
+<meta name="description" content="One-page delivery view for a human-data project: daily rate vs deadline, acceptance by contributor/pod/vendor, reviewer load, contributor ramp forecast, decision log. Runs on your CSVs in the browser.">
+<link rel="preload" href="/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+</head><body>
+<nav><div class="wrap"><div class="brand"><span class="mark" aria-hidden="true"></span>Delivery Cockpit</div>
+<div class="links"><a href="#rate">Daily rate</a><a href="#quality">Acceptance</a><a href="#reviewers">Reviewers</a><a href="#ramp">Contributor ramp</a><a href="#log">Decision log</a><a href="#how">How to use</a></div>
+<div class="spacer"></div><a class="btn ghost" href="https://github.com/amyzhuang111/delivery-cockpit">Source</a></div></nav>
+<main class="wrap">
+<div class="hero"><div>
+<span class="illus" id="illus-banner">ILLUSTRATIVE DATA — synthetic, not real contributors or customers</span>
+<h1><b>Delivery</b> is visible every day, not at the deadline.</h1>
+<p class="lede">One page per project: are we on rate, where is quality slipping, who is overloaded, and can we ramp enough contributors in time. Everything runs in your browser on CSVs you upload; nothing is sent anywhere.</p>
+</div><div class="demo-card"><p><b style="color:var(--ink);font-weight:500">Demo: "onboard 1,000 contributors in 3 days"</b><br>Runs the ramp forecast against the funnel in the loaded data and shows what would have to be true.</p>
+<button class="btn" id="demo-btn" type="button">Run the 1,000-in-3-days check</button></div></div>
+
+<section class="panel" id="rate"><h2>Daily rate vs deadline<small class="illus-tag">ILLUSTRATIVE DATA</small></h2>
+<p class="sub">Accepted tasks per day against the rate required to hit the target.</p>
+<div class="row"><label>Target accepted tasks<input id="target" type="number" min="1" value="6000"></label>
+<label>Deadline<input id="deadline" type="date" value="2026-10-21"></label></div>
+<div class="grid" id="rate-kpis"></div>
+<svg class="chart" id="rate-chart" viewBox="0 0 800 220" role="img" aria-label="Cumulative accepted tasks vs required pace"></svg></section>
+
+<section class="panel" id="quality"><h2>Acceptance rate<small class="illus-tag">ILLUSTRATIVE DATA</small></h2>
+<p class="sub">Lowest first. Red = below the threshold. Upload a task-review export (any column names like worker / team / vendor / reviewer / outcome / date).</p>
+<div class="row"><label>Task CSV<input type="file" id="task-file" accept=".csv,text/csv"></label><label>Flag below<input id="thresh" type="number" min="0" max="100" value="80" style="width:90px"></label></div>
+<div class="map" id="task-map"></div>
+<div class="tabs" role="tablist"><button role="tab" data-k="vendor" aria-selected="true">Vendor</button><button role="tab" data-k="pod" aria-selected="false">Pod</button><button role="tab" data-k="contributor" aria-selected="false">Contributor</button></div>
+<div class="bars" id="acc-bars"></div></section>
+
+<section class="panel" id="reviewers"><h2>Reviewer load<small class="illus-tag">ILLUSTRATIVE DATA</small></h2>
+<p class="sub">Reviews per reviewer per day. Red = more than 1.5× the median reviewer: a backlog and quality-drift risk.</p>
+<div class="bars" id="rev-bars"></div></section>
+
+<section class="panel" id="ramp"><h2>Contributor ramp<small class="illus-tag">ILLUSTRATIVE DATA</small></h2>
+<p class="sub">Recruited → screened → trained → first accepted task → productive. Upload a contributor export with one row per person and a date per stage; headers are matched fuzzily ("Applied On", "Screen Passed", "1st Accepted Task"…).</p>
+<div class="row"><label>Contributor CSV<input type="file" id="ramp-file" accept=".csv,text/csv"></label><button class="btn ghost" type="button" id="ramp-reset">Reload illustrative data</button></div>
+<div class="map" id="ramp-map"></div>
+<div class="grid" id="ramp-kpis" style="margin-top:14px"></div>
+<h3 style="font-weight:400;font-size:18px;margin:22px 0 8px">Funnel and drop-off</h3>
+<div class="bars funnel" id="funnel"></div>
+<h3 style="font-weight:400;font-size:18px;margin:26px 0 4px">Can we onboard N by date X?</h3>
+<p class="note" style="margin:0 0 4px">Uses the funnel's conversion rates, P80 time-to-productivity (so 80% of productive people got there this fast), and your sourcing capacity.</p>
+<div class="row" id="fc-form"><label>N productive<input id="fc-n" type="number" min="1" value="100"></label>
+<label>Start<input id="fc-start" type="date" value="2026-10-22"></label>
+<label>By date X<input id="fc-date" type="date" value="2026-11-05"></label>
+<label>Recruits/day capacity<input id="fc-cap" type="number" min="1" value="150"></label>
+<label>Stage rates from<select id="fc-src"><option value="data">Loaded data</option><option value="published">Published anchors (screen 13%, train 20%)</option></select></label></div>
+<div id="fc-out" aria-live="polite"></div>
+<p class="note" id="fc-src-note"></p></section>
+
+<section class="panel" id="log"><h2>Decision log</h2>
+<p class="sub">What changed today and why. Stored only in this browser (localStorage).</p>
+<form class="row" id="log-form"><label style="flex:1 1 260px">Decision<input id="log-text" required placeholder="e.g. Moved Vendor South to full review"></label><label style="flex:1 1 200px">Because<input id="log-why" placeholder="metric that triggered it"></label><button class="btn" type="submit">Log it</button></form>
+<table><thead><tr><th>When</th><th>Decision</th><th>Because</th></tr></thead><tbody id="log-body"></tbody></table></section>
+
+<section class="panel" id="how"><h2>How to use</h2>
+<ol class="how">
+<li>Open the page. It loads two <b>illustrative</b> CSVs (synthetic, seeded) so every panel has something to show.</li>
+<li>Set the project <b>target</b> and <b>deadline</b> in Daily rate. The red/green tile says whether the current pace gets there.</li>
+<li>Upload your <b>task-review export</b> in Acceptance. Columns needed: who did it, outcome (accepted/approved/pass vs rejected/fail/rework), and optionally team, vendor, reviewer, date. Names don't need to match exactly.</li>
+<li>Upload your <b>contributor export</b> in Contributor ramp: one row per person, a date column per stage. Blank = didn't reach it. Check the "matched columns" line under the upload.</li>
+<li>Enter N, the date, and how many people you can recruit per day. The verdict says yes/no, what's required per day, and the earliest date that works.</li>
+<li>Log any change you make in the Decision log so the reason is on record.</li>
+</ol>
+<p class="note">Sample files: <a href="/data/illustrative-ramp.csv">illustrative-ramp.csv</a> · <a href="/data/illustrative-tasks.csv">illustrative-tasks.csv</a> (download one, rename the headers, upload it back to see the matching work).</p></section>
+
+<section class="panel" id="sources"><h2>Where the numbers come from</h2>
+<table><tbody>
+<tr><td>Bundled CSVs</td><td><b>ILLUSTRATIVE.</b> Generated by a seeded script in the repo. Stage rates in them (e.g. ~45% screened) are made up for the demo, not measured anywhere.</td></tr>
+<tr><td>Screen pass 13%</td><td>26 of 200 MTurk workers passed a summarization-evaluation qualification task; 12 of 200 (6%) passed the endurance task too. Zhang et al., ACL 2023. <a href="https://aclanthology.org/2023.acl-long.835/">aclanthology.org/2023.acl-long.835</a></td></tr>
+<tr><td>Train pass 20%</td><td>"Of the 150 workers who complete the tutorial, 20% qualify for the final writing round"; training took an estimated 6–7 hours. Nangia et al., ACL 2021. <a href="https://aclanthology.org/2021.acl-long.98/">aclanthology.org/2021.acl-long.98</a></td></tr>
+<tr><td>Caveat</td><td>Both are academic crowdsourcing pipelines for hard NLP tasks with strict filters. They are a pessimistic anchor, not a benchmark for expert-network onboarding. The "1,000 contributors in 3 days" scenario is the example given in the role description, not a measured rate.</td></tr>
+</tbody></table></section>
+</main>
+<footer><div class="wrap">Delivery Cockpit · independent interview project by Amy Zhuang, not affiliated with or endorsed by Mercor. Visual style follows mercor.com's public site (Inter, indigo accent). Inter is self-hosted under the <a href="/fonts/OFL-Inter.txt">SIL Open Font License</a>.</div></footer>
+<script type="module" src="/app.js"></script>
+</body></html>

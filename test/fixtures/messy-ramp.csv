@@ -1,0 +1,8 @@
+﻿"Expert Name";"Date Applied";"Passed Screening?";"Onboarding complete";"First approved task";"Fully Ramped";"Team / Pod"
+"Doe, Jane";10/1/26;10/2/26;10/4/26;10/5/26;10/8/26;Pod A
+"Smith; Bob";10/1/26;10/03/26;;;;Pod B
+"O""Neil";10/2/26;N/A;;;;Pod A
+"Lee";2026-10-02;2026-10-03;2026-10-03;;;Pod B
+"Kim";10/3/26;;;;10/9/26;Pod A
+;;;;;;
+"NoDate";;;;;;Pod C
